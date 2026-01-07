@@ -1,0 +1,1372 @@
+fileVersion: 1
+id: 1bbefa91-f735-410c-997e-a3628919bbc3
+name: STG_GP_NL_PRIMECLAIM
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: RAW_GP_NEWLEAF
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dcc08ad7-ed57-48da-92b4-ccef4f49e26d
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CLAIMID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7de857a4-48ec-4706-9d98-008299feeb33
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 145094f3-824c-4f75-83d3-838d6ac39116
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEAMOUNTEXCEEDINGPERIODICBENEFITMAXIMUM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee4abe24-ac30-46e0-9c97-bd4cabbef51b
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6b3dbf4-67fd-4be9-8c6f-0cfe2c2d9105
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: RESPONSEGROUPID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 58ffe4cf-c23a-4ed3-92cc-6ed9017dc448
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c98b1081-6813-42c6-b237-79070ddd91c3
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: COSTBASISCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 369fe875-6825-4681-9115-a2c4cc95ed79
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 432e9cfa-5e4c-4b9c-8077-e2919f2ba084
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: COVERMYMEDSPASTATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3666694d-9aa9-480d-9a7c-82a091ed8016
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f822fc9-ee0f-4366-8dda-cb8b4ac010f2
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RESPONSEBASISOFCALCULATIONFLATSALESTAX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9efe2f8-a83d-417e-902b-1e86c1c3adab
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e15d1fdd-cd00-4a15-a0f5-ec0b734be20b
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: REQUESTMARKUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6fd46148-1c26-4bc7-8ee6-4d3abf1ab4f2
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1df90c68-ce10-4511-ba57-a83e3fab95a6
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CLAIMSEQUENCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cfa8e6e2-6881-4e50-b4ff-02f7fa001fd0
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbf8c054-ebbb-480b-b284-46489793d0b0
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UPDATEDBY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5dfea8d9-8300-44b3-9d78-7fa2fe3d64a7
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ad7c028-c35a-424a-b02b-222640ef91a3
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEPERCENTAGESALESTAXAMOUNTPAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 421d5009-3a71-4900-a4e3-d40544ad4c61
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 556afa20-3902-471e-82aa-a26c8d30b1b6
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEDISPENSINGFEEPAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a21ce62-97c7-4e2a-be2e-ef3ad54c47a3
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5cc0423-1d80-4e54-af56-7415b6c44f24
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: RESPONSETAXEXEMPTINDICATOR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 38191636-990c-4cf8-b332-cfc6a6f19717
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f851419e-48b3-4080-8f14-2e4a5ea7222e
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: RESPONSEPLANID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f1c8997a-b943-4e1d-a698-540e0ba4d26a
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e53f8d7-73ac-47c6-8f7c-2dc6f8814ded
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEACCUMULATEDDEDUCTIBLEAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9249cddc-e895-4856-b7af-44a7cbbd3dae
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08baf9ec-4e0e-4fc3-9936-a8e078783b1b
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CUSTOMERARACCOUNTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1cd2fbda-bf9b-41c8-9cd6-57d1c40688f6
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16c13b41-e4f3-432d-86b4-0e6b518795c3
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: AWPCOST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aae137ec-526c-4cdb-ab94-5dd35d075954
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ab1c33dc-87ee-49dc-adf9-e35e07786259
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(10,3)
+        description: ""
+        name: RESPONSEPRIORAUTHORIZATIONQUANTITYACCUMULATED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 37850f3f-810b-4b6e-91c5-1da1af2666cb
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c85179e7-5f09-4be8-b36e-3bba5c11d13d
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UPDATEDON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b87e881b-f7f8-48ce-a2a6-593a460abc74
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 851c3b01-3c5b-476e-b282-c3f430628941
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(18)
+        description: ""
+        name: RESPONSEHELPDESKPHONENUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4fd5b0de-9f00-4f24-a78f-1a0af43d8876
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d00cf8f-2777-404f-b619-2f6df06543da
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: FEESCHEDULEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 31a31ae6-2c35-4ef5-89aa-c20cf1785bc2
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c89f5e5f-3434-480d-a4a9-24beb67a541a
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: INHOUSEPRICINGID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d310ab8-d3f6-4743-8f95-b1e48689586c
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5ece1b9-7b9a-47c7-b18d-fe642102b691
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEPATIENTPAYAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b175d523-d2e3-465d-8a9a-8850d6e7213c
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f6cab34-6242-41ff-8eb4-62dfb338feb8
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(7,4)
+        description: ""
+        name: RESPONSEPERCENTAGESALESTAXRATEPAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 07764e0e-0a41-4e9b-bebd-bb8a2ed484a6
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dd1acacb-de84-4543-af74-93ced00a3ab9
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RESPONSEPREFERREDPRODUCTCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 87ed1f9e-101a-43c5-beb7-66191ec03269
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 131c5023-8095-45ef-b2a3-de15f6e0acef
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CREATEDBY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa4e0e5a-5398-4114-a8f5-ce013682e339
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dcc685ea-e19b-4b0b-bd3a-908c21ff45c4
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: RESPONSEDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1067e720-30be-4e29-ba65-cab3d11a5c61
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a509c23a-ab55-4cec-8663-b3866cd65791
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RESPONSESERVICEPROVIDERIDQUALIFIER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cd2f3d-bd23-4c0b-9190-4709b9cf3516
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 828ba3ac-5181-4c63-93db-c93a12db247a
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEAMOUNTOFCOINSURANCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 15ee2eca-5ac5-44ee-9628-7787989626c1
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98ae3a93-c557-4765-96dd-d517ffa7de90
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RESPONSEBASISOFCALCULATIONDISPENSINGFEE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fb7dc8c6-5e9b-40da-9fc5-bbb7987e30c1
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32738c30-7282-4413-9707-42aa1b9bfad6
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RESPONSEOTHERAMOUNTPAIDCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 245fe080-7df1-44f5-b274-d254473fcb13
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc627761-df6f-4388-aebd-60285db04746
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: REQUESTINGREDIENTCOST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 57aebfd1-bfce-41c7-88bf-5c75a485152b
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04f0b448-bba7-4899-8948-ddfa411c633b
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: COVERMYMEDSREQUESTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf67872e-450e-4018-8950-5ca57e791d42
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1c81c09-df7d-4ffa-8622-0165cd487988
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RESPONSEPRESCRIPTIONREFERENCENUMBERQUALIFIER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8bb11095-3a45-4184-9949-209314a7c73c
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57d02bb3-e628-4c89-9d53-bebc0132c319
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: RESPONSEMESSAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a2edee78-f6ed-41fd-9f13-98e872ac7f80
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff25b8e3-d020-4089-afd5-7229b1fb798e
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RESPONSETRANSACTIONCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 41cc298b-691f-48a7-80f2-23bd0935a5a4
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a36a81b1-77ca-4c94-b5d6-70979fce79db
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISRELEVANT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 73f72814-d0f1-40f7-97eb-ff7246fbc53c
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b989bd62-9207-48a7-9aac-4bdc742dbc52
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: REQUESTPATIENTPAYAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dd0f2206-9f5c-4f5f-9810-f421f30ed681
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdb849a1-829c-41bb-bae1-671c0ffc189d
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RESPONSEHELPDESKPHONENUMBERQUALIFIER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1d731362-8f7a-4d72-9502-853edbd47c31
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58dd77cc-0c50-4525-abae-89a1d2d5ebfd
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RESPONSEPRIORAUTHORIZATIONNUMBERASSIGNED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e6d0aae9-bcd1-427c-b5dc-ea593142ae92
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6dc0ca84-e37d-4bf5-abff-1c084c7591e9
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISPAIDUNDERCOST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7aa1a40a-512b-4543-838a-c25f643c7893
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f19efd19-9b5b-465c-acc9-f20983a62b14
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEPROFESSIONALSERVICEFEEPAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bd7c0860-95d5-442a-a165-3ac01e8e9947
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdcfb9a1-e316-4a09-8927-81bb4aef77b5
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RESPONSEPRESCRIPTIONREFERENCENUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2f805c23-1389-441e-983b-9ef665ec2b7d
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87c540b2-4f9b-4782-963f-784226dab54e
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: RESPONSESTATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 388e64a8-5eb8-4514-b096-1dae1a131593
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38921c86-6e9f-403b-84de-b9ef6bf999a4
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RESPONSEBASISOFCALCULATIONPERCENTAGESALESTAX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 951237e5-82aa-4650-bd96-3d1ec44159eb
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f86b6002-eab4-4bca-9f03-7ddfe70964ec
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: ACQUISITIONCOST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0a66fea5-da77-450e-ace6-5bbab81c8497
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 079bf807-73b1-4030-9b71-ca563c05e636
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: REQUESTTRANSACTIONCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 046da69f-be18-42ca-8267-198331a5e2ae
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ad5b91a-5c15-4e3d-ad40-913a9c2b2a4d
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2048)
+        description: ""
+        name: RESPONSETEXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a9251360-c4a6-4914-9429-c2ccc422d7fb
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 408c081e-a131-4aff-838d-b6ba2ab16b97
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: RESPONSESERVICEPROVIDERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0df436f5-9ac6-4116-8ca6-e86cff362e3d
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 459739de-6347-4178-8ba9-7c4226d946c8
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(10,3)
+        description: ""
+        name: RESPONSEPRIORAUTHORIZATIONQUANTITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68811b08-f5a6-44b8-a8fd-323200d3f3fc
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d941aa9-0b82-4134-9dcc-45c658203c61
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEAMOUNTAPPLIEDTOPERIODICDEDUCTIBLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb62d1cd-8602-4391-9292-95b6557593e7
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8b53557-a2d8-43b0-9a33-7b5e23723d3d
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: REQUESTDISPENSINGFEE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 05da8c52-163c-4236-8416-ff2a4f0ef79b
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7dc66800-0ea4-47ec-873d-1033162a7c57
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: RESPONSEDATEOFSERVICE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c91e4af1-43ae-4a68-828e-f1319086cdaa
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac1c2571-aeb8-4738-813f-c224590f71cd
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CLAIMSTATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d615eddb-23f8-43ba-8ea8-72fc61d52866
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a18a37e3-3dc9-49b7-ac7b-e367f0a15887
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RESPONSEPERCENTAGESALESTAXBASISPAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab453249-bb1c-46ed-96f6-981c8c824090
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b956183-8655-4630-8d4e-e00f72008c32
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(1024)
+        description: ""
+        name: REQUESTTEXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 732a1913-68ec-45ed-b995-4ae27e9c2072
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2002c6c3-8a47-4a19-92eb-37f8291d963d
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEREMAININGBENEFITAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 315a5f9d-3e5c-49eb-872a-284a8d08d6bc
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 053db825-8ac5-4c54-98c2-6343d215a8d1
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEINCENTIVEAMOUNTPAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5d6ee03d-8ba0-4017-b692-7ef97eeb3a75
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: db9165d8-9620-4a4d-94e5-7fe12df423c0
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSETOTALAMOUNTPAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 94f31f5a-dd95-4bf6-b806-b8dcd871bb20
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3aa9c92b-22cf-49de-a52d-e131010cb401
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEOTHERPAYERAMOUNTRECOGNIZED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 636e0a50-e480-410e-8868-624e390d90e2
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d7d4dc06-91be-49ef-9e77-6c7c53f86843
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: RESPONSEPRIORAUTHORIZATIONPROCESSEDDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b6bd8cd8-5d55-45bd-a820-43620a3bc7ba
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b4df8b2-2c6f-4b5e-bfff-33f5df5d51ef
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: INGREDIENTCOSTOVERRIDEAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fe8fbe25-dd9a-46e9-a3a5-38ea78cab5c7
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28edb22a-4cb0-4887-8d00-bb521042e0fc
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: REQUESTDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ec157729-3475-4ac7-8511-e023212c10bc
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 389d0a48-06cb-460e-910f-350bb996a8b3
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: RESPONSEPAYERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a0ee4690-a2f3-45d6-933c-d09ba17b01b8
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa155bf2-d077-4b86-9841-b4f91aabe770
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: RESPONSENETWORKREIMBURSEMENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 75cd4768-7483-4a1e-adfe-f207ab71d1c8
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83138854-38da-42ea-a113-c78ec765c415
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: USUALANDCUSTOMARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0bf52cfd-b30b-4bc2-bb66-959eae08a98c
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4a637a4-188c-44db-9ba2-43b690f3410e
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RESPONSEBASISOFCALCULATIONCOPAY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 96d52de8-4ec9-4f62-9ec0-f3f2da362027
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6cdbbc29-5ecd-4e0d-aaa7-d34818603c07
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: COVERMYMEDSPRIORAUTHORIZATIONBY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 00bb1604-c418-4c6a-9228-0a6f1f7aee35
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2cc0e2e-7635-42ed-b51d-e8d9eea31bc9
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: REQUESTSALESTAX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6af308e7-bd97-4d5d-8f7a-144a6c9293dd
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b522538e-7fcc-4174-b26d-3307bb5961bb
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: CREATEDON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 03763089-8738-4f32-a3e2-85643aef8474
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 668a20d2-a90f-4f71-8f95-10f4645556b3
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RESPONSEBASISOFREIMBURSEMENTDETERMINATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 58c5b443-c843-4661-aaa0-acca3763b607
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23072900-b898-4b23-ab30-616f5e710239
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: RESPONSEADDITIONALMESSAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 50027070-3a28-4094-b762-b73b044a1abe
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e3717dd-3f80-41d1-947d-990b34e58ac8
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEREMAININGDEDUCTIBLEAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ecfe609b-6e90-4cf1-ace2-6c1f7972528a
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c24b83b0-f203-4b46-8348-e92b3265beae
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: RESPONSETRANSACTIONCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a6127a4-32e1-4571-98c5-80f7809524cf
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 777c09ea-30f3-4fee-ab99-701c62a92d5b
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RESPONSEVERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1e4317c7-a6af-4609-ad99-862942683fe3
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2078a40f-037f-46ec-b53c-e134e3f3cdda
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: RESPONSEAUTHORIZATIONNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d9e45d4-b2ba-49e3-933a-bc67d08344d9
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aec5ef48-7505-449a-8829-339e2c4616ce
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEAMOUNTATTRIBUTEDTOSALESTAX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a1430ee6-dbf9-43a4-bb77-09ce9bdf5df3
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc53bd45-d82a-4225-a683-917f18460b3e
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: RESPONSEPRIORAUTHORIZATIONEFFECTIVEDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d311630e-3ee1-4e6a-af41-42e0eee88c61
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e8634f1-ab22-40ba-8c3c-1cfbbb8559bb
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RESPONSEREJECTCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c2235a2e-b850-403d-8774-6d5ba67f67ab
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b47f9cec-e6c4-4dd4-87d7-da9121e6b677
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEINGREDIENTCOSTPAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77663429-919d-44cf-8db8-33932fbac9d0
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9fe049f6-7cee-4cd0-9cd2-6681de744905
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEFLATSALESTAXAMOUNTPAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 45f0360f-6e14-4f9a-995f-2fe0172a4fa4
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d19058f-b071-4be2-a84b-4d3ce0a84470
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEAMOUNTATTRIBUTEDTOPRODUCTSELECTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 683f33cc-1ac8-4e03-91e5-88ae0dd984c6
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87672e23-216f-4287-b181-b53fa840242b
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: DATEFILLED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cb607d9-20d6-4e88-9244-a08b06ec3b0d
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64fd6f19-ce95-4791-8e7b-96ca2ae487eb
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: RESPONSEPRIORAUTHORIZATIONDOLLARSAUTHORIZED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7dd8d4e7-dd74-407b-aa70-5929eb8aaaa2
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e777ad8-f3e1-424a-a437-faa43b71f278
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: THIRDPARTYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0135d036-1308-487f-a5b5-8401f41ac6ea
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c46448f-ede6-4898-aef6-ec31ffa57d65
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RESPONSEBENEFITSTAGECOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 55100585-6e17-4d9a-9072-1bcdbd9e5350
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 187916ac-829f-4a8f-a157-c3531ee9b377
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: REFILLID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8c64a477-22df-4649-b186-b5569d2490aa
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17ee9f35-5f94-40a2-bfb3-282b04bed0e1
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RESPONSEPRIORAUTHORIZATIONNUMBEROFREFILLSAUTHORIZED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a0865720-c6f4-4707-a7cd-01cb33ac5e03
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 654b689c-7a42-4399-a4e5-689eec42b1ba
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: RESPONSEHEADERSTATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d93c7c5-33d0-4e59-93aa-b0fc11f5c61c
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55bed480-ef28-4206-be5d-2c8b8b17cf9e
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: RESPONSEPAYERIDQUALIFIER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3428b7c9-dc23-4a23-8ba1-d3813133de33
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a382f56-ce71-4a35-92b5-baad30ab9694
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: RESPONSEPRIORAUTHORIZATIONEXPIRATIONDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a0078d57-2543-45d0-ba0a-16a2b37d590c
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74ffda7f-f180-4e50-8bfb-01d2b1a4ac54
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RESPONSEAPPROVEDMESSAGECOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 674b31a1-b232-4a41-9812-ac079a539764
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90396793-a962-46c3-966b-1025e7f2c12d
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(8,2)
+        description: ""
+        name: REQUESTDISCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8282bbeb-6a91-4ae7-b635-32152fe52c60
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b789621a-05bf-4c1a-a031-72776f4110c6
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: COSTBASISUNITPRICE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5393ef2b-3668-4790-96d8-9aceb5fab2c3
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: da9dcc5a-49f4-4a05-96ca-92b82632bac3
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c64d72c-25ac-4ea3-8a0a-ee6cf16a5c27
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5cd4d2ed-8ab4-43a5-9227-11689705d099
+          stepCounter: 1bbefa91-f735-410c-997e-a3628919bbc3
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 368e4aff-4f44-4879-b192-cb2e91da74b2
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_GP_NL_CLAIM: 5daa2d04-a801-4a2a-90cc-5635c9691056
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_GP_NEWLEAF
+            nodeName: STG_GP_NL_CLAIM
+        join:
+          joinCondition: |-
+            FROM {{ ref('RAW_GP_NEWLEAF', 'STG_GP_NL_CLAIM') }} "STG_GP_NL_CLAIM"
+            WHERE "STG_GP_NL_CLAIM"."CLAIMSEQUENCE"=1
+        name: STG_GP_NL_PRIMECLAIM
+        noLinkRefs: []
+  name: STG_GP_NL_PRIMECLAIM
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
