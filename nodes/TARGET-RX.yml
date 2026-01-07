@@ -5,7 +5,7 @@ operation:
   database: ""
   deployEnabled: true
   description: ""
-  locationName: RAW_GP_NEWLEAF
+  locationName: TARGET
   metadata:
     columns:
       - acceptedValues:
