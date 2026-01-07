@@ -1,0 +1,158 @@
+fileVersion: 1
+id: 47e0733d-de5c-4c27-9a6f-9ab0e0e17adb
+name: STG_FILL_NUMBER
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: From table OrderItems - calculates the Fill number since relying on fill numbers in refill table is not accurate.
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: de47de5f-68af-443a-ad69-54e909025f47
+          stepCounter: 47e0733d-de5c-4c27-9a6f-9ab0e0e17adb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 659ad882-d283-4090-9edf-c6677f8ecc3c
+                stepCounter: c3ae32af-d5c0-4ddc-99c1-62a383a14b42
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e11c40f1-ed74-4be9-824d-aeb3facc86b9
+          stepCounter: 47e0733d-de5c-4c27-9a6f-9ab0e0e17adb
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISDELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 31c6eacb-350e-474d-a168-08077a409ef3
+                stepCounter: c3ae32af-d5c0-4ddc-99c1-62a383a14b42
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8121adc-b866-4fd2-b7af-20e37631b512
+          stepCounter: 47e0733d-de5c-4c27-9a6f-9ab0e0e17adb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 51ca8216-f03f-4721-9b96-6544f2b0d108
+                stepCounter: c3ae32af-d5c0-4ddc-99c1-62a383a14b42
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56965afd-c2d9-4ed5-90c7-dfeb6ac0df40
+          stepCounter: 47e0733d-de5c-4c27-9a6f-9ab0e0e17adb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: REFILLID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c3834415-7805-4756-a534-a130f5b4d4c5
+                stepCounter: c3ae32af-d5c0-4ddc-99c1-62a383a14b42
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a7b0e31-c332-4b7f-976d-ec1cd39b868d
+          stepCounter: 47e0733d-de5c-4c27-9a6f-9ab0e0e17adb
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: CREATIONTIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 38bb146d-8788-47de-9419-a8ee5a207fd4
+                stepCounter: c3ae32af-d5c0-4ddc-99c1-62a383a14b42
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd2363ed-8b03-47c3-aeec-af629a133873
+          stepCounter: 47e0733d-de5c-4c27-9a6f-9ab0e0e17adb
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 67893482-2b4e-4dae-af84-ab12cfbe31f5
+                stepCounter: c3ae32af-d5c0-4ddc-99c1-62a383a14b42
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71bca32e-90cc-4571-ab8a-8641261cf74d
+          stepCounter: 47e0733d-de5c-4c27-9a6f-9ab0e0e17adb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d1dc5081-3d7c-4c8b-9ce7-92ad644ca2a4
+                stepCounter: c3ae32af-d5c0-4ddc-99c1-62a383a14b42
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e143b883-9c93-4042-a586-a6a16ce97024
+          stepCounter: 47e0733d-de5c-4c27-9a6f-9ab0e0e17adb
+        config: {}
+        dataType: Number(10,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: FILL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 659ad882-d283-4090-9edf-c6677f8ecc3c
+                stepCounter: c3ae32af-d5c0-4ddc-99c1-62a383a14b42
+            transform: DENSE_RANK() OVER (PARTITION BY REFILLID ORDER BY "ORDERITEMS"."ID" ASC)-1
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          ORDERITEMS: c3ae32af-d5c0-4ddc-99c1-62a383a14b42
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: ORDERITEMS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'ORDERITEMS') }} "ORDERITEMS"
+        name: STG_FILL_NUMBER
+        noLinkRefs: []
+  name: STG_FILL_NUMBER
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
