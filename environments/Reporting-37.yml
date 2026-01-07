@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "37"
+mappingDefinitions:
+  RAW_GP_NEWLEAF:
+    database: SCH_RAW
+    schema: GP_NEWLEAF_DBO
+  TARGET:
+    database: SCH_DEV
+    schema: REPORTING
+name: Reporting
+type: Environment
