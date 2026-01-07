@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "36"
+mappingDefinitions:
+  SRC:
+    database: SCH_RAW
+    schema: FT_PIXEL_BACKOFFICE_DB_1_DBO
+  TARGET:
+    database: SCH_DEV
+    schema: REPORTING
+name: Staging
+type: Environment
