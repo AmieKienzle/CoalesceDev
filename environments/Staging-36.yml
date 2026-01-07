@@ -1,7 +1,7 @@
 fileVersion: 1
 id: "36"
 mappingDefinitions:
-  SRC:
+  PIXELBO:
     database: SCH_RAW
     schema: FT_PIXEL_BACKOFFICE_DB_1_DBO
   TARGET:

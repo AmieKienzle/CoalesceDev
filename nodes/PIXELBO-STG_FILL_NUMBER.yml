@@ -12,7 +12,7 @@ operation:
   deployEnabled: true
   description: From table OrderItems - calculates the Fill number since relying on fill numbers in refill table is not accurate.
   isMultisource: false
-  locationName: SRC
+  locationName: PIXELBO
   materializationType: table
   metadata:
     appliedNodeTests: []
@@ -143,10 +143,10 @@ operation:
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: SRC
+          - locationName: PIXELBO
             nodeName: ORDERITEMS
         join:
-          joinCondition: FROM {{ ref('SRC', 'ORDERITEMS') }} "ORDERITEMS"
+          joinCondition: FROM {{ ref('PIXELBO', 'ORDERITEMS') }} "ORDERITEMS"
         name: STG_FILL_NUMBER
         noLinkRefs: []
   name: STG_FILL_NUMBER
