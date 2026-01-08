@@ -1,6 +1,6 @@
 fileVersion: 1
-id: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-name: REFILLS
+id: 27261054-e1f0-4ca4-a4b6-419296741302
+name: INSURANCE
 operation:
   database: ""
   deployEnabled: true
@@ -13,8 +13,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 6de77533-1dcd-4dfe-98c7-83cc606bca31
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
+          columnCounter: c2341f08-fdd5-4287-8cdf-9a9af24b0d67
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -32,51 +32,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 628542d2-4dd8-45f8-884d-180316fd95c7
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: TIMESTAMP_NTZ(9)
-        defaultValue: ""
-        description: ""
-        name: LASTMODIFICATIONTIME
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 853ae0a6-a5a1-48e4-a6d8-9acc459f1b8f
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: VARCHAR(1000)
-        defaultValue: ""
-        description: ""
-        name: CANCELLATIONREASON
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 0b94b14f-4215-47da-a5f0-8bf82a9aa703
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
+          columnCounter: 646e6f07-0d31-4577-add5-b12d8f8cefbd
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
         description: ""
-        name: QUANTITYOFDISPENSED
+        name: STATUS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -89,13 +51,279 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: df6220e0-7016-42c2-b9dd-d44c11214562
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
+          columnCounter: 1c1ef978-9e52-4931-bf49-9d3051c5aa68
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: NUMBER(18,2)
+        defaultValue: ""
+        description: ""
+        name: DEDUCTIBLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ce001c97-4bee-4db6-8302-2a1e8c482cf6
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: FERTILITYCOVERAGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95e2ed9c-ca21-4011-88f4-ddd758035078
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: COINSURANCECOVERAGEMODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5a47449d-3e25-4929-adc6-fa76e68ae9b7
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: ISENABLED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f21b8def-5101-485e-bd78-0f1ec21b1cc6
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PRIORITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c775590-9134-4b39-a55e-9fbcccaa9f1b
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: NUMBER(18,2)
+        defaultValue: ""
+        description: ""
+        name: LIFETIMECAP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 028188b6-6b24-449c-a5fc-7e1b5dbdb54f
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: COMBINEDCAPOPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3566c30-c565-4a1d-877c-131ae678f53a
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: NUMBER(18,2)
+        defaultValue: ""
+        description: ""
+        name: ANNUALCAP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: be38caa4-6719-4a1e-80c5-24ad1c1c5052
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: ENDDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2399df9f-2f13-473d-a307-54443c53ee65
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INSURANCETEMPLATEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6843597-cd62-4172-bb5d-6d589a8d1407
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DISCRIMINATOR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ec5b755-e5ef-4a2d-b898-05946147dbfb
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c12e44d5-ed4f-4858-9d4c-f6d0b695fbae
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: STARTDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39c58108-8368-41fb-8c23-756793df01d9
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+        config: {}
+        dataType: NUMBER(18,2)
+        defaultValue: ""
+        description: ""
+        name: COINSURANCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0dadc55-f479-47a3-9ffe-cb2ea9abc5ee
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
         config: {}
         dataType: VARCHAR(512)
         defaultValue: ""
         description: ""
-        name: DIRECTIONFORADMINISTRATION
+        name: OWNERCHANGELOGS
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -108,13 +336,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 0b3a2dea-0e8d-4ebf-b238-c8cce3f8e054
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
+          columnCounter: 762620bf-9052-449d-bed8-6494c90d9180
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
         config: {}
-        dataType: BOOLEAN
+        dataType: VARCHAR(510)
         defaultValue: ""
         description: ""
-        name: ISDELETED
+        name: INSURANCENUMBERID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -127,13 +355,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 4e7d1961-2b52-4af7-84e8-ee6d0477f1c5
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
+          columnCounter: 53ebd768-dcb0-409f-b2be-a11b94a727c5
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(1000)
         defaultValue: ""
         description: ""
-        name: DELETERUSERID
+        name: DESCRIPTIONANDNOTES
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -146,32 +374,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: b21ce43b-8c1c-4240-ba73-d6bf8ae4c6c4
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: TIMESTAMP_NTZ(9)
-        defaultValue: ""
-        description: ""
-        name: DELETIONTIME
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 3dcf7880-1f19-4a86-9126-a6466ad52f8d
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
+          columnCounter: 187da49f-ba4b-427a-83e4-30d5fa60fb48
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
         description: ""
-        name: PRESCRIPTIONID
+        name: PATIENTID
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -184,13 +393,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: b25ff375-06c6-40e8-a3b9-4d83eaf76757
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
+          columnCounter: bace1e63-72e5-45b0-8d53-48c1f37ef3a6
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
         description: ""
-        name: LASTMODIFIERUSERID
+        name: CYCLESCOUNT
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -203,217 +412,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: b1615f80-2c3b-4995-b224-f390aa22b8d8
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: NUMBER(38,0)
-        defaultValue: ""
-        description: ""
-        name: ANTICIPATEDQUANTITY
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 10e0ddbd-b76b-41ae-a358-e0eab51922b0
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: BOOLEAN
-        defaultValue: ""
-        description: ""
-        name: ISURGENT
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: ac1cf471-4f8f-4467-951b-424fa43ff48d
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: TIMESTAMP_NTZ(9)
-        defaultValue: ""
-        description: ""
-        name: FOLLOWUPDATE
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 1922cb87-766c-4f96-8c8f-d1b972db52fd
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: BOOLEAN
-        defaultValue: ""
-        description: ""
-        name: ISAPPROVED
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 98527dcb-e400-4bcf-9645-804e0d67a89f
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: BOOLEAN
-        defaultValue: ""
-        description: ""
-        name: ISSCHEDULED
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 9c4307f7-b25d-4c7e-b80a-f7fff7d67d64
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: BOOLEAN
-        defaultValue: ""
-        description: ""
-        name: ISEXTERNAL
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 6224a5ac-c81b-4915-bf09-fd4e2894feae
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: TIMESTAMP_NTZ(9)
-        defaultValue: ""
-        description: ""
-        name: CREATIONTIME
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: ec3a9399-8725-41f7-a0c3-fc36b9554ec3
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: NUMBER(38,0)
-        defaultValue: ""
-        description: ""
-        name: TREATMENTREGIMENID
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 4d58d2dc-121c-41c2-bc10-4868812bcd9c
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: NUMBER(38,0)
-        defaultValue: ""
-        description: ""
-        name: REFILLSTATUSID
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 6b8d1e2c-0fcf-428d-bb81-49d863107db1
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: NUMBER(38,0)
-        defaultValue: ""
-        description: ""
-        name: DRUGID
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 3cab0b1e-111c-40ea-ad2b-6c807f1c2989
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
-        config: {}
-        dataType: NUMBER(38,0)
-        defaultValue: ""
-        description: ""
-        name: CREATORUSERID
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 3b6413f1-63ea-4e63-9bff-b68771a1c1b0
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
+          columnCounter: b3470b3a-2dcc-4b84-be84-adfabc06686b
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
         config: {}
         dataType: BOOLEAN
         defaultValue: ""
@@ -431,8 +431,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: a28677dc-b30f-421d-a37f-ea797bba0d11
-          stepCounter: f1b016f1-ae59-4c8f-953d-a431c2d753d8
+          columnCounter: 972e41a0-cf10-4f8c-aef1-3b71a9147750
+          stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
         config: {}
         dataType: TIMESTAMP_TZ(9)
         defaultValue: ""
@@ -445,7 +445,7 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-  name: REFILLS
+  name: INSURANCE
   schema: ""
   sqlType: Source
   type: sourceInput

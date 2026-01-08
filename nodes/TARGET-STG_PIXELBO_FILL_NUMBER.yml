@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 47e0733d-de5c-4c27-9a6f-9ab0e0e17adb
-name: STG_FILL_NUMBER
+name: STG_PIXELBO_FILL_NUMBER
 operation:
   config:
     insertStrategy: INSERT
@@ -12,7 +12,7 @@ operation:
   deployEnabled: true
   description: From table OrderItems - calculates the Fill number since relying on fill numbers in refill table is not accurate.
   isMultisource: false
-  locationName: PIXELBO
+  locationName: TARGET
   materializationType: table
   metadata:
     appliedNodeTests: []
@@ -146,10 +146,12 @@ operation:
           - locationName: PIXELBO
             nodeName: ORDERITEMS
         join:
-          joinCondition: FROM {{ ref('PIXELBO', 'ORDERITEMS') }} "ORDERITEMS"
-        name: STG_FILL_NUMBER
+          joinCondition: |-
+            FROM {{ ref('PIXELBO', 'ORDERITEMS') }} "ORDERITEMS"
+            WHERE "ORDERITEMS"."ISDELETED"=0
+        name: STG_PIXELBO_FILL_NUMBER
         noLinkRefs: []
-  name: STG_FILL_NUMBER
+  name: STG_PIXELBO_FILL_NUMBER
   overrideSQL: false
   schema: ""
   sqlType: Stage

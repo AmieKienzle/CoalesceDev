@@ -1,0 +1,170 @@
+fileVersion: 1
+id: f1f918d4-57f6-4225-9822-9587960a9fa4
+name: STG_PIXELBO_REGULAR_INS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: From a temp table to identify the "regular" insurance for a fill.
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7875f19b-dbc6-4c81-834d-9aa54df5846d
+          stepCounter: f1f918d4-57f6-4225-9822-9587960a9fa4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDERITEMID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0fe36fd0-1813-49fd-8d16-4799fd6646ab
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dfb20109-8552-44b1-a4bf-b8d091588180
+          stepCounter: f1f918d4-57f6-4225-9822-9587960a9fa4
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: INSURANCEPAYAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f2d346e-e5ee-4245-ada7-d01da108e67f
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae52b19e-4342-4283-8a28-3faa180bc36d
+          stepCounter: f1f918d4-57f6-4225-9822-9587960a9fa4
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: PATIENTPAYAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2edeaed1-e389-4b1f-ba80-13ab2a48a0a8
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38f7a265-0043-42f5-b4ca-15e858c8829d
+          stepCounter: f1f918d4-57f6-4225-9822-9587960a9fa4
+        config: {}
+        dataType: NUMBER(18,2)
+        description: Don't trust - will calculate from rate card
+        name: PATIENTPAYMARGIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7164650c-5a3b-498d-ac41-b6532dff4f6f
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc03f727-5ebc-44aa-a3ab-f6f9e3e2c346
+          stepCounter: f1f918d4-57f6-4225-9822-9587960a9fa4
+        config: {}
+        dataType: NUMBER(18,2)
+        description: Don't trust - will calculate from rate card
+        name: INSURANCEPAYMARGIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 501f2b29-212a-4e09-bd63-c8d1fe6c6e10
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7673cbe-9b32-4c59-8200-2d7871d4d949
+          stepCounter: f1f918d4-57f6-4225-9822-9587960a9fa4
+        config: {}
+        dataType: VARCHAR(200)
+        description: Name of insurance "plan"
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 05080f86-0b62-445c-8da6-d4ce8beab171
+                stepCounter: b1e1235c-8e86-4dd1-a777-07dc43476f83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7bb9c6a4-d641-486d-80d6-1317eecebbde
+          stepCounter: f1f918d4-57f6-4225-9822-9587960a9fa4
+        config: {}
+        dataType: VARCHAR(256)
+        description: Name of insurance "company"
+        name: COMPANYNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88698d17-c335-4ca9-9b88-06c919192cf3
+                stepCounter: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 718a049e-6ef6-41bb-8b6d-580e3d575afc
+          stepCounter: f1f918d4-57f6-4225-9822-9587960a9fa4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Priority of insurance plan on patient profile
+        name: PRIORITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f21b8def-5101-485e-bd78-0f1ec21b1cc6
+                stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          BASEINSURANCETEMPLATE: b1e1235c-8e86-4dd1-a777-07dc43476f83
+          INSURANCE: 27261054-e1f0-4ca4-a4b6-419296741302
+          INSURANCECOMPANY: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+          ORDERREFILLINSURANCES: f5305024-ddf7-40bf-b92d-936a86192f35
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PIXELBO
+            nodeName: BASEINSURANCETEMPLATE
+          - locationName: PIXELBO
+            nodeName: INSURANCE
+          - locationName: PIXELBO
+            nodeName: INSURANCECOMPANY
+          - locationName: PIXELBO
+            nodeName: ORDERREFILLINSURANCES
+        join:
+          joinCondition: |-
+            FROM {{ ref('PIXELBO', 'ORDERREFILLINSURANCES') }} "ORDERREFILLINSURANCES"
+            JOIN {{ ref('PIXELBO', 'INSURANCE') }} "INSURANCE"
+            ON "ORDERREFILLINSURANCES"."INSURANCEID" = "INSURANCE"."ID"
+            LEFT JOIN {{ ref('PIXELBO', 'BASEINSURANCETEMPLATE') }} "BASEINSURANCETEMPLATE"
+            ON "INSURANCE"."INSURANCETEMPLATEID" = "BASEINSURANCETEMPLATE"."ID"
+            LEFT JOIN {{ ref('PIXELBO', 'INSURANCECOMPANY') }} "INSURANCECOMPANY"
+            ON "INSURANCECOMPANY"."ID" = "BASEINSURANCETEMPLATE"."INSURANCECOMPANYID"
+
+            WHERE "INSURANCE"."PRIORITY"=3
+        name: STG_PIXELBO_REGULAR_INS
+        noLinkRefs: []
+  name: STG_PIXELBO_REGULAR_INS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

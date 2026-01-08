@@ -1,0 +1,187 @@
+fileVersion: 1
+id: f5305024-ddf7-40bf-b92d-936a86192f35
+name: ORDERREFILLINSURANCES
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: PIXELBO
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9a862da-703f-409e-9c6c-fa6fb5f953dc
+          stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7164650c-5a3b-498d-ac41-b6532dff4f6f
+          stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+        config: {}
+        dataType: NUMBER(18,2)
+        defaultValue: ""
+        description: ""
+        name: PATIENTPAYMARGIN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f2d346e-e5ee-4245-ada7-d01da108e67f
+          stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+        config: {}
+        dataType: NUMBER(18,2)
+        defaultValue: ""
+        description: ""
+        name: INSURANCEPAYAMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e8a66bb-69fa-430b-8e35-a626ea01ff43
+          stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INSURANCEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2edeaed1-e389-4b1f-ba80-13ab2a48a0a8
+          stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+        config: {}
+        dataType: NUMBER(18,2)
+        defaultValue: ""
+        description: ""
+        name: PATIENTPAYAMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 501f2b29-212a-4e09-bd63-c8d1fe6c6e10
+          stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+        config: {}
+        dataType: NUMBER(18,2)
+        defaultValue: ""
+        description: ""
+        name: INSURANCEPAYMARGIN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0fe36fd0-1813-49fd-8d16-4799fd6646ab
+          stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ORDERITEMID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19154b09-e645-43db-9ef9-d4217eddb812
+          stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9de7f35-ff41-481d-98f3-1586fd1ee68d
+          stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: ORDERREFILLINSURANCES
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

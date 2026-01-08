@@ -1,0 +1,124 @@
+fileVersion: 1
+id: e18aa355-2ea1-4781-80aa-24f179369458
+name: STG_PIXELBO_INSURANCECOMPANY
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Master InsuranceCompany
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b9bc637-7031-4f7f-9d86-b8b91e052709
+          stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cab8c6b9-783c-4034-b327-1323de4b3157
+                stepCounter: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 051136b7-10c3-44c3-9413-bbed725207f7
+          stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d6902afa-a7f0-4735-97ff-803e59f7bc8c
+                stepCounter: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e93d8af3-b9d0-46c3-acd3-cbfcb938f016
+          stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: COMPANYNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88698d17-c335-4ca9-9b88-06c919192cf3
+                stepCounter: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb25c6cc-25b1-4041-b51b-16fb28be8c8a
+          stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2dbb47cf-1050-4c1a-bf3c-2dc2f605361e
+                stepCounter: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d963f37-82f6-47a2-bf0d-c36fdcfae57e
+          stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6ee77e79-1f39-4f95-9d1a-5e41e471fcbc
+                stepCounter: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 446b9411-2bf7-46eb-bd65-74c416181959
+          stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3dcf0684-ddb5-454b-9b8d-8922d873678b
+                stepCounter: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          INSURANCECOMPANY: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PIXELBO
+            nodeName: INSURANCECOMPANY
+        join:
+          joinCondition: FROM {{ ref('PIXELBO', 'INSURANCECOMPANY') }} "INSURANCECOMPANY"
+        name: STG_PIXELBO_INSURANCECOMPANY
+        noLinkRefs: []
+  name: STG_PIXELBO_INSURANCECOMPANY
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
