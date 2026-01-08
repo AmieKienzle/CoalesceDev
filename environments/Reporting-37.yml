@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "37"
+mappingDefinitions:
+  SP_PRICELISTS:
+    database: SCH_RAW
+    schema: FT_SHAREPOINT_PRICELISTS
+  TARGET:
+    database: SCH_DEV
+    schema: REPORTING
+name: Reporting
+type: Environment

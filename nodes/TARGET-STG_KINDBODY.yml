@@ -1,0 +1,180 @@
+fileVersion: 1
+id: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+name: STG_KINDBODY
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a806789e-850a-49f9-b8f3-6ad6cb18f867
+          stepCounter: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: _LINE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aef87843-f6de-4502-9357-221291c3f84f
+                stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb970c64-211f-4aa8-a4f5-a2254c592ac0
+          stepCounter: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f8aa638b-7af0-4718-8a14-63a50f52e9e7
+                stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63ec55ec-2c06-4abf-8ea8-7199aa810e6d
+          stepCounter: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: PRINCETON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44c103c8-4b89-42ed-be21-624fb366ca01
+                stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef200950-ccfc-42ac-b3d0-ba5957947d51
+          stepCounter: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: JCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9f8eae4-76b9-47bc-bee1-56ff4083a0c8
+                stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4849925b-38ee-42d9-87b5-b35063dc6f51
+          stepCounter: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: SANA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4eceff85-83cc-49b2-a130-0d86aa9ceb8a
+                stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3641463a-cd51-4a24-b546-d1702aff21dd
+          stepCounter: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: REIMBURSEMENT_FOR_ALL_GROUPS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 990b24fc-d2ab-4829-b310-2119eb6d98fd
+                stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f367dbc6-6303-415d-bc1e-1eb4facf9c26
+          stepCounter: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: MEDICATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 193d66e8-24c6-47b3-afc1-e30c429518d9
+                stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c669ebea-eed2-47ce-9a71-1dc23e9a56cf
+          stepCounter: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: REIMBURSEMENT_FOR_SANA_SMITH_RX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: baaf086f-e79e-48cd-931c-9994b62f870f
+                stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fcac74be-72ef-40ba-84f6-7d956d05312d
+          stepCounter: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: NDC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7539455a-834e-40b3-9de7-42a399238b46
+                stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 21ca6dcd-4b35-4df6-827f-89ca7b4df079
+          stepCounter: 74ba7703-7947-468c-aa03-6b3c6a75a42d
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: REIMBURSEMENT_FOR_MANAGED_CARE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c094c9b2-1019-43e3-ac7a-2b0a273ec4a2
+                stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          KINDBODY: 60371be0-099f-47c7-9a60-ab6258574d08
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SP_PRICELISTS
+            nodeName: KINDBODY
+        join:
+          joinCondition: FROM {{ ref('SP_PRICELISTS', 'KINDBODY') }} "KINDBODY"
+        name: STG_KINDBODY
+        noLinkRefs: []
+  name: STG_KINDBODY
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
