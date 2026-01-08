@@ -1,6 +1,12 @@
 fileVersion: 1
 id: "37"
 mappingDefinitions:
+  SP_AP:
+    database: SCH_RAW
+    schema: FT_SHAREPOINT
+  SP_MAPPING:
+    database: SCH_RAW
+    schema: FT_SHAREPOINT_MAPPING
   SP_PRICELISTS:
     database: SCH_RAW
     schema: FT_SHAREPOINT_PRICELISTS

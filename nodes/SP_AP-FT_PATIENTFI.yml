@@ -1,0 +1,434 @@
+fileVersion: 1
+id: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+name: FT_PATIENTFI
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SP_AP
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d946f35-5969-46b6-a920-f06f4394bcd3
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: _FILE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e5188b0-19b5-42a8-a9c1-6af8ee3fa878
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: _LINE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22cd8a94-e8c6-4462-bb48-4f8c03a3ff80
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _MODIFIED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95b7f435-4025-4f6e-b732-849f98dd8af8
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 093ab9ea-e656-47a5-98c1-891346351ff4
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: FEE_PERCENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58510b0c-1524-4c35-941e-cdbf822999d8
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: LOAN_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aecebbfb-d07f-43a9-bb1e-cf33ab729e72
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: FIRST_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9362a3eb-43f3-446c-a816-6304e7139e30
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: PATIENT_FI_FEE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 998de304-0710-46ba-b8b0-797118ed6ba9
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: PATIENT_FI_FUNDING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c644941c-4d5e-4e95-9744-6f58a1ed37a5
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PAYMENT_REFERENCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 10424e39-6622-402c-9e7f-c7d137cf7bd6
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39474f06-ad32-4671-9700-29132f5ff695
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: USER_ID_USER_REFERENCE_
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97589091-07c6-419c-945a-611e2de09454
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: PAYMENT_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 59b81edf-1e3a-45ed-a6d4-f9cc968ee83b
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: POST_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2072f40e-04e6-4281-896f-7ecc579ae6e0
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PLAN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48e47f8a-ce2f-4747-8399-015c88852214
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PROVIDER_REFERENCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9bb85efb-247e-4b6c-978c-69c2f9c9c1ae
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TRANSACTION_REFERENCE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: add03466-18c4-4c0c-a695-30af5d345703
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CREATED_BY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca3fe697-ec6d-4088-af76-f8173354b666
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: LAST_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d51a6c0-676d-4a4f-b9e4-77bf86dd1a84
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TRANSACTION_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2adb3b7-e898-4f25-a341-75bc754f7e77
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: LOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eec1fc7a-64e9-46ff-8889-9f5e88f9dd1e
+          stepCounter: 16f7e090-f739-4f17-b309-6efd69fd8e7b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: ACCOUNT_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: FT_PATIENTFI
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

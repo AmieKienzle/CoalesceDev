@@ -1,0 +1,358 @@
+fileVersion: 1
+id: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+name: FT_CARECREDIT
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SP_AP
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7af377b6-b836-41c7-993d-ddd5ab6295a7
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: _FILE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eecb9e16-6ffc-4d4a-b536-4d82f2990e6a
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: _LINE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c41cc5c-e039-4112-ad3b-95983037393c
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _MODIFIED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5aa59b01-db85-48c1-acb5-693753dc977c
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 53bd5aad-84aa-4a7d-98fc-81b61c0933e8
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TRAN_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a6d8f8d-90b7-4782-8ec7-8e94e5eb5647
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PROMO_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3eccf2f-6e78-4649-bfb2-b0a90c950671
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CH_FIRST_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5452ca2-afd7-4779-a73a-d21fdea4a216
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CH_LAST_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a2da391a-b7d9-439e-85bf-6a25902f673f
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: POST_DT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e40e8610-8ec2-45b9-951e-e11553c9aa56
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: DISC_RATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28d2e2dd-d7e8-4528-a992-248ae7ecd645
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PROMO_DESC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: feb87dfe-bf3d-4747-8262-beeec751db46
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: EFF_DT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42781690-d35f-43a1-a109-d468978e233d
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CARD_TYPE_DESC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e38f0fb8-6677-4789-b1ea-5e37f9bda8ec
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CH_NBR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2a792d8-e1bf-4162-bb38-05d1de223d25
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: AUTH_CD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 552d595a-415b-48b5-b1fb-892efbd6e9b8
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: DISC_AMT_
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e498112-201f-4f21-9c07-213e40bd3b7d
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TRAN_AMT_
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e57c4b2c-0a8e-4c4e-8c74-46dbd26ef4f7
+          stepCounter: 200b3b1b-bf6f-4a96-98a8-7626fa1a11d8
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: MERCHANT_NBR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: FT_CARECREDIT
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

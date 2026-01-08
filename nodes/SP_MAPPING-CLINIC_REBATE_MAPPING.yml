@@ -1,0 +1,263 @@
+fileVersion: 1
+id: 3ffb3a0a-b317-4681-a222-d724e26b2371
+name: CLINIC_REBATE_MAPPING
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SP_MAPPING
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28b3ea06-0035-4792-8126-eecdd9f083a6
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: _LINE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46846170-e2bc-4dd5-a1e7-2ac75b583df5
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cea5a223-767c-418a-b0f4-b5458c651208
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TOTAL_DISCOUNT_PER_UNIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1dd8c5da-e9cc-495b-85c8-13a4ec49df18
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: VARCHAR(16384)
+        defaultValue: ""
+        description: ""
+        name: CLINIC_PROVIDER_NPI
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2e016e8-23c8-48b8-8843-8dffb40996ad
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: NDC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ef3a783-5ea8-4683-aae7-4aeffbefc113
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PHARMACY_GROUP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5e12f97-7802-4e0c-85b4-b474aac520ac
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e965234-9766-46fe-82b1-ea39f6652bc5
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: RRX_PORTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b9a7a1c-add7-436a-8874-721106ee7009
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TOTAL_PATIENT_COST
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eff9256e-9f76-49f3-94d1-1e145a2edb4f
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DISCOUNT_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ad27d8e-25f1-4e5b-9095-3d553d761328
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: NETWORK
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a352bd71-fda9-4acf-a6fd-78b3aa1e2c77
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c752307-64ca-4cbe-a8df-5a1acf12cdf5
+          stepCounter: 3ffb3a0a-b317-4681-a222-d724e26b2371
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: GROUP_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: CLINIC_REBATE_MAPPING
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
