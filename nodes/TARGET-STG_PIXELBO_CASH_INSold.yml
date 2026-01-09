@@ -1,0 +1,123 @@
+fileVersion: 1
+id: df0a9f9f-ece1-4318-a2aa-f8c20f23d7d4
+name: STG_PIXELBO_CASH_INSold
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: From a temp table to identify the "cash" lines for a fill.
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5be8217f-a8c8-4835-aa79-155e45e37003
+          stepCounter: df0a9f9f-ece1-4318-a2aa-f8c20f23d7d4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDERITEMID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0fe36fd0-1813-49fd-8d16-4799fd6646ab
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e5529df-9775-424f-8b7e-a214ab53708d
+          stepCounter: df0a9f9f-ece1-4318-a2aa-f8c20f23d7d4
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: INSURANCEPAYAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f2d346e-e5ee-4245-ada7-d01da108e67f
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 068e7d44-9846-4d2e-8ecf-65c9424b3fd8
+          stepCounter: df0a9f9f-ece1-4318-a2aa-f8c20f23d7d4
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: PATIENTPAYAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2edeaed1-e389-4b1f-ba80-13ab2a48a0a8
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58ca2a6d-5804-493b-803c-ee8cbce130bc
+          stepCounter: df0a9f9f-ece1-4318-a2aa-f8c20f23d7d4
+        config: {}
+        dataType: VARCHAR(200)
+        description: Name of insurance "plan"
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 05080f86-0b62-445c-8da6-d4ce8beab171
+                stepCounter: b1e1235c-8e86-4dd1-a777-07dc43476f83
+            transform: "'CASH'"
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c41f650f-35cd-4808-892e-686e06624b3c
+          stepCounter: df0a9f9f-ece1-4318-a2aa-f8c20f23d7d4
+        config: {}
+        dataType: VARCHAR(256)
+        description: Name of insurance "company"
+        name: COMPANYNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88698d17-c335-4ca9-9b88-06c919192cf3
+                stepCounter: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+            transform: "'NO ROLLUP'"
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          BASEINSURANCETEMPLATE: b1e1235c-8e86-4dd1-a777-07dc43476f83
+          INSURANCE: 27261054-e1f0-4ca4-a4b6-419296741302
+          ORDERREFILLINSURANCES: f5305024-ddf7-40bf-b92d-936a86192f35
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PIXELBO
+            nodeName: BASEINSURANCETEMPLATE
+          - locationName: PIXELBO
+            nodeName: INSURANCE
+          - locationName: PIXELBO
+            nodeName: ORDERREFILLINSURANCES
+        join:
+          joinCondition: |-
+            FROM {{ ref('PIXELBO', 'ORDERREFILLINSURANCES') }} "ORDERREFILLINSURANCES"
+            JOIN {{ ref('PIXELBO', 'INSURANCE') }} "INSURANCE"
+            ON "ORDERREFILLINSURANCES"."INSURANCEID" = "INSURANCE"."ID"
+            LEFT JOIN {{ ref('PIXELBO', 'BASEINSURANCETEMPLATE') }} "BASEINSURANCETEMPLATE"
+            ON "INSURANCE"."INSURANCETEMPLATEID" = "BASEINSURANCETEMPLATE"."ID"
+
+            WHERE "INSURANCE"."PRIORITY" IS NULL
+        name: STG_PIXELBO_CASH_INSold
+        noLinkRefs: []
+  name: STG_PIXELBO_CASH_INSold
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

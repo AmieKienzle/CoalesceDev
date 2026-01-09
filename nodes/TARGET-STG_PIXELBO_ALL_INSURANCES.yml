@@ -24,7 +24,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: ID
+        name: OrderRefillInsurancesID
         nullable: false
         sourceColumnReferences:
           - columnReferences:
@@ -122,7 +122,7 @@ operation:
         config: {}
         dataType: BOOLEAN
         description: ""
-        name: _FIVETRAN_DELETED
+        name: OrderRefillInsurances_FIVETRAN_DELETED
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -136,7 +136,7 @@ operation:
         config: {}
         dataType: TIMESTAMP_TZ(9)
         description: ""
-        name: _FIVETRAN_SYNCED
+        name: OrderRefillInsurances_FIVETRAN_SYNCED
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -170,7 +170,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: ID
+        name: InsuranceID
         nullable: false
         sourceColumnReferences:
           - columnReferences:
@@ -184,7 +184,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: STATUS
+        name: InsuranceSTATUS
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -352,7 +352,7 @@ operation:
         config: {}
         dataType: VARCHAR(200)
         description: ""
-        name: NAME
+        name: InsuranceNAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -464,7 +464,7 @@ operation:
         config: {}
         dataType: BOOLEAN
         description: ""
-        name: _FIVETRAN_DELETED
+        name: Insurance_FIVETRAN_DELETED
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -478,7 +478,7 @@ operation:
         config: {}
         dataType: TIMESTAMP_TZ(9)
         description: ""
-        name: _FIVETRAN_SYNCED
+        name: Insurance_FIVETRAN_SYNCED
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -492,8 +492,8 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: ID
-        nullable: false
+        name: InsuranceCompanyID
+        nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 3b9bc637-7031-4f7f-9d86-b8b91e052709
@@ -506,7 +506,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: STATUS
+        name: InsuranceCompanySTATUS
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -548,7 +548,7 @@ operation:
         config: {}
         dataType: BOOLEAN
         description: ""
-        name: _FIVETRAN_DELETED
+        name: InsuranceCompany_FIVETRAN_DELETED
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -562,7 +562,7 @@ operation:
         config: {}
         dataType: TIMESTAMP_TZ(9)
         description: ""
-        name: _FIVETRAN_SYNCED
+        name: InsuranceCompany_FIVETRAN_SYNCED
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -576,8 +576,8 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: ID
-        nullable: false
+        name: BaseInsuranceTemplateID
+        nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 11e94245-139f-40bd-b0bf-2a516ee8fd22
@@ -590,7 +590,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: STATUS
+        name: BaseInsuranceTemplateSTATUS
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -604,7 +604,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: INSURANCECOMPANYID
+        name: BaseInsuranceTemplateINSURANCECOMPANYID
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -632,7 +632,7 @@ operation:
         config: {}
         dataType: VARCHAR(200)
         description: ""
-        name: NAME
+        name: BaseInsuranceTemplateNAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -646,7 +646,7 @@ operation:
         config: {}
         dataType: BOOLEAN
         description: ""
-        name: _FIVETRAN_DELETED
+        name: BaseInsuranceTemplate_FIVETRAN_DELETED
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -660,7 +660,7 @@ operation:
         config: {}
         dataType: TIMESTAMP_TZ(9)
         description: ""
-        name: _FIVETRAN_SYNCED
+        name: BaseInsuranceTemplate_FIVETRAN_SYNCED
         nullable: true
         sourceColumnReferences:
           - columnReferences:

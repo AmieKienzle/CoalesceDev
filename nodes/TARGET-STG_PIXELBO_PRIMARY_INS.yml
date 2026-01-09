@@ -1,5 +1,5 @@
 fileVersion: 1
-id: 7db250db-d2f9-462f-8128-23dd77ce1cef
+id: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
 name: STG_PIXELBO_PRIMARY_INS
 operation:
   config:
@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: From a temp table to identify the "primary" insurance for a fill.
+  description: Isolate fills where insurance is primary priority
   isMultisource: false
   locationName: TARGET
   materializationType: table
@@ -19,22 +19,22 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 5e056527-7ff3-437b-ad36-17b45bc47774
-          stepCounter: 7db250db-d2f9-462f-8128-23dd77ce1cef
+          columnCounter: 0d646008-7617-4002-a4ce-93746311410d
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
         config: {}
         dataType: NUMBER(38,0)
-        description: ""
+        description: To join to OrderItems later
         name: ORDERITEMID
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 0fe36fd0-1813-49fd-8d16-4799fd6646ab
-                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+              - columnCounter: 41297ca3-c7b5-48b4-9722-6ce5b1608110
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 1a223d85-8656-49c5-892d-7119e94a2bf6
-          stepCounter: 7db250db-d2f9-462f-8128-23dd77ce1cef
+          columnCounter: 098b66db-b480-4937-8a3e-1ed002e514ea
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
         config: {}
         dataType: NUMBER(18,2)
         description: ""
@@ -42,13 +42,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 4f2d346e-e5ee-4245-ada7-d01da108e67f
-                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+              - columnCounter: e1f50eec-2cf9-4049-9c30-2326a790f9fe
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c0700cb0-141e-4f98-8f9d-596f1bd60a76
-          stepCounter: 7db250db-d2f9-462f-8128-23dd77ce1cef
+          columnCounter: 162e0356-d3d4-45d1-b13e-f8bb86322091
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
         config: {}
         dataType: NUMBER(18,2)
         description: ""
@@ -56,109 +56,206 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 2edeaed1-e389-4b1f-ba80-13ab2a48a0a8
-                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+              - columnCounter: 0243427e-4c70-4045-9c06-8917bec124ea
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 38f79050-3487-451a-ada6-e518fab23eab
-          stepCounter: 7db250db-d2f9-462f-8128-23dd77ce1cef
+          columnCounter: 57de8bec-9d2e-434c-8436-6fd83e7711bd
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
         config: {}
         dataType: NUMBER(18,2)
-        description: Don't trust - will calculate from rate card
+        description: Don't trust for now. Will calculate later. Margins need to be updated 01/09/2026 MPB
         name: PATIENTPAYMARGIN
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 7164650c-5a3b-498d-ac41-b6532dff4f6f
-                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+              - columnCounter: 8dba8e7c-a445-4512-a533-42161bf47e04
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 16f1e063-b22b-4a2c-bc83-daf1ec8c0e01
-          stepCounter: 7db250db-d2f9-462f-8128-23dd77ce1cef
+          columnCounter: 19d337d3-55b6-4032-941c-3ab52163f9ae
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
         config: {}
         dataType: NUMBER(18,2)
-        description: Don't trust - will calculate from rate card
+        description: Don't trust for now. Will calculate later. Margins need to be updated 01/09/2026 MPB
         name: INSURANCEPAYMARGIN
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 501f2b29-212a-4e09-bd63-c8d1fe6c6e10
-                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+              - columnCounter: d01ec7e4-a322-4b70-aabb-a3e7cfa6a9e4
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 03b7d1ee-169a-415b-a83d-3bf56a7beea2
-          stepCounter: 7db250db-d2f9-462f-8128-23dd77ce1cef
+          columnCounter: 4d3c5134-0169-4c99-b13c-1d472ae2c513
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
         config: {}
         dataType: VARCHAR(200)
         description: Name of insurance "plan"
-        name: NAME
+        name: BaseInsuranceTemplateNAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 05080f86-0b62-445c-8da6-d4ce8beab171
-                stepCounter: b1e1235c-8e86-4dd1-a777-07dc43476f83
+              - columnCounter: 9a4891dd-292b-40b3-a5e7-eb11426c0237
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f27e4b49-acaf-49cb-acee-e813d373a75b
-          stepCounter: 7db250db-d2f9-462f-8128-23dd77ce1cef
+          columnCounter: ad500a31-4042-41bc-8fa4-bc66644c1a12
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
         config: {}
         dataType: VARCHAR(256)
-        description: Name of insurance "company"
+        description: Name of insurance "company" or rollup
         name: COMPANYNAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 88698d17-c335-4ca9-9b88-06c919192cf3
-                stepCounter: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
+              - columnCounter: 60c825b1-3adc-49b5-91bf-dcd922cb972b
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 13407881-a739-416e-bcd3-33d8651eb7d3
-          stepCounter: 7db250db-d2f9-462f-8128-23dd77ce1cef
+          columnCounter: bb299369-fea4-4435-bb4a-544019b97b8f
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
         config: {}
         dataType: NUMBER(38,0)
-        description: Priority of insurance plan on patient profile
+        description: Priority of the plan on the patient profile
         name: PRIORITY
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: f21b8def-5101-485e-bd78-0f1ec21b1cc6
-                stepCounter: 27261054-e1f0-4ca4-a4b6-419296741302
+              - columnCounter: 97edec9e-5bd2-4012-a617-3ef6315c74e3
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d507c713-a614-4b97-803c-95a744335500
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: OrderRefillInsurances_FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9e742ea7-b56c-4f55-8424-e5eb621155d2
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7a237a9-0874-485c-acef-c379ac6b78db
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: OrderRefillInsurances_FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9f0f37c8-2426-4db7-992a-dfe0d03a0c2f
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14290740-6cfb-48af-81d6-269965f9289e
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: Insurance_FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 23fba747-6b0e-4b92-99e2-53bdd70ed0c6
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86ec7d6c-58ca-4316-a427-0925a61c6813
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: Insurance_FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ddf30073-5b04-4fd9-bb8a-99623e62f237
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0b69d98-fa72-4935-8a62-8c3ed7ffb0b6
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: InsuranceCompany_FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1fd09f34-114a-420a-a17a-257b86d002b3
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfc66e6e-5501-4bbb-af66-6b7d473d5ede
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: InsuranceCompany_FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1edf373f-6fec-4f8a-9052-d80d6f8f3596
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11cc2b93-d633-4841-8265-5345ab3176ea
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: BaseInsuranceTemplate_FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6504322a-547d-4b61-99f3-a96052778007
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f077387-e412-4c31-ad6e-08333c3daa2f
+          stepCounter: 057021aa-01a0-4a3b-9447-83e13c0ae4e1
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: BaseInsuranceTemplate_FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a33608d2-8630-4148-bbbf-50075fa7938d
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
             transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
-          BASEINSURANCETEMPLATE: b1e1235c-8e86-4dd1-a777-07dc43476f83
-          INSURANCE: 27261054-e1f0-4ca4-a4b6-419296741302
-          INSURANCECOMPANY: d2fd6209-fab9-419f-9a8c-fd3286ac70e7
-          ORDERREFILLINSURANCES: f5305024-ddf7-40bf-b92d-936a86192f35
+          STG_PIXELBO_ALL_INSURANCES: 753815ba-4452-44e2-869c-4662c9134521
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: PIXELBO
-            nodeName: BASEINSURANCETEMPLATE
-          - locationName: PIXELBO
-            nodeName: INSURANCE
-          - locationName: PIXELBO
-            nodeName: INSURANCECOMPANY
-          - locationName: PIXELBO
-            nodeName: ORDERREFILLINSURANCES
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_ALL_INSURANCES
         join:
           joinCondition: |-
-            FROM {{ ref('PIXELBO', 'ORDERREFILLINSURANCES') }} "ORDERREFILLINSURANCES"
-            JOIN {{ ref('PIXELBO', 'INSURANCE') }} "INSURANCE"
-            ON "ORDERREFILLINSURANCES"."INSURANCEID" = "INSURANCE"."ID"
-            LEFT JOIN {{ ref('PIXELBO', 'BASEINSURANCETEMPLATE') }} "BASEINSURANCETEMPLATE"
-            ON "INSURANCE"."INSURANCETEMPLATEID" = "BASEINSURANCETEMPLATE"."ID"
-            LEFT JOIN {{ ref('PIXELBO', 'INSURANCECOMPANY') }} "INSURANCECOMPANY"
-            ON "INSURANCECOMPANY"."ID" = "BASEINSURANCETEMPLATE"."INSURANCECOMPANYID"
+            FROM {{ ref('TARGET', 'STG_PIXELBO_ALL_INSURANCES') }} "STG_PIXELBO_ALL_INSURANCES"
 
-            WHERE "INSURANCE"."PRIORITY"=0
+            where "STG_PIXELBO_ALL_INSURANCES"."PRIORITY"=0
         name: STG_PIXELBO_PRIMARY_INS
         noLinkRefs: []
   name: STG_PIXELBO_PRIMARY_INS
