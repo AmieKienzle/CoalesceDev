@@ -1123,6 +1123,34 @@ operation:
               - columnCounter: 7c9fd067-1ae4-4819-b52f-122557df916d
                 stepCounter: 7244febc-a82f-4f1e-b85a-3852a8a72c15
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40ed5b27-3235-4c9a-995b-f8fe7c08814b
+          stepCounter: b28e87fd-dfd4-4a17-ab38-4cb8531c0f8f
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REBATEPLAN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |
+              CASE WHEN "THIRDPARTY"."THIRDPARTYID" = '00C2B6CA-97DA-4C7E-B6E4-0FFA04352CA4' THEN 'RXI' 
+              WHEN "THIRDPARTY"."THIRDPARTYID" = '2BA6EE42-9E9B-4A3C-A35D-5E5C05162816' THEN 'KINDBODY' 
+              WHEN "THIRDPARTY"."THIRDPARTYID" = 'FE1F7990-53B1-42E1-8444-7A5FA63C6C79' THEN 'KINDBODY' 
+              WHEN "THIRDPARTY"."THIRDPARTYID" = 'D2FF7FE9-A1C0-4889-9D66-A415C3A95BC3' THEN 'REUNITE' 
+              WHEN "THIRDPARTY"."THIRDPARTYID" = 'D2AC07A6-1EBD-4167-A88E-49E9E1776EAA' THEN 'KINDBODY' 
+              WHEN "THIRDPARTY"."THIRDPARTYID" = '2E82F24A-2B96-49DB-B92D-118C72B66D19' THEN 'REUNITE' 
+              WHEN "THIRDPARTY"."THIRDPARTYID" = '588A658C-9B82-4344-9ADA-DD765D386627' THEN 'HEARTTOMORROW' 
+              END 
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

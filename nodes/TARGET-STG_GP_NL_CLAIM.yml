@@ -1358,8 +1358,9 @@ operation:
           - locationName: RAW_GP_NEWLEAF
             nodeName: CLAIM
         join:
-          joinCondition: |
+          joinCondition: |-
             FROM {{ ref('RAW_GP_NEWLEAF', 'CLAIM') }} "CLAIM"
+            WHERE "CLAIM"."CLAIMSTATE" <> 6
         name: STG_GP_NL_CLAIM
         noLinkRefs: []
   name: STG_GP_NL_CLAIM

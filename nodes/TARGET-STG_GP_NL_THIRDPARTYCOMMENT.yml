@@ -1,0 +1,194 @@
+fileVersion: 1
+id: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+name: STG_GP_NL_THIRDPARTYCOMMENT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5bb54d2d-a2e2-43f4-917f-f3918d1ecf71
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: THIRDPARTYCOMMENTID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1fe21994-66cd-4195-a771-0c47ee8a4636
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eee737de-389b-43a9-b9d3-3c6e0b019429
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: VARCHAR(4096)
+        description: ""
+        name: COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fca3ebef-8b43-4254-a9e9-b7332dba6ac5
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c72cd38-41c8-4ed0-bfc2-425ac2d1838e
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UPDATEDBY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2a1c8b09-7c62-4956-bee4-fc71e9d7df5e
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5128764d-6909-4a5e-b453-bc34a5468c3c
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CREATEDBY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4d25d037-6a44-41b5-b2f4-0097e8c24c18
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 666b34ba-bdaf-49ea-bd1f-356643d373e5
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRIORITYCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 99f8296b-e326-4cd2-97ae-894c29aa1831
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8ecf59d-bba8-4aa0-9e4a-6e6a4c8ec78c
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UPDATEDON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e2813980-d305-4756-b0bf-cce188093e08
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8f3d40f-ef4f-46bd-80a3-0140309d1590
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: CREATEDON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d3ca1788-47c9-4a9f-b0d4-88e78ea8102c
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6328bb1b-baf3-421e-aeee-776bee7423a6
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: THIRDPARTYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5923822c-c20d-46c5-959c-44357de6f6b1
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b72066f-bc07-48e9-8021-950ad527bae7
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: COMMENTDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d0d0f07-909b-4abd-b007-fbc995e2c999
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0acdd177-3518-40ae-a724-3320d6592a25
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1f92b8d0-0913-4b43-af77-46f3c1ce30f2
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a056544e-9575-4767-b71a-8751daed4529
+          stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ea1e45f-1066-4087-a490-3315b8f0a7d3
+                stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          THIRDPARTYCOMMENT: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_GP_NEWLEAF
+            nodeName: THIRDPARTYCOMMENT
+        join:
+          joinCondition: FROM {{ ref('RAW_GP_NEWLEAF', 'THIRDPARTYCOMMENT') }} "THIRDPARTYCOMMENT"
+        name: STG_GP_NL_THIRDPARTYCOMMENT
+        noLinkRefs: []
+  name: STG_GP_NL_THIRDPARTYCOMMENT
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
