@@ -1,9 +1,7 @@
 fileVersion: 1
 id: "36"
 mappingDefinitions:
-  PIXELBO:
-    database: SCH_RAW
-    schema: FT_PIXEL_BACKOFFICE_DB_1_DBO
+
   RAW_GP_NEWLEAF:
     database: SCH_RAW
     schema: GP_NEWLEAF_DBO

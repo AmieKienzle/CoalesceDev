@@ -1,0 +1,586 @@
+fileVersion: 1
+id: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+name: STG_GP_NL_ENTERPRISEORDERENTRY
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cffe04f4-0e7d-4c6b-bac2-124e31f783e5
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ENTERPRISEORDERENTRYID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44f1c9cb-5989-4604-ad36-228fc099e67b
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76e77574-59eb-42c4-9157-43d5c4b1deab
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LASTWORKFLOWEVENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cdf94ace-9671-4390-8872-e621e3b2e902
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 687e85cb-11ca-4cdd-8fa0-798757fbcac8
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISCREDITCARDCHARGED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad9079c1-09bb-45fc-8740-aad3c5f6f1f9
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65788d1a-8eb0-4f38-8de9-b12e5664df71
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDERENTRYTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3640bba1-30f0-4e6e-8731-844cfb55aa57
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50977942-1dc3-4f0d-9d6e-59fa0c4c8ba8
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: QUARANTINEREWORKPATH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f18f0224-af05-4cc7-86f7-4b4b55e1d122
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f708ac1-a404-4d2c-9219-cb18c6330401
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISCENTRALFILLDISPENSE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d6f46857-be3c-46c7-b961-0dc5e728a4dc
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a92fa83-a3dd-4338-8b2e-731ba75ddbc0
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISPACKED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8a109af1-c5e0-4370-9d20-4d46184239f5
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c43fe293-bd6a-443c-9a99-8d026dadbf42
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: COMPLETEDON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f85cc7b8-e3cc-4e74-9669-6bc6072fb0fe
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 855687fb-f0e0-48c7-9457-e086af86228e
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ENTERPRISEORDERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 46c0a576-6ebe-4de5-90f9-9fe2703e8d0f
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6de8c116-a9f4-455b-b2c5-b946d0f03282
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISARCHARGEDSUPPLYKITFILL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3cdbd192-d3c2-4b27-bd8f-55d4836d78b6
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b356a1d3-a1d5-4438-a647-b79df23c7706
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISARCHARGED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc9d0276-1098-44f1-88d8-6bf1682417e7
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 495f5cc2-4382-44ec-b27f-321d5bd32cc3
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: WORKFLOWSTATEDESC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3f624d47-9db8-40fd-98da-be76c47591ff
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e338d02-194d-4073-bb48-f47e7aafccfd
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISLEMONAIDEMRDISPENSED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c736687c-e765-4743-aac5-ec862a7cfc69
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e974785-3733-41c5-9dfa-a1946fadb4f8
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UPDATEDBY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9253a3c1-a0af-4228-90a5-790511fa31a0
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5aa3db81-a78c-43ba-a532-9f08e078dc58
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISCHARGEOVERRIDENSUPPLYKITFILL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d20824fb-c42c-4ff3-bbde-2a9bb846187e
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd96d1b9-56cb-42f6-b12a-fd261c4d74a2
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: WORKFLOWSTAGEWAITSTATUSID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 23b86847-e8e6-4744-9fe5-4be5698a9789
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74af278b-fef4-4602-9148-784d818fa82b
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: DELIVERYSTATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d25356cc-920f-4cb3-8620-250d1a4aa5de
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a438a08-5f3b-44fa-bceb-88e2108f8136
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: WORKFLOWSTAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bffb5353-b712-4b4b-9270-939daed85032
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a04ae31a-e206-4879-b072-964f6a375f32
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UPDATEDON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ae065e0-a971-4933-9dc1-ef1e177a027d
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd038fd5-f02b-4cef-ad11-6da0f12a92cd
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: CREATEDON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a6d1d12b-7b6a-43fc-b58b-74b3290f9dbb
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e3572381-47c7-49d4-b46a-8aea965d056a
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISCREDITCARDCHARGEDSUPPLYKITFILL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 50b279f0-9809-4e69-b0f0-f1c8aa64d7c6
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: abfc5002-a1cb-4476-b1d8-3b9d7d80e7d4
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISQUARANTINED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a35619c8-f6ab-4f52-984d-f18f18da4d34
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d217a8b-1b39-454f-a081-e7e610c6515c
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISCHARGEOVERRIDEN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8a2dddc9-c11e-411d-b5fa-c9fc66164b26
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb9b8065-0c3a-4d4b-8df3-6ae05a49613c
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: QUARANTINEDFROMSTAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e6c0ade-2167-4ecf-8f9c-e912e188a410
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 715df712-315e-492f-b02b-d9a7f9925b93
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISDELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4eef6f9e-e2ac-4c59-add8-af1771eaec00
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c9840b12-0267-4a25-82eb-96cbbeaff13d
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CREATEDBY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6264cb12-e8ea-4ab6-a6b9-dbae33c1d20a
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fd1a70f-ad87-4e40-b7a1-0513fb10ded8
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: LOCKENTERPRISEORDERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 112b2363-0a91-4a01-8e87-e97c84f8e184
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2bc270ac-ec16-4a5c-a81a-3128c55266b0
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ITEMFILLID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ef6f6c69-7ba3-4ac6-a071-583c743fffc9
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6073f37-27b6-4382-9088-dd5af455026d
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: DATEDELIVERED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 95685394-fbdf-47b5-89f0-6902b84613ae
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a637c79-6662-4e77-8cf0-db22624942ce
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISDELIVERED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 715906f8-8ef9-484b-8b31-bc8801d27a5c
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8af779ba-0f9a-4f9d-972b-12e17f5f1067
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PIECESPACKED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 94e67560-87c6-403b-a041-dadee13ed30d
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aba0aaac-9969-41fe-a75f-56bb3e18352c
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: WORKFLOWSTATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7d4c9e0b-d1f1-4f2c-9e11-9d0b030cfa8b
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d852e462-2296-47a3-87fc-1d628750850f
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISCHARGEATPOS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2ac34189-26bc-4063-8d1e-534cb96f0f5b
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b7e38df-d5db-4c0b-a8a5-1e2bf70783ff
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISAUTOCOMPLETEORDER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 71b6f8f7-39d4-4409-87d3-82cc47f37d7e
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96fd131e-4788-49cd-b1ce-40a6ce2bd996
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: WORKFLOWINSTANCEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c41d5b52-5aa6-4fa8-a783-2484f543cf2c
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3439964a-081b-4922-87ad-fb4b68a5259b
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: COMPLETEDBYTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0a3ba549-c2bb-4574-91dc-78e3058f58ff
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58c2a0d0-2d85-4a06-a692-30a43426a2ce
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISREMOTEFILLDISPENSE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84460638-a674-4753-b490-c22d5d796e4a
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b439740e-6e0e-4205-9b19-21797df5da4f
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a11aadb-24e2-42fd-80c3-7edbcb2abea5
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04ae20d7-976d-4be8-8db0-27f95cc0d394
+          stepCounter: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17b77db3-a2b8-464c-970f-1b050a51587a
+                stepCounter: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          ENTERPRISEORDERENTRY: c7a259d2-f394-48b1-b6ca-cc398ab1109c
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_GP_NEWLEAF
+            nodeName: ENTERPRISEORDERENTRY
+        join:
+          joinCondition: FROM {{ ref('RAW_GP_NEWLEAF', 'ENTERPRISEORDERENTRY') }} "ENTERPRISEORDERENTRY"
+        name: STG_GP_NL_ENTERPRISEORDERENTRY
+        noLinkRefs: []
+  name: STG_GP_NL_ENTERPRISEORDERENTRY
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

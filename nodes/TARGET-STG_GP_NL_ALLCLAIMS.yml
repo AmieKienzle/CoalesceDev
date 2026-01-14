@@ -1,0 +1,440 @@
+fileVersion: 1
+id: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+name: STG_GP_NL_ALLCLAIMS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: be3471fe-b0ea-4a8b-8abe-5a0063641bda
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REFILLID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ada904a1-91de-497c-9856-cf96c9b65418
+                stepCounter: 5ede5222-f9cb-40d0-887d-79da0809459b
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04de9cab-b690-4664-85a0-0d7d7a928f80
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CLAIMID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7de857a4-48ec-4706-9d98-008299feeb33
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f1cbff8-9592-420f-95c8-004942abe362
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PLANNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c8b9d3cf-c692-4920-8b84-4edcff402126
+                stepCounter: b28e87fd-dfd4-4a17-ab38-4cb8531c0f8f
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5b892ec-8225-4ebe-a7ad-897fb4e8a474
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REVERSAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_GP_NL_CLAIM"."CLAIMSTATE" = 3 THEN 'REVERSAL'
+               END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa593445-793c-4ba3-b175-457bae6406a5
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_GP_NL_CLAIM"."CLAIMSTATE" = 3 THEN
+              (LAG("STG_GP_NL_CLAIM"."RESPONSETOTALAMOUNTPAID") OVER(PARTITION BY "STG_GP_NL_REFILL"."REFILLID","STG_GP_NL_CLAIM"."CLAIMSEQUENCE" ORDER BY "STG_GP_NL_CLAIM"."REQUESTDATE"))*-1
+              ELSE "STG_GP_NL_CLAIM"."RESPONSETOTALAMOUNTPAID"
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dd445422-909d-4d2f-a80c-556c8712a85e
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: COPAY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_GP_NL_CLAIM"."CLAIMSTATE" = 3 THEN
+              (LAG("STG_GP_NL_CLAIM"."RESPONSEPATIENTPAYAMOUNT") OVER(PARTITION BY "STG_GP_NL_REFILL"."REFILLID","STG_GP_NL_CLAIM"."CLAIMSEQUENCE" ORDER BY "STG_GP_NL_CLAIM"."REQUESTDATE"))*-1
+              ELSE "STG_GP_NL_CLAIM"."RESPONSEPATIENTPAYAMOUNT"
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b4572cb-c3a9-469a-a580-df5d471eca84
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AUTHNUM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d9e45d4-b2ba-49e3-933a-bc67d08344d9
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8402f98-43cf-4131-b68a-e22d9624c171
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REQUESTDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ec157729-3475-4ac7-8511-e023212c10bc
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d692093-95f0-4b05-baed-e38e57ec85e6
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DATEFILLED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cb607d9-20d6-4e88-9244-a08b06ec3b0d
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b7ff427-c1a9-42ed-a70e-1598ca962e76
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: TINYINT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CLAIMSEQUENCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cfa8e6e2-6881-4e50-b4ff-02f7fa001fd0
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ede4209-de27-4304-bb64-e27aa758d77a
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: TINYINT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CLAIM#
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ROW_NUMBER() OVER(PARTITION BY "STG_GP_NL_REFILL"."REFILLID","STG_GP_NL_CLAIM"."CLAIMSEQUENCE" ORDER BY "STG_GP_NL_CLAIM"."REQUESTDATE")
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b5f99af-9664-4dae-8219-d41ece39ac5e
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: BINNBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 997e0800-d822-4359-91c1-a67c8d09a378
+                stepCounter: 5cafce41-d3bf-4d91-a4df-bf67ec849f95
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffd5da91-d545-477b-963f-03dd77cda853
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: GROUPID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_GP_NL_CLAIM"."CLAIMSTATE" = 3 THEN
+              (LAG("STG_GP_NL_CLAIM"."RESPONSEGROUPID") OVER(PARTITION BY "STG_GP_NL_REFILL"."REFILLID","STG_GP_NL_CLAIM"."CLAIMSEQUENCE" ORDER BY "STG_GP_NL_CLAIM"."REQUESTDATE"))
+              ELSE "STG_GP_NL_CLAIM"."RESPONSEGROUPID"
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ef6b94c-12af-40c5-a890-089aa36c984d
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: TINYINT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CLAIMSTATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d615eddb-23f8-43ba-8ea8-72fc61d52866
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8d5f450-2acd-4ba9-bdbe-9a7b4250f3f0
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ISRELEVANT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 73f72814-d0f1-40f7-97eb-ff7246fbc53c
+                stepCounter: 5daa2d04-a801-4a2a-90cc-5635c9691056
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1487e2c-f4dc-41bd-ab23-faea6b0d3fd5
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ROLLUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eee737de-389b-43a9-b9d3-3c6e0b019429
+                stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f083cbfa-d700-4054-bc2e-dcbebf9cca49
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DRUGID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9b86a6a5-d2f8-41c6-af72-cee1c52f09ef
+                stepCounter: 5ede5222-f9cb-40d0-887d-79da0809459b
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d912a6a0-8360-4678-b30d-792ac9e3ff0c
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: NUMBER(11,3)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: QUANTITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 479c57c6-4764-4bba-bb2f-162a70671304
+                stepCounter: 5ede5222-f9cb-40d0-887d-79da0809459b
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_GP_NL_ADJUDICATIONFORMAT: 5cafce41-d3bf-4d91-a4df-bf67ec849f95
+          STG_GP_NL_CLAIM: 5daa2d04-a801-4a2a-90cc-5635c9691056
+          STG_GP_NL_REFILL: 5ede5222-f9cb-40d0-887d-79da0809459b
+          STG_GP_NL_THIRDPARTY: b28e87fd-dfd4-4a17-ab38-4cb8531c0f8f
+          STG_GP_NL_THIRDPARTYCOMMENT: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+          STG_GP_NL_THIRDPARTYFORMAT: 278011d3-369c-4ff8-b168-d8e4eeebff1a
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_GP_NL_ADJUDICATIONFORMAT
+          - locationName: TARGET
+            nodeName: STG_GP_NL_CLAIM
+          - locationName: TARGET
+            nodeName: STG_GP_NL_REFILL
+          - locationName: TARGET
+            nodeName: STG_GP_NL_THIRDPARTY
+          - locationName: TARGET
+            nodeName: STG_GP_NL_THIRDPARTYCOMMENT
+          - locationName: TARGET
+            nodeName: STG_GP_NL_THIRDPARTYFORMAT
+        join:
+          joinCondition: |-
+            FROM {{ ref('TARGET', 'STG_GP_NL_CLAIM') }} "STG_GP_NL_CLAIM"
+            LEFT JOIN {{ ref('TARGET', 'STG_GP_NL_THIRDPARTY') }} "STG_GP_NL_THIRDPARTY"
+            ON "STG_GP_NL_THIRDPARTY"."THIRDPARTYID" = "STG_GP_NL_CLAIM"."THIRDPARTYID"
+            LEFT JOIN {{ ref('TARGET', 'STG_GP_NL_THIRDPARTYCOMMENT') }} "STG_GP_NL_THIRDPARTYCOMMENT"
+            ON "STG_GP_NL_CLAIM"."THIRDPARTYID" = "STG_GP_NL_THIRDPARTYCOMMENT"."THIRDPARTYID"
+            LEFT JOIN {{ ref('TARGET', 'STG_GP_NL_THIRDPARTYFORMAT') }} "STG_GP_NL_THIRDPARTYFORMAT"
+            ON "STG_GP_NL_THIRDPARTYFORMAT"."THIRDPARTYID" = "STG_GP_NL_THIRDPARTY"."THIRDPARTYID"
+            LEFT JOIN {{ ref('TARGET', 'STG_GP_NL_ADJUDICATIONFORMAT') }} "STG_GP_NL_ADJUDICATIONFORMAT"
+            ON "STG_GP_NL_ADJUDICATIONFORMAT"."ADJUDICATIONID" = "STG_GP_NL_THIRDPARTYFORMAT"."ADJUDICATIONID"
+            LEFT JOIN {{ ref('TARGET', 'STG_GP_NL_REFILL') }} "STG_GP_NL_REFILL"
+            ON "STG_GP_NL_REFILL"."REFILLID" = "STG_GP_NL_CLAIM"."REFILLID"
+        name: STG_GP_NL_ALLCLAIMS
+        noLinkRefs: []
+  name: STG_GP_NL_ALLCLAIMS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
