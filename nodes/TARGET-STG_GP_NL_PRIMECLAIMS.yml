@@ -241,6 +241,46 @@ operation:
               - columnCounter: f1487e2c-f4dc-41bd-ab23-faea6b0d3fd5
                 stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa7833f7-4abb-4e63-94ba-31a4be40c02c
+          stepCounter: 164f9a49-c84f-4c7c-a108-5cfc740cec9c
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DRUGID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f083cbfa-d700-4054-bc2e-dcbebf9cca49
+                stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5deac2fc-9fd2-4bc3-bfb5-8842b27588be
+          stepCounter: 164f9a49-c84f-4c7c-a108-5cfc740cec9c
+        config: {}
+        dataType: NUMBER(11,3)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: QUANTITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d912a6a0-8360-4678-b30d-792ac9e3ff0c
+                stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

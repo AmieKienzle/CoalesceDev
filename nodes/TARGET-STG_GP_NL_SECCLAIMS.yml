@@ -241,6 +241,26 @@ operation:
               - columnCounter: f1487e2c-f4dc-41bd-ab23-faea6b0d3fd5
                 stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13ddc82d-ca11-4e97-b3c5-4955f7ad42d9
+          stepCounter: 9e73522b-643a-4524-83d3-e6cf388711ec
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DRUGID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f083cbfa-d700-4054-bc2e-dcbebf9cca49
+                stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

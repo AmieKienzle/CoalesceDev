@@ -133,7 +133,7 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: dc4cb3b8-8848-43a2-adb1-cb55a9c2a0d4
+              - columnCounter: ca10dbaa-057f-450a-b91d-0149e34b5944
                 stepCounter: c301f4d0-ce5d-4104-81af-dab5e7f950a9
             transform: ""
         systemColumnType: None

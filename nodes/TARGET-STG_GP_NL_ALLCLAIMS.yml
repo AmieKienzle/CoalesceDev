@@ -33,8 +33,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 7311679f-5e28-4f02-98e7-9d0ef40beab9
-                stepCounter: b28e87fd-dfd4-4a17-ab38-4cb8531c0f8f
+              - columnCounter: ada904a1-91de-497c-9856-cf96c9b65418
+                stepCounter: 5ede5222-f9cb-40d0-887d-79da0809459b
             transform: ""
         systemColumnType: None
       - acceptedValues:
@@ -349,6 +349,46 @@ operation:
           - columnReferences:
               - columnCounter: eee737de-389b-43a9-b9d3-3c6e0b019429
                 stepCounter: 61bbf9dc-56a6-4af7-b52d-2b3e5b49067e
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f083cbfa-d700-4054-bc2e-dcbebf9cca49
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DRUGID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9b86a6a5-d2f8-41c6-af72-cee1c52f09ef
+                stepCounter: 5ede5222-f9cb-40d0-887d-79da0809459b
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d912a6a0-8360-4678-b30d-792ac9e3ff0c
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: NUMBER(11,3)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: QUANTITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 479c57c6-4764-4bba-bb2f-162a70671304
+                stepCounter: 5ede5222-f9cb-40d0-887d-79da0809459b
             transform: ""
         systemColumnType: None
     cteString: ""
