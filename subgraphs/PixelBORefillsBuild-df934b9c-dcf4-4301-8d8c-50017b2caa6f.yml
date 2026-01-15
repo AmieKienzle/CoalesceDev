@@ -1,0 +1,12 @@
+fileVersion: 1
+id: df934b9c-dcf4-4301-8d8c-50017b2caa6f
+name: PixelBO Refills Build
+steps:
+  - 1990e832-eee4-43fd-b5a1-f861a6f2b24f
+  - 2fc3ebb7-dbaf-492f-a1f9-8054e036ac95
+  - 4aea6530-690e-4c30-a8fd-0b41f47d8301
+  - 4eb7cfa7-3d64-4fbb-8818-905e16c8bf5e
+  - 73811478-e11a-48f0-932b-70509b978b8c
+  - a6331fd7-d11d-477f-bb8a-02f46c5b1763
+  - aae33e67-8fd3-4be6-9ff3-3319786213f4
+type: Subgraph

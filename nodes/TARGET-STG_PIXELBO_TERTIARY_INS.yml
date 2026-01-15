@@ -241,6 +241,26 @@ operation:
               - columnCounter: a33608d2-8630-4148-bbbf-50075fa7938d
                 stepCounter: 753815ba-4452-44e2-869c-4662c9134521
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2debc228-922c-418d-ad3d-9796a6ebb329
+          stepCounter: 74d5c4f4-ee21-4eff-9123-8f7f1dc40525
+        config: {}
+        dataType: Number (10)
+        defaultValue: ""
+        description: This ranks the position since you can have multiple Tertiary plans on a profile (Primary and Secondary only allow one).
+        keyColumnType: None
+        name: RANK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 41297ca3-c7b5-48b4-9722-6ce5b1608110
+                stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+            transform: DENSE_RANK() OVER (PARTITION BY "STG_PIXELBO_ALL_INSURANCES"."ORDERITEMID" ORDER BY "STG_PIXELBO_ALL_INSURANCES"."OrderRefillInsurancesID" asc)
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

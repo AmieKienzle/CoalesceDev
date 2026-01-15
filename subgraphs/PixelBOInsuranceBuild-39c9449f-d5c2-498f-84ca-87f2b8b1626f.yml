@@ -1,9 +1,10 @@
 fileVersion: 1
 id: 39c9449f-d5c2-498f-84ca-87f2b8b1626f
-name: PixelBO Insurance
+name: PixelBO Insurance Build
 steps:
   - 27261054-e1f0-4ca4-a4b6-419296741302
   - 724b540f-c81b-4306-90b2-3b4ca0beacde
+  - 753815ba-4452-44e2-869c-4662c9134521
   - 8d8a7274-05de-4dfa-a729-25ba1064a2e7
   - b1e1235c-8e86-4dd1-a777-07dc43476f83
   - cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
