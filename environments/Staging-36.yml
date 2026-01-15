@@ -1,6 +1,7 @@
 fileVersion: 1
 id: "36"
 mappingDefinitions:
+
   RAW_GP_NEWLEAF:
     database: SCH_RAW
     schema: GP_NEWLEAF_DBO
