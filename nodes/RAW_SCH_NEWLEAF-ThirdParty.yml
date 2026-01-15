@@ -1,0 +1,1517 @@
+fileVersion: 1
+id: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+name: ThirdParty
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_SCH_NEWLEAF
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 158e4882-2f96-4b03-8785-ec9cd8643474
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: ThirdPartyId
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bdfbf828-0a75-47c8-a47d-b2fa6eefe8b9
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(9)
+        defaultValue: ""
+        description: ""
+        name: Zip
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f8c949c-7efa-49d3-9a16-016fa1603a70
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: ExpirationBasis
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0899deff-9a88-4292-98b8-bab32372d31e
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: ImportedFrom
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5df36da-b34b-41ed-befd-e01fd20153b5
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: UseBrandCopay
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36b377ac-4d94-49dd-97a0-387228f5e191
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d877f6dd-8a16-4f73-8fb8-5e9240f05628
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ZeroCopayUnderAgeLimit
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf4b97e1-b708-4414-a8ad-fbf87d68a8ca
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: NABPNumber
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b80ffceb-a546-41bc-b377-4bd077ff4758
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: Class2FeeScheduleId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1fbf09ed-c543-46ba-8f1e-f8da1a2041b2
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: EnforcePlanNDCRestrictions
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3491d011-349b-4365-8254-6ca9072196d8
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: Class6FeeScheduleId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f9b7796-817c-404f-989a-2bda182fc8f8
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: PlanType
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cbeede63-c2f9-48b0-b3a7-384eb6de755c
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa99ce73-d16d-417c-aef9-7792885f22b2
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: ZeroCopayPregnant
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ed70774-44ec-4533-9892-af5a3730af96
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UsualCustomaryCalcMethod
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4dec1d0-a8e6-4848-a75c-cc0e70ce7986
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: DPSNumber
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa83a4fa-af22-4608-8117-a49b1df4b6ae
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: AdjudicateZeroPatientObligation
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0bf644a0-2866-4a80-8f9e-bd2eb81fbdb5
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: DoseCheckRefills
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42de8d88-5cbb-4325-8de4-9ffaad6108c6
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CreatedBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6547b16-f85f-4bd3-b4ac-b976a19f9dc6
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: ZeroCopayNursingHome
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae03fad5-8eab-4e73-b64f-83dd53f211b7
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: ExcludeNonBillableIngredients
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3bf2b4a1-8db9-45a2-aeb7-44d006e6f630
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: GlobalPlanId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42efcbe2-4664-4567-888e-fbfe17333e33
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ReportingPlanType
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb619884-828b-4053-9206-f65a66b0c7b5
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: RxExpiresCodeClass67
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 15aeb7cb-62d3-4aed-b46c-b4c03ff0a0b9
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: City
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c5b9336-a37e-4b11-8123-e08df00d3360
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PreferredListCategoryId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65893614-4cc3-4d43-8d90-b3839bd12ee9
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PlanRefillRatioAmount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 932be8ed-b6c6-4200-9c00-57dc1196f6f9
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        name: GenericCopayAmount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 82a51e1c-1d57-45ff-bebe-47899a4cf6ec
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: InventoryId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d03f33df-8f95-4002-9211-02f7a79d2d40
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: ZeroCopayUnderAge
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c6234f1-97d6-45f5-baaf-b94ce5b99d6f
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsMedicareBRespiratory
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 583827a5-4ee0-46bc-932a-67ef270a4238
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: State
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f6115fa-d5da-4c0a-bab3-8f0a3fe9ae88
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: DiagnosisCodeNotRequired
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ea3579e-aa99-4499-bc76-f0c1fd49d016
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        name: BrandCopayAmount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0cebb001-3222-4d1a-84e0-73be5dfaee11
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsMedicare
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b2e16fd-9074-4925-adf9-7c089ca85dc8
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: UseAlternateNPI
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65ab2695-a635-4d17-902d-b02fc4131754
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: OriginTabStop
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc08a70c-b127-4b9d-8f4f-cdb8b966fb72
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: UsePlanRefillRatio
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb58ed5d-4b9c-4eb0-be90-fe8d00b04c96
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: CalculateSalesTax
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37846a9c-c4b1-4180-9cf0-5bbf441e7181
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsActive
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a15a1f83-4aaa-45d0-8bd4-4382ac19d62c
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: RxExpiresCodeClass35
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d915587b-7b82-4b69-a947-62c6bc7a3425
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: GenericFeeScheduleId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25be5293-9e28-4f78-8608-2c3715f0415e
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: PlanName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93d87e95-8d23-4262-b128-6b5e49070d0d
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: PrintAfterFill
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0b228f7-83d7-46b6-8e8e-830cabfc4e80
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: UseInHousePricing
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b1a0fc1-7739-42ae-8aa2-6e0aa668d48d
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: ZeroCopayAllCustomers
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2bf8f9d8-64e5-481b-bd85-82802f7f1807
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsMajorMedical
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 35b71254-0b93-47be-aa1d-dd7e74373baa
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(10,2)
+        defaultValue: ""
+        description: ""
+        name: PercentageCopayAmount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f267252-4bad-4513-b999-b1c750bb5ce5
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: DEANumber
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c628706-1bf2-4e72-b13e-78750be14906
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsMedicaid
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c60535b3-d95e-49e8-9910-c7d04321c6ba
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: CreatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c75b909e-6e6a-4674-9571-20c04428f3e5
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: PaymentReconciliation
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 345bf2a0-bd0d-4030-bf70-49b1f8d97435
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: MaxRefills
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbed4aa0-6db9-4e7d-b00f-e7e88c39a67e
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: Class35FeeScheduleId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42e2040d-e9c4-403b-9836-e22e81ab7bc1
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        name: MaximumCopayAmount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: baf343f8-ead5-4e7f-82ae-1c4ce3d314b5
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: MinDaysSupply
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1628c639-ba9b-4cfa-92f4-ed1a42ff6cab
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: UseMedicalBilling
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8921d77a-b5c7-4324-9a09-9dacb4f6d941
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: NDCDrugCoveredType
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0290e60f-e016-4cf3-8314-6be529ecc61f
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: CarryOverOtherCoverageCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6de83f6f-4658-4bc1-b49e-392745dd3456
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: Address2
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57b732a9-0931-4dc7-b524-caefbc4c2aef
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: MedicaidNumber
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 305d41ec-8383-4814-8952-30e47671d6b7
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: CopayType
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 190c3547-c2d0-4fd6-9b2b-169d12033f22
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: Address1
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34c10148-4e17-46e0-b9d2-f46735859563
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        name: MinRxAmount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6c987af-37bf-4655-ad17-02294f532c2d
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: VendorCertification
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc36b3f4-7cdf-4e1e-bc3a-3a82cd47d56f
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        name: NPINumber
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dcbfff05-73cd-4c79-a7ee-a2877c6e92e5
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: UseGenericCopay
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94aba2d3-70c2-4d8e-a690-c696084b0e19
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: MedicareNumber
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cebbd00b-8aa6-471f-89a3-d6143408c5a7
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: UseDrugPricingInd
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4dc4e625-239e-4142-ab4e-a5281474549c
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: HelpDeskNbr
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 70e86f2f-4777-469a-9c14-ee488db789e4
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: MaxDaysSupply
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 53199013-66d6-41c6-bba8-863f206341a3
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsMedicareBDiabetes
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d848b89-9492-4503-b3c9-e306ac1950ab
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: RxExpiresCodeClass2
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92dc0f86-d82d-42cd-9d4d-06b7c99f6e8b
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: CompoundIngredientInd
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0549748-bbff-4df6-9ca3-ce152520a046
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CompoundFeeScheduleId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c55f011-3a17-4665-8a0e-3170c3cbe0b2
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        name: MaxRxAmount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 908831d3-8cbb-4105-b128-4ec56539f20b
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: EffectiveDate
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e1766964-48fc-4372-9d1c-6309a0ce5e7b
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: efede629-3306-4087-afd2-2030a5292ff9
+          stepCounter: 445ec5fd-f6d2-4a15-b2fa-3adc47e5ba72
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: ThirdParty
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

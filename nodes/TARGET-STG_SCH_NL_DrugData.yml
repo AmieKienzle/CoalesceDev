@@ -1,0 +1,426 @@
+fileVersion: 1
+id: 8109502a-8edb-46cc-9509-04d2c9634cfd
+name: STG_SCH_NL_DrugData
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 137ec7c8-a0fe-4d4b-ae07-ead451a43afd
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DrugId
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 74fa4861-cac6-4d98-8f14-4aafc4c1b054
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c256b32-1dd7-461c-bd9f-336f6cadb6d2
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: VARCHAR(35)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: NDC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 26182c98-9464-4601-b3c2-279759cfc6e3
+                stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8533c39-2748-46b6-bdfe-256c8a5d0f3b
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: VARCHAR(105)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DRUGNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2d7f6838-c995-4ac0-891e-0b73ce99abe6
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b8c6343-f897-4ad1-87f8-a615f4fcf096
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: MASTERDRUGNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |
+              CASE WHEN "STG_SCH_NL_Drug"."Description" LIKE '%CETROTIDE%' THEN 'CETROTIDE' 
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%ENDOMETRIN' THEN 'ENDOMETRIN'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%GAN%ORG%' THEN 'GANIRELIX (ORGANON)'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%GAN%MEI%' THEN 'GANIRELIX (MEITHEAL)'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%GAN%XIR%' THEN 'GANIRELIX (XIROMED)'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%GONAL%300%' THEN 'GONAL-F 300'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%GONAL%450%' THEN 'GONAL-F 450'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%GONAL%900%' THEN 'GONAL-F 900'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%GONAL%1050%' THEN 'GONAL-F 1050'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%LEUPROLIDE%' THEN 'LEUPROLIDE'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%MENOPUR%' THEN 'MENOPUR'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%NOVAREL%' THEN 'NOVAREL'
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%OVIDREL%' THEN 'OVIDREL' 
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE '%CHORIONIC%' THEN 'CHORIONIC GONADOTROPIN'
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '78206013101' THEN 'FAQ 900 (ORGANON)'
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '78206013001' THEN 'FAQ 600 (ORGANON)'
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '78206012901' THEN 'FAQ 300 (ORGANON)'
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '78206015001' THEN 'PREGNYL (ORGANON)' 
+              ELSE 'OTHER'
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9a11289-cec2-48ea-a560-7f78f43ea3db
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: NUMBER(8,3)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PACKSIZE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0ed117ac-1605-4f50-834f-7d981dedf1ca
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b74b76e-e467-4edb-a9a7-0ef1f7492205
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PACKUNITS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 74e89f36-8636-4a08-85a2-26e7dee01853
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39197361-3bd0-4dc7-ba1a-22d7244c7e41
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PACKQUANTITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 16898b48-14c7-4dff-b886-0748af91972a
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: CASE WHEN "STG_SCH_NL_Drug"."PackageQuantity" = 0 THEN 1 ELSE "STG_SCH_NL_Drug"."PackageQuantity" END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7ed4476-c801-4672-8085-f07cfe0f8bea
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PACKDESCRIPTIONCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f6dbf9a-5466-4173-b785-7d2b5615b8b7
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ec80d31-0c56-40d3-ab22-3c925564ab1b
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: VARCHAR(30)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: MANUFACTURER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3bd01cbb-ef6d-4563-90c6-f5f30564bd56
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9a956a79-2100-413e-bee7-83379ce12e45
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AWP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a9163a9-0f70-4f6d-832c-17a0e2a38c46
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b38c4f9-06d4-4277-8937-85899f0f50bb
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: WAC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d59e6756-037a-4b17-a74e-e19cee82d931
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45c60424-d521-4d64-970d-9a9dc2ffafba
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: GPI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad18c75f-cb06-4dd3-88fa-01a05c0a971b
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d001748b-b1dd-4aee-ba55-d642de1a3ad2
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DIVISOR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |
+              CASE WHEN "STG_SCH_NL_Drug"."PackageDescriptionCode" = 'DP' OR "STG_SCH_NL_Drug"."PackageDescriptionCode" = 'TB'  THEN "STG_SCH_NL_Drug"."PackageSize"/"STG_SCH_NL_Drug"."PackageQuantity"
+              WHEN "STG_SCH_NL_Drug"."PackageDescriptionCode" = 'BL' THEN 1
+              WHEN "STG_SCH_NL_Drug"."PackageDescriptionCode" = 'BX' THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '38379000078'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '03837900020'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '38379000208'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '38379000190'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '03837900018'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '38379000185'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '08290305109'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '63323049257'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '38379000071'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '00409397703'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '00409427602'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '08881701364'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '38379000081'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '75177497590'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '38779998401'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '03837900019'THEN 1
+              WHEN "STG_SCH_NL_DrugIdentifier"."Identifier" = '00562780505'THEN 1
+              WHEN "STG_SCH_NL_Drug"."PackageDescriptionCode" = 'AA' OR "STG_SCH_NL_Drug"."PackageDescriptionCode" = 'CR' THEN "STG_SCH_NL_Drug"."PackageSize"
+              WHEN "STG_SCH_NL_Drug"."PackageDescriptionCode" = 'SR' THEN "STG_SCH_NL_Drug"."PackageSize"/
+                  CASE WHEN "STG_SCH_NL_Drug"."PackageQuantity"= 0 THEN 1 ELSE "STG_SCH_NL_Drug"."PackageQuantity" END
+              WHEN "STG_SCH_NL_Drug"."PackageDescriptionCode" = 'BO' THEN
+                  CASE WHEN "STG_SCH_NL_Drug"."PackageQuantity" = 0 THEN 1 ELSE "STG_SCH_NL_Drug"."PackageQuantity" END
+              ELSE "STG_SCH_NL_Drug"."PackageSize"/    
+                  CASE WHEN "STG_SCH_NL_Drug"."PackageQuantity" = 0 THEN 1
+                  ELSE "STG_SCH_NL_Drug"."PackageQuantity" END
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c62ad74-4df3-45d6-ba1c-691cb471a3a4
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: KINDBODY/REUNITE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2d7f6838-c995-4ac0-891e-0b73ce99abe6
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: |-
+              CASE WHEN "STG_SCH_NL_Drug"."Description" LIKE '%Foll%IU%' 
+              OR "STG_SCH_NL_Drug"."Description" LIKE '%GANI%(ORG%'
+              OR "STG_SCH_NL_Drug"."Description" LIKE '%Pregnyl%'
+              THEN 'Y'
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecdd7184-048e-499e-8835-4f2fac88958a
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RXI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2d7f6838-c995-4ac0-891e-0b73ce99abe6
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: |-
+              CASE WHEN "STG_SCH_NL_Drug"."Description" LIKE '%ENDOMETRIN%' 
+              OR "STG_SCH_NL_Drug"."Description" LIKE '%Menopur%'
+              OR "STG_SCH_NL_Drug"."Description" LIKE '%NOVAREL%'
+              THEN 'Y'
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9edc2a09-358f-46bd-9450-539dfd0d336e
+          stepCounter: 8109502a-8edb-46cc-9509-04d2c9634cfd
+        config: {}
+        dataType: TINYINT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REBATEMULTIPLIER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2d7f6838-c995-4ac0-891e-0b73ce99abe6
+                stepCounter: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+            transform: |-
+              CASE WHEN "STG_SCH_NL_Drug"."Description" LIKE 'FOLL%300%' OR "STG_SCH_NL_Drug"."Description" LIKE 'GONAL%300' THEN 4
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE 'Foll%600%' THEN 8
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE 'Fol%900%' OR "STG_SCH_NL_Drug"."Description" LIKE 'GONAL%900%' THEN 12
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE 'GONAL%450' THEN 6
+              WHEN "STG_SCH_NL_Drug"."Description" LIKE 'GONAL%1050%' THEN 14
+              ELSE 1
+              END
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_SCH_NL_Drug: fc267f5e-6385-40e0-8ec9-8554d6a6ec71
+          STG_SCH_NL_DrugIdentifier: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_Drug
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_DrugIdentifier
+        join:
+          joinCondition: |-
+            FROM {{ ref('TARGET', 'STG_SCH_NL_Drug') }} "STG_SCH_NL_Drug"
+            JOIN {{ ref('TARGET', 'STG_SCH_NL_DrugIdentifier') }} "STG_SCH_NL_DrugIdentifier"
+            ON "STG_SCH_NL_DrugIdentifier"."DrugId" = "STG_SCH_NL_Drug"."DrugId"
+        name: STG_SCH_NL_DrugData
+        noLinkRefs: []
+  name: STG_SCH_NL_DrugData
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,180 @@
+fileVersion: 1
+id: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+name: STG_SCH_NL_DrugIdentifier
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dc6cd919-98bd-481e-b2dc-9a81796c8b5f
+          stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DrugIdentifierId
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa1285a0-e97f-44b7-9e4d-e3ffccaffea6
+                stepCounter: 85739310-6233-4548-8ee7-a0454feaf88c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d158c8ef-f1f2-4c9c-8b6b-3cee04d827e9
+          stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: IdentifierCode
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6011dd17-b9c1-4c11-9a98-76a0fc4c2bc5
+                stepCounter: 85739310-6233-4548-8ee7-a0454feaf88c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 781c5b19-2bd7-4078-91c3-f338a4b32224
+          stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f8016145-bc6e-4718-95a4-45490c491b3e
+                stepCounter: 85739310-6233-4548-8ee7-a0454feaf88c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26182c98-9464-4601-b3c2-279759cfc6e3
+          stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        config: {}
+        dataType: VARCHAR(35)
+        description: ""
+        name: Identifier
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad1ddef2-7fcc-4793-b1d1-c3a183efd789
+                stepCounter: 85739310-6233-4548-8ee7-a0454feaf88c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5398807-24e6-408c-b60c-df4a1b7b28db
+          stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IsMedispanId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b148fb53-819b-45d5-8831-e78374cf3b9f
+                stepCounter: 85739310-6233-4548-8ee7-a0454feaf88c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32b79d53-1f54-439f-b509-769e22176791
+          stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IsPrimary
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44c2ed34-53a3-4548-a401-74b679e088b9
+                stepCounter: 85739310-6233-4548-8ee7-a0454feaf88c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 810e23a4-a634-41a9-8b31-d62abd8ba8d7
+          stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c916dc96-2d95-4dd9-848c-613a7adfe58c
+                stepCounter: 85739310-6233-4548-8ee7-a0454feaf88c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4bb3435-9c7b-4f57-9b3d-282a3640435f
+          stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DrugId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1885fcf6-87f9-49b3-a436-44513f4fd089
+                stepCounter: 85739310-6233-4548-8ee7-a0454feaf88c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 386aa22c-4e20-4b5d-9c94-f932b85091f0
+          stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab36d449-ea6a-427c-af8e-6141b6f26a2c
+                stepCounter: 85739310-6233-4548-8ee7-a0454feaf88c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b289a184-91f3-4e5e-b1b7-889795c9f8ee
+          stepCounter: 1055917d-3f37-4be0-9279-7a3bbc7a24cb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b5f8dfd8-ee3d-4ef3-97dd-7f0382cecd94
+                stepCounter: 85739310-6233-4548-8ee7-a0454feaf88c
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DrugIdentifier: 85739310-6233-4548-8ee7-a0454feaf88c
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_SCH_NEWLEAF
+            nodeName: DrugIdentifier
+        join:
+          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'DrugIdentifier') }} "DrugIdentifier"
+        name: STG_SCH_NL_DrugIdentifier
+        noLinkRefs: []
+  name: STG_SCH_NL_DrugIdentifier
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

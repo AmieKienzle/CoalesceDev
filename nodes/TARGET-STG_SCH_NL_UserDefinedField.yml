@@ -1,0 +1,194 @@
+fileVersion: 1
+id: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+name: STG_SCH_NL_UserDefinedField
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45ff6af9-3676-4171-8dea-a3eaaf041d8d
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UserDefinedFieldId
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ff3fdcc2-6745-4c62-9dab-9f7ad3331451
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eef9f539-84d1-45a9-a914-f38a353a8916
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4db27783-cc25-4b4e-b24a-0cb922f62306
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf1b5664-a09f-4cfa-989f-4320bc39d353
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CreatedBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0419ec93-309d-433f-8539-3e4bc7eb8e51
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecdf0049-3523-448d-98e2-e2295ed6d304
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UserDefinedFieldFormatId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 092304e7-8286-408f-a241-24834a4355d6
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c851e1ea-586d-46af-bda3-cf29184e5d80
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ExternalId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 467293a0-4386-47ad-8073-a6511f062ef2
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c533639-66bf-434f-8c0e-0829a94fea25
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fff3bf58-1254-46a5-b3c0-9492b14ce86d
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1414847-1ded-4f8f-9035-18140e07f74b
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: CreatedOn
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 59361bb3-1eaf-4900-a725-e73ad995916b
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 030b8431-0ad2-4855-952d-4a8650bd2811
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: FieldValue
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 64861fc7-c094-4255-b8b5-ad1c37e1e013
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd5e8871-f703-4e26-bb68-e1e1036b4cd6
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: RelatedRecordId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1ca18795-804f-4308-835d-61f820910c7d
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a3385ce1-73c8-44f6-9a85-f358703ef63e
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bbb113ac-ba9b-41f0-a91f-5ccb2ebe82c4
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 554f344b-f1af-40ab-8a00-bbb93c6a6082
+          stepCounter: a9726b42-3ef3-4e11-a4e1-24a8714cbe00
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 25b15db6-2e58-4d65-87d0-33f02797518a
+                stepCounter: 2fed250a-984c-49ad-abba-2ee37710ad45
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          UserDefinedField: 2fed250a-984c-49ad-abba-2ee37710ad45
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_SCH_NEWLEAF
+            nodeName: UserDefinedField
+        join:
+          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'UserDefinedField') }} "UserDefinedField"
+        name: STG_SCH_NL_UserDefinedField
+        noLinkRefs: []
+  name: STG_SCH_NL_UserDefinedField
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

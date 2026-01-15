@@ -1,0 +1,236 @@
+fileVersion: 1
+id: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+name: STG_SCH_NL_ThirdPartyFormat
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca4ea0c0-175a-4012-bd07-0f62f059162a
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ThirdPartyFormatId
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d1cd2b42-8f28-49a7-a2f6-677b9ec8fabb
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dc115a22-dac4-45ac-a8df-2bc5b384ab52
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ThirdPartyId
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a42d7cb4-2bd0-4343-893c-910438d8c91d
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 952c5b04-82db-4dc5-93a7-1470aada3ea8
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 26d43c61-ce87-4e46-a69c-9cd31dbe0740
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03b20bc0-a633-4df6-aeb8-2411d78fa8f0
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IsDeleted
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69218671-3a3a-49d0-8c12-f3d973e9c81b
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e82c4af6-2546-41fc-b55c-5d1fc6d38fca
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CommunicationOverrideId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3ce33bbd-5257-4fce-846a-3cdba12f7fe4
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4cee3016-3f4f-4625-a575-c20d058249ef
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: GroupingWaitPeriod
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6b7c3987-00f8-4a63-bf09-724aa5d5ce34
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed4d613c-b2dc-4e9e-a25e-7c85c1f13c50
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: AdjudicationId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7709f28-0d0e-48b8-8cd3-3206d2c64e10
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5a1a188-76b8-470d-b677-75342b2c6bf3
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IsRebillAllowed
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35bc37c3-c22a-4162-a857-7d13d046eb0d
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7b14b34-72d1-438e-bcd7-6fcc976614e6
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ThirdPartyFormatRowId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d0299abc-2e05-4411-9c59-de8c0b5379a3
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 533622fa-8fac-44fd-8d86-e1cd7ecd4cf2
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69ce4e41-31ef-433a-9bda-2510d8970efc
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 043cc692-3363-4047-9cc0-f396419a54c6
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: EffectiveDate
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 42a7d3df-7448-4ab8-ba82-d2fef6f6dcbb
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79daf62f-5924-4f23-822d-9fe111ef6ce8
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: NbrPerTransmission
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0755b3e1-d576-455f-8edc-41b0d6220d5e
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36b044e8-9eef-431e-bb97-7ee1eb6415d4
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 07d24d57-d7db-45aa-a279-8e1ccd90fba5
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a50fd045-82f8-47df-8444-61ef09b6e63b
+          stepCounter: d68ef97a-34f4-4dab-b43d-e1fed81dcdc3
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 15832cd1-5e8a-4be0-813f-0e4ae2434909
+                stepCounter: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          ThirdPartyFormat: d4b2bdd3-f539-4d75-9e27-4791e8885d37
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_SCH_NEWLEAF
+            nodeName: ThirdPartyFormat
+        join:
+          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'ThirdPartyFormat') }} "ThirdPartyFormat"
+        name: STG_SCH_NL_ThirdPartyFormat
+        noLinkRefs: []
+  name: STG_SCH_NL_ThirdPartyFormat
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
