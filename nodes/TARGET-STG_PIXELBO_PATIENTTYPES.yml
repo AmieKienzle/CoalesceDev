@@ -1,0 +1,110 @@
+fileVersion: 1
+id: 6eb0c259-f2c4-4794-a20c-83148b4ac789
+name: STG_PIXELBO_PATIENTTYPES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a8ef114-11cc-42a4-ac0e-41f3a4f3069a
+          stepCounter: 6eb0c259-f2c4-4794-a20c-83148b4ac789
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5d03d5a3-9012-469d-83ca-57ce9c13012d
+                stepCounter: 8ac9d575-b69a-4099-b81b-f4866a67a1da
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22821e6d-0098-40b8-a012-9dcb8720471e
+          stepCounter: 6eb0c259-f2c4-4794-a20c-83148b4ac789
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a7ee7ea-4091-4e5c-a722-c74a9cad807a
+                stepCounter: 8ac9d575-b69a-4099-b81b-f4866a67a1da
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 164a5971-3236-445b-9c51-70991f23ea0e
+          stepCounter: 6eb0c259-f2c4-4794-a20c-83148b4ac789
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35e3de51-cb28-40a9-93d6-725d2252c9b4
+                stepCounter: 8ac9d575-b69a-4099-b81b-f4866a67a1da
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6cdca44-8152-4042-a66d-96335338bae9
+          stepCounter: 6eb0c259-f2c4-4794-a20c-83148b4ac789
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b19bf121-a561-445d-84ec-d6283fe05000
+                stepCounter: 8ac9d575-b69a-4099-b81b-f4866a67a1da
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84ab0d5d-45cb-402b-ad2d-9e3c025bd5c0
+          stepCounter: 6eb0c259-f2c4-4794-a20c-83148b4ac789
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 00ffa3fd-12c5-45f8-b489-1b9be66622d5
+                stepCounter: 8ac9d575-b69a-4099-b81b-f4866a67a1da
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          PATIENTTYPES: 8ac9d575-b69a-4099-b81b-f4866a67a1da
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PIXELBO
+            nodeName: PATIENTTYPES
+        join:
+          joinCondition: FROM {{ ref('PIXELBO', 'PATIENTTYPES') }} "PATIENTTYPES"
+        name: STG_PIXELBO_PATIENTTYPES
+        noLinkRefs: []
+  name: STG_PIXELBO_PATIENTTYPES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

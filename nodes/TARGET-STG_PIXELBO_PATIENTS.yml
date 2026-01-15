@@ -1,0 +1,222 @@
+fileVersion: 1
+id: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+name: STG_PIXELBO_PATIENTS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ce4b08dd-f681-4001-8252-8cee0fc1624a
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf812c07-cc92-424a-b752-e74dae38bc27
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 353bc8db-6fda-41b2-acf2-9b8562655130
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PATIENTTYPEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ecf9fafb-b028-44ac-a01b-6511f8ed6fbe
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 131490cc-3572-43db-9bfd-640895d46dd3
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DATEOFBIRTH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cdf3325e-e682-4d22-a79a-adc77b853a2b
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e98790bd-10d7-4551-999f-daf5546e822a
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: MERGETARGETID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 123499a4-16ac-42fc-aa82-6848146a8dfe
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: acd47231-419a-482f-9db9-10cb9dac3539
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SOCIALSECURITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 055c8426-7d36-4393-bd9e-651bdbba00f2
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 70006a71-2b5b-45e7-b991-c8a3b5c0b571
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PATIENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9bb299e5-3b8e-4196-b950-623a80a21731
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef72bf9d-0783-419b-992d-0feb7260a504
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: REDOXPARTNERTENANTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 441699a1-8f8e-4a81-a820-5bb8a400782e
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eaa85810-879d-43b8-b67b-19328030b515
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: SIGNATURE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5ec3ca22-d420-4c4a-aef5-1487af384585
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 903fc345-98e1-4a6a-8281-a6e1dc1c4a31
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: USEDINVITATIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6886fa77-a1c1-410e-b6ee-75aa96027fd2
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d805cbb-a803-4401-9a8d-21e862508e93
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: GENDER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 07f8be19-3205-4cbd-850a-41b4210fc7d5
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dfcac65e-bbac-45a3-b24c-0aabeb5f317b
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: VARCHAR(510)
+        description: ""
+        name: PRIMARYLANGUAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7de3d003-013a-4284-aab8-d2add8144861
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 642bbbf4-7ab9-4491-8039-aa737a1cc35b
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a5598fd-3e7a-4d6c-a9ed-855556fd8ac9
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f2e126f-036b-442a-a73e-770c75bd1529
+          stepCounter: 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77322804-891c-484f-9729-e975e58a27d1
+                stepCounter: 64e1f124-98d5-494a-8688-27c565463dfd
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          PATIENTS: 64e1f124-98d5-494a-8688-27c565463dfd
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PIXELBO
+            nodeName: PATIENTS
+        join:
+          joinCondition: FROM {{ ref('PIXELBO', 'PATIENTS') }} "PATIENTS"
+        name: STG_PIXELBO_PATIENTS
+        noLinkRefs: []
+  name: STG_PIXELBO_PATIENTS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
