@@ -1,5 +1,4 @@
 defaultStorageMapping: TARGET
 fileVersion: 1
 locations:
-  - RAW_SCH_NEWLEAF
-  - TARGET
+  - RAW_GP_NEWLEAF

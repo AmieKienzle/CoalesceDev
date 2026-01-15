@@ -1,0 +1,225 @@
+fileVersion: 1
+id: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+name: THIRDPARTYCOMMENT
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_GP_NEWLEAF
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1fe21994-66cd-4195-a771-0c47ee8a4636
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: THIRDPARTYCOMMENTID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fca3ebef-8b43-4254-a9e9-b7332dba6ac5
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: VARCHAR(4096)
+        defaultValue: ""
+        description: ""
+        name: COMMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a1c8b09-7c62-4956-bee4-fc71e9d7df5e
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: UPDATEDBY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d25d037-6a44-41b5-b2f4-0097e8c24c18
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CREATEDBY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 99f8296b-e326-4cd2-97ae-894c29aa1831
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PRIORITYCODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2813980-d305-4756-b0bf-cce188093e08
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: UPDATEDON
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d3ca1788-47c9-4a9f-b0d4-88e78ea8102c
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: CREATEDON
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5923822c-c20d-46c5-959c-44357de6f6b1
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: THIRDPARTYID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d0d0f07-909b-4abd-b007-fbc995e2c999
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: COMMENTDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f92b8d0-0913-4b43-af77-46f3c1ce30f2
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ea1e45f-1066-4087-a490-3315b8f0a7d3
+          stepCounter: f8a7f1b8-7822-4319-b7dc-8e2e909d4488
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: THIRDPARTYCOMMENT
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

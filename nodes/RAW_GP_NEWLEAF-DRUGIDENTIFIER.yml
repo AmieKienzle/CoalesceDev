@@ -1,0 +1,206 @@
+fileVersion: 1
+id: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+name: DRUGIDENTIFIER
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_GP_NEWLEAF
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26ea7553-28b3-4e54-93ef-e01119208eff
+          stepCounter: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DRUGIDENTIFIERID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6e8e688-69e5-40cb-bc8f-ecab77d87841
+          stepCounter: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: UPDATEDBY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d201911-6ad9-466b-807d-e755a38bd5b6
+          stepCounter: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: IDENTIFIERCODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e852a1a-db17-4fa6-a247-1b26c8105489
+          stepCounter: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+        config: {}
+        dataType: VARCHAR(35)
+        defaultValue: ""
+        description: ""
+        name: IDENTIFIER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee8fe1e1-bb75-4008-af8f-0a3d20c110ee
+          stepCounter: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: ISPRIMARY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac588fb7-3a40-4b88-8684-b9ced31f7047
+          stepCounter: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: ISMEDISPANID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f10773c-5490-4d3b-a74f-2b95391e419a
+          stepCounter: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: UPDATEDON
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ea710f8-5f4d-418a-943f-7375cd020aae
+          stepCounter: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DRUGID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94402447-f2dc-460d-b8d9-89f3f3292a70
+          stepCounter: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a450e562-8115-4f57-a7f5-d81aa7269944
+          stepCounter: f4ad64ac-f2e4-493c-a9f6-43c031dffa94
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DRUGIDENTIFIER
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

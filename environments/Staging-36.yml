@@ -1,11 +1,12 @@
 fileVersion: 1
 id: "36"
 mappingDefinitions:
-  RAW_SCH_NEWLEAF:
+
+  RAW_GP_NEWLEAF:
     database: SCH_RAW
-    schema: dbo
+    schema: GP_NEWLEAF_DBO
   TARGET:
-    database: SCH_PREPARED
+    database: SCH_DEV
     schema: REPORTING
 name: Staging
 type: Environment

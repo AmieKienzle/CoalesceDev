@@ -1,0 +1,226 @@
+fileVersion: 1
+id: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+name: STG_GP_NL_NEEDBY
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75126daf-04c7-4b06-b20b-4d3e358a3868
+          stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CUSTOMERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f00efa0f-a41b-44e9-ae79-26a26d7dcd51
+                stepCounter: f28967f7-305b-4198-9b79-c325abd3d3c5
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6cf35fd-d81c-4004-bb69-e8618a3235ad
+          stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REFILLID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b18fd0b-8db0-49c2-92e0-3fa5f50e2cb0
+                stepCounter: f28967f7-305b-4198-9b79-c325abd3d3c5
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1258a2b7-64c4-4158-9e39-ea2a85290cbc
+          stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RXNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 918a64fa-6d96-46a1-b526-5923c141cc6f
+                stepCounter: e55b0425-59fd-4398-a7bd-d87f8eda12f6
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b7f68b7-3f00-428e-8a03-f4fdff1bc7a2
+          stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ORDERNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d74b041e-ca3f-414c-8d4b-14d2d15e36ed
+                stepCounter: c301f4d0-ce5d-4104-81af-dab5e7f950a9
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aeb72e08-f0e5-4ea2-9960-5b09646fae0c
+          stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+        config: {}
+        dataType: SMALLINT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DELIVERYMETHOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 992b7a6f-c49f-4054-a69c-7979c32c2758
+                stepCounter: c301f4d0-ce5d-4104-81af-dab5e7f950a9
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b6612a1a-0b99-4ff7-8ea2-9abc3c9a09f6
+          stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: COMPLETEDON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ca10dbaa-057f-450a-b91d-0149e34b5944
+                stepCounter: c301f4d0-ce5d-4104-81af-dab5e7f950a9
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 787b391b-3171-42b4-8b06-60ec1f0338d6
+          stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+        config: {}
+        dataType: VARCHAR(40)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CUSTOMERTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 26fb8b9d-f215-4737-a71a-553c9b67342d
+                stepCounter: e509cbdc-844a-4e8f-b15c-076b301d3989
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7971cbf-b6f1-48e0-b9c5-e6c46ccd1341
+          stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TACKINGNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6860d959-ba37-494d-8f89-d826beb193ad
+                stepCounter: a1b3b757-d364-4649-95c4-6aaa556738de
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_GP_NL_CUSTOMERS: e509cbdc-844a-4e8f-b15c-076b301d3989
+          STG_GP_NL_ENTERPRISEORDER: c301f4d0-ce5d-4104-81af-dab5e7f950a9
+          STG_GP_NL_ENTERPRISEORDERENTRY: feb11d0d-ce1a-47a0-a7f6-216d3fe6f2c0
+          STG_GP_NL_REFILLSHIPMENT: a1b3b757-d364-4649-95c4-6aaa556738de
+          STG_GP_NL_RX: e55b0425-59fd-4398-a7bd-d87f8eda12f6
+          STG_GP_NL_WORKQUEUEITEM: f28967f7-305b-4198-9b79-c325abd3d3c5
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_GP_NL_CUSTOMERS
+          - locationName: TARGET
+            nodeName: STG_GP_NL_ENTERPRISEORDER
+          - locationName: TARGET
+            nodeName: STG_GP_NL_ENTERPRISEORDERENTRY
+          - locationName: TARGET
+            nodeName: STG_GP_NL_REFILLSHIPMENT
+          - locationName: TARGET
+            nodeName: STG_GP_NL_RX
+          - locationName: TARGET
+            nodeName: STG_GP_NL_WORKQUEUEITEM
+        join:
+          joinCondition: |-
+            FROM {{ ref('TARGET', 'STG_GP_NL_ENTERPRISEORDERENTRY') }} "STG_GP_NL_ENTERPRISEORDERENTRY"
+            JOIN {{ ref('TARGET', 'STG_GP_NL_ENTERPRISEORDER') }} "STG_GP_NL_ENTERPRISEORDER"
+            ON "STG_GP_NL_ENTERPRISEORDER"."ENTERPRISEORDERID" = "STG_GP_NL_ENTERPRISEORDERENTRY"."ENTERPRISEORDERID"
+            JOIN {{ ref('TARGET', 'STG_GP_NL_WORKQUEUEITEM') }} "STG_GP_NL_WORKQUEUEITEM"
+            ON "STG_GP_NL_WORKQUEUEITEM"."WORKQUEUEITEMID" = "STG_GP_NL_ENTERPRISEORDERENTRY"."ITEMFILLID"
+            JOIN {{ ref('TARGET', 'STG_GP_NL_RX') }} "STG_GP_NL_RX"
+            ON "STG_GP_NL_WORKQUEUEITEM"."RXID" = "STG_GP_NL_RX"."RXID"
+            LEFT JOIN {{ ref('TARGET', 'STG_GP_NL_CUSTOMERS') }} "STG_GP_NL_CUSTOMERS"
+            ON "STG_GP_NL_CUSTOMERS"."CUSTOMERID" = "STG_GP_NL_WORKQUEUEITEM"."CUSTOMERID"
+            LEFT JOIN {{ ref('TARGET', 'STG_GP_NL_REFILLSHIPMENT') }} "STG_GP_NL_REFILLSHIPMENT"
+            ON "STG_GP_NL_ENTERPRISEORDER"."ENTERPRISEORDERID" = "STG_GP_NL_REFILLSHIPMENT"."ENTERPRISEORDERID"
+        name: STG_GP_NL_NEEDBY
+        noLinkRefs: []
+  name: STG_GP_NL_NEEDBY
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
