@@ -1,0 +1,263 @@
+fileVersion: 1
+id: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+name: CustomerType
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_SCH_NEWLEAF
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 360c1ddd-84d7-4793-a4d7-f31e8f7fd33f
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CustomerTypeId
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e674db18-5579-449a-bbd6-9a3b9b7a3feb
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsDefault
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 418c7daa-15c3-404f-b46d-bbe757e14c2b
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25e8a846-e5b2-42ef-b029-c687410e365a
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CreatedBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52f118c1-340d-4ac5-87c5-170214552408
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsAuthvia
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f2bd157-d512-42d6-9bd4-6124cd98326b
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsActive
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5b16e98-bb59-4601-a0ab-da62525ebc38
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: StoreProfileId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 158607cd-2a76-49ed-afe5-82d4c697e523
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2efb3a6e-397d-442f-90eb-e54baa02dc83
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsLocked
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9179b198-e6b4-4e19-9970-cca5885dd1ed
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: CreatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 18e817fa-abef-45a6-9fd8-5d2ebb0948b7
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: VARCHAR(40)
+        defaultValue: ""
+        description: ""
+        name: Name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e05f421-64e7-4f5a-8425-3469068abaf1
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1386da2d-5523-4f34-aee9-45fd4d319f96
+          stepCounter: 9986f3c3-3e51-4f1c-9da0-fe8f49c6a595
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: CustomerType
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

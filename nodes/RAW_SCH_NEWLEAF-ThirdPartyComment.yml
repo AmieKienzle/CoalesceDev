@@ -1,0 +1,225 @@
+fileVersion: 1
+id: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+name: ThirdPartyComment
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_SCH_NEWLEAF
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6bf811fd-1308-4740-bbab-4af04b323035
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: ThirdPartyCommentId
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b26a196-a4ea-4efb-ac5c-ae8ef07c207f
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e75eea7e-7218-4f25-bad0-ae6c963cb784
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: VARCHAR(4096)
+        defaultValue: ""
+        description: ""
+        name: Comment
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e25b963-e5ea-4e8e-b562-930470ce89f3
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CreatedBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50b8a75b-a3b0-495e-adae-709467ca8f20
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PriorityCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b81393c5-7e39-42e0-b79c-8cf2f69164d1
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a784c007-de93-477c-8f0f-45308c4c01ea
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: CreatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71c93300-d688-4e7f-95fd-49f9c320b0c9
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: ThirdPartyId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8c9e3a7d-ae7f-4e45-97a8-d1fdc8a2e77a
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: CommentDate
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d3eed08-fe2c-49b0-9356-effa33d53d58
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db60756a-4fc0-45cf-bbef-6e43217ae3fa
+          stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: ThirdPartyComment
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

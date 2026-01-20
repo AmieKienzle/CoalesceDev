@@ -1,0 +1,1992 @@
+fileVersion: 1
+id: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+name: Drug
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_SCH_NEWLEAF
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e6c3829-eada-485a-8a25-87234d8ddfb7
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DrugId
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b44e434-efcd-4156-96be-723f27f5df8f
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DosageFormCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 693a220c-cf0b-4874-8a7e-cbdd44d4df0d
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: PackageDescriptionCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 218049c5-0710-41f7-a29d-e41ee523aa16
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsStocked
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 988cab45-ae46-441c-a571-5d2eec8d37d8
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        name: OldNDC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 153eca3b-a21d-425e-a9db-58b4b5b3fdaa
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: CountryOfManufacture
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b82672bc-c347-4022-a496-5c8f597fcf63
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: MasterNameTypeCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8d129da-0c92-4534-9886-ded983755e7b
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: MedispanPackage_Quantity
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2407ae9c-5904-4f1c-a731-1c9b38baefa3
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FULSource
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f50dd60a-7e1e-41da-9a24-fe86c66d8eff
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf5f6f5f-72de-4e13-a8ea-ae05a3834c44
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsRx
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad76bb13-3f90-4fef-b4e2-041666ad42a2
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: PrintAsPackage
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b5c58d7-0706-4896-8f77-1f5e99be1679
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: CustomsUnitPrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7057f5a-4f22-4af1-8228-f290cbe13e74
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: CurrentLotNumberOne
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89b89641-3e24-4b23-b440-c2c8e66edb4a
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: FeeScheduleId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d916939d-df84-42bf-8f5c-95ab999beccb
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AcquisitionSource
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a4b45f9b-6d87-44b0-a8be-547b90b363d3
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(28)
+        defaultValue: ""
+        description: ""
+        name: MedispanGeneric_Product_Identifier
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 733564b3-c737-4b95-9d84-5e9129c8299a
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(30)
+        defaultValue: ""
+        description: ""
+        name: ManufacturerName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ff92268-6972-4407-bccb-bb7a01628c63
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CreatedBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ebef1148-e886-4117-84df-f96b300670bc
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: NADACSource
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d10b065e-74fc-4e0e-9782-e259e275ced1
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PackageQuantity
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d21aaa1d-bcc9-4345-b858-e0855b2dfe3c
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        name: NewNDC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 330c836c-a71b-4f4a-ab2f-72171b589b65
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DrugEnforceDoseCheckType
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8de19cdf-96bb-47c6-9b13-8419af762abe
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: Preferred
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0dabcac-084d-415c-8c38-db1941b93b53
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsGeneric
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50c9d7ab-1b0c-43a6-8679-3fb3823be089
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OverrideDEAClassCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf1051d8-893c-4a74-88d8-dd5b822d2268
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: AcquisitionPackagePrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51a06189-ac44-4b4f-a191-3664d9f4a825
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: HighestListPackagePrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: abd28ddf-ba20-485d-b4a2-43461e4c657d
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: TEECode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4c0e583-53fd-40e8-b376-1d0c7fbe1782
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: DirectUnitPriceConversion
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f933fac0-6599-4b4c-8383-ac20ad261527
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: ThirdPartyRestriction
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b244d415-351e-4bbd-8031-1b67c1d6b75c
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(105)
+        defaultValue: ""
+        description: ""
+        name: Description
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 924efc7d-0197-4b34-a169-b227f2ab81f0
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: WACUnitPrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 783043d8-fbb3-4bc3-aa63-0e4325b05147
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsInfusion
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ad32329-e6c1-470c-ab57-473561dcfb37
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: AWPUnitPrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 320dc1b7-ab72-41de-aea6-83628c0851c0
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: MasterPackageSizeUnitCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1720734f-8995-477a-8b17-041d870259ba
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: NADACUnitPrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0fc0fd6-36ac-476d-8e6e-dbb1118eab18
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AWPSource
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36d5c4e6-31bd-40f2-92e1-c232f3c93eb5
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(5)
+        defaultValue: ""
+        description: ""
+        name: DiscardDate
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae1467ef-9766-4962-9e3e-c4f55c9b3107
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(9,6)
+        defaultValue: ""
+        description: ""
+        name: MiscPricePercent
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 698bf6d1-260d-4a76-8d86-ea0dfd2de5ca
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: PreventFill
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3eb76bff-0a57-491e-b8a5-ee624fc77973
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: MACUnitPriceConversion
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4389ccef-29ee-419f-9285-485596806158
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: MedispanPackage_Size
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b323469-c748-4f40-9500-15559aeebbc0
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: MasterStorageCondition
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 82110758-0510-47bd-a033-fbd8880a14a6
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsExactamixDispense
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 617c3762-972f-4ebb-a19e-a69d7055c7be
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(120)
+        defaultValue: ""
+        description: ""
+        name: GPIGenericName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 166e04a3-46b0-4cf4-ab6d-cc8c4444cb75
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsRoboticDispense
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7aba2633-5f0b-4423-9f21-0b2ef67f2192
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: TotalCompoundPrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63aeffed-d2f6-4e27-b714-158416a62553
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsDrugStorageConditionLocked
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79d7ba55-37c3-4f9a-8af4-907668ec0d1c
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: FixedDiscardDate
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f86a8f78-82d8-440a-8d02-2c2be8a335c4
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: GPI
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03ab579a-7da3-400c-baed-259dfb11e2f3
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: MACUnitPrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8821ed7-0501-4256-8457-65d7ae8714ed
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DirectSource
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 85a5df88-47ab-4081-a53a-965f5b69c56d
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: MiscPackagePrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8fc1622a-ecdb-4516-9463-a78ec178dbdc
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: StatusCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71c1d6d0-ffbb-4b24-a38d-eee39134168c
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DesiCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 890bc5e9-a9a3-4966-9d8e-604331bfe0ba
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: FULUnitPrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8760a2e0-2e20-42a6-a8e0-10287b43c395
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: WACSource
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9d7fdb2-67cb-4b5c-81f3-7e3027772fe2
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: Identifier
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 882877cc-df34-4968-a8db-5457b5b2a121
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: HighestListSource
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b82bceb-bc88-4a2c-bdf7-2be63394cdeb
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: MiscUnitPrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c5b5d53-289d-4e31-915f-3e4db5e103fe
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b946ce66-1c89-4728-847c-816371f9d343
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: UnitDoseCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ecdb7b8-7b07-466e-839e-b0f39ec513c5
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: MedispanStatusCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2726a58e-b3d5-4c3c-8e09-2ed8121d8574
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsDrugDescriptionLocked
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6a43479-0789-485f-91b5-b06353cd7ca9
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsFactor
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ccb94edb-8229-4ff4-bba7-652095a60981
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: StorageCondition
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: acb77324-bfab-48c1-89a9-78e14ca60683
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsMiscPricePercentOfAWP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28e35d85-f215-48ee-ab74-84ee4e02c71d
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsDrugPackageSizeUnitCodeLocked
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a8ded25-1763-46c1-896e-b33cc848fa04
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsMasterDrug
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c9c0f34a-1fa3-4bc7-a3bf-84d9d1c85e04
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(60)
+        defaultValue: ""
+        description: ""
+        name: TherapeuticClass
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dda8b76a-a4d0-4ed4-afa0-8a132c4a5ceb
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CompoundType
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6675ee84-068f-4490-8e33-413b0e37db65
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsDrugIsRxLocked
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16993107-5f80-4b97-b0fc-04cf00b0bfac
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: CustomsUnitWeight
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d85da0d-881b-4a91-8f57-4f7617a6e5fe
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsNonBarcoded
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 411af075-449e-484a-9c05-4168b5961805
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CustomsDescription
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed5f1069-6c30-424d-826d-03dec33823b1
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: ShipToPrescriber
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 528c0c56-ba92-4b84-89ea-e91e6891eae4
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: DirectUnitPrice
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e4252e7-76e1-4e8a-9256-e27e491776f1
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(500)
+        defaultValue: ""
+        description: ""
+        name: MasterDescription
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1f81336-0e0b-485e-a7fd-4d492df3f520
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: AWPUnitPriceConversion
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac9ffca5-39e3-4f21-be03-a922592bb8aa
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsCompound
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93420148-acdb-4a99-85b4-42c992cac816
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: LabelFormatId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdce88f3-c07d-4611-b300-35e7b1b508e5
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(8,3)
+        defaultValue: ""
+        description: ""
+        name: PackageSize
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4462e7b3-4e83-45bd-a47e-5f04dc375edc
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: MONYIndicator
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 349e9844-d5a4-4ace-8128-01a6e7d6dd3c
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: MACSource
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2fabcfc6-bc10-4dd1-93a4-d4df7dd47251
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsDrugPackageSizeLocked
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f773dedd-2a07-4baf-a154-e0d1c59fa0e8
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: SupplyKitId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 989120f8-b6df-4dd0-a3c3-8df9a82accb5
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: CreatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 081c24c0-30b8-4500-920f-25ab72289a20
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: MasterRouteOfAdminCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c991a76b-e5c2-4b71-9234-19d30aa963a4
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: RouteCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1d54433a-2964-4a10-b1fc-3d541de7623d
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FederalDEAClassCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef3d686d-415d-4c0c-b6de-875bc350b7e5
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: NUMBER(12,6)
+        defaultValue: ""
+        description: ""
+        name: WACUnitPriceConversion
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: de16c712-b952-4d01-81fb-3b9a19482b19
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsDrugTypeLocked
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96871f8c-2114-4f5f-8361-261d7cb350bd
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: RequireLotNumber
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c1a8cb1-54a3-4940-a3f7-a929158e71c2
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsTPN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8a64438-ee9d-47ee-8e11-6e551f209b7b
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: MasterIsRx
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 99658fb9-62e6-4a6b-9c8b-0aadecc34e31
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: RequirePVReview
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1ec4d8a-7f94-4c32-b9ab-8d6712cc4dc4
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: UseFixedDiscardDate
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0789374c-c3c7-4e60-bc51-2575a86702b3
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsDrugRouteOfAdminLocked
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b5b1218-a5d2-4f1d-9995-5e6dc366a1f5
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: CurrentLotNumberTwo
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6aa9410a-d559-4fd3-aeec-d4c9e68ac730
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(2)
+        defaultValue: ""
+        description: ""
+        name: PackageSizeUnitCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d2bf6bd-12b8-4b6f-807d-9266860d3a95
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: VARCHAR(30)
+        defaultValue: ""
+        description: ""
+        name: Strength
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfea92eb-c318-438f-a4d3-81d35b33c224
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22178040-4bdb-452c-8581-d4745aa675fb
+          stepCounter: 2302fd2c-3490-4bd6-8f29-859f56dca0e3
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: Drug
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
