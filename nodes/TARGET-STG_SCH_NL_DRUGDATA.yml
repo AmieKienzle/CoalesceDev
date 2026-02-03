@@ -86,6 +86,7 @@ operation:
             transform: |-
               CASE WHEN "STG_SCH_NL_DRUG"."Description" LIKE '%CETROTIDE%' THEN 'CETROTIDE'
               WHEN "STG_SCH_NL_DRUG"."Description" LIKE '%ENDOMETRIN%' THEN 'ENDOMETRIN'
+              WHEN "STG_SCH_NL_DRUG"."Description" LIKE '%PREGNYL%' THEN 'PREGNYL'
               WHEN "STG_SCH_NL_DRUG"."Description" LIKE '%GAN%ORG%' THEN 'GANIRELIX (ORGANON)'
               WHEN "STG_SCH_NL_DRUG"."Description" LIKE  '%GAN%MEI%' THEN 'GANIRELIX (MEITHEAL)'
               WHEN "STG_SCH_NL_DRUG"."Description" LIKE '%GAN%XIR%' THEN 'GANIRELIX (XIROMED)'
@@ -320,6 +321,26 @@ operation:
 
 
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e8a9e02-9785-45bb-878d-9e1df4a36b88
+          stepCounter: 43682bc7-3da2-4c3b-b66a-be34792bf7f0
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ISGENERIC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fec960ab-d710-4968-815d-e08c6302a883
+                stepCounter: 09ff8265-9f79-48e9-99b4-ad2325ce72e4
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -334,7 +355,7 @@ operation:
           - locationName: TARGET
             nodeName: STG_SCH_NL_DRUGIDENTIFIER
         join:
-          joinCondition: |-
+          joinCondition: |
             FROM {{ ref('TARGET', 'STG_SCH_NL_DRUGIDENTIFIER') }} "STG_SCH_NL_DRUGIDENTIFIER"
             JOIN {{ ref('TARGET', 'STG_SCH_NL_DRUG') }} "STG_SCH_NL_DRUG"
             ON "STG_SCH_NL_DRUG"."DrugId" = "STG_SCH_NL_DRUGIDENTIFIER"."DrugId"

@@ -1,0 +1,381 @@
+fileVersion: 1
+id: 72ce9eee-915f-4505-9374-f04ee44217f5
+name: STG_SCH_NL_ALLCLAIMS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0714741b-4e92-456f-a7af-aa44370628ff
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: RefillId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 01571ca9-fb83-44a9-bcb4-eef22312d4c5
+                stepCounter: 3c663567-78de-4dd6-bf80-d380dae86087
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cee0e0ba-e547-42c7-a08f-fe8fd0312c72
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PLANNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b222b659-d689-4039-8885-4d216874ceaa
+                stepCounter: 9b748fe8-3a66-4cae-9f76-74a3eec10e11
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd422fd8-2c60-4413-8e85-51e7763b70c7
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: THIRDPARTYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5270bc2f-aa82-48c6-873a-322b5de958bf
+                stepCounter: 9b748fe8-3a66-4cae-9f76-74a3eec10e11
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28dec909-ae43-4d43-87cb-a4bfb3aeefb3
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CLAIMSTATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3caeeb27-7656-4c22-91e1-80463dd0b60b
+                stepCounter: 3c663567-78de-4dd6-bf80-d380dae86087
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7147148-b16d-42e6-9235-925666f215d2
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PAID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN  "STG_SCH_NL_CLAIM"."ClaimState" = 3 
+              THEN (LAG("STG_SCH_NL_CLAIM"."ResponseTotalAmountPaid") OVER (PARTITION BY "STG_SCH_NL_REFILL"."RefillId","STG_SCH_NL_CLAIM"."ClaimSequence" ORDER BY "STG_SCH_NL_CLAIM"."RequestDate"))*-1
+              ELSE "STG_SCH_NL_CLAIM"."ResponseTotalAmountPaid"
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a969c55-7dbb-46df-b282-94ac10c2b25a
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: COPAY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_SCH_NL_CLAIM"."ClaimState" = 3 
+              THEN (LAG("STG_SCH_NL_CLAIM"."ResponsePatientPayAmount") OVER (PARTITION BY "STG_SCH_NL_REFILL"."RefillId","STG_SCH_NL_CLAIM"."ClaimSequence" ORDER BY "STG_SCH_NL_CLAIM"."RequestDate"))*-1
+              ELSE "STG_SCH_NL_CLAIM"."ResponsePatientPayAmount"
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 43ceced8-2c4e-4699-ae72-0bea858611ef
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AUTHNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 139a1d1a-a1f0-45a6-ae21-c4e51f794785
+                stepCounter: 3c663567-78de-4dd6-bf80-d380dae86087
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf98670b-aafb-4784-a0ca-e7ccfa9c43e2
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DATEFILLED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0795c38b-88f5-42a4-9656-5e9afaaffabc
+                stepCounter: 3c663567-78de-4dd6-bf80-d380dae86087
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d48a1296-5bcc-45f4-8c03-2d67078381d3
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REQUESTDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e9fc41d1-ec59-4e7c-be5e-fd4674a99cba
+                stepCounter: 3c663567-78de-4dd6-bf80-d380dae86087
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 24ad3085-da28-44de-9caa-2cc618359f6e
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CLAIMSEQUENCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 11379a2d-b94d-4c10-8952-b882b262e6bb
+                stepCounter: 3c663567-78de-4dd6-bf80-d380dae86087
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f94c178-bc76-491a-b62e-979719c488f5
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: VARCHAR(6)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: BIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 832e1fbe-9bd6-458b-9d04-7dae695bdca4
+                stepCounter: 9b748fe8-3a66-4cae-9f76-74a3eec10e11
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 004e9eaf-646d-49a0-8d73-34e48a666cb7
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: GROUPID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 863aa85b-e16d-4130-b5b7-9d6d8e6bbc71
+                stepCounter: 3c663567-78de-4dd6-bf80-d380dae86087
+            transform: |-
+              CASE WHEN "STG_SCH_NL_CLAIM"."ClaimState" = 3
+              THEN (LAG("STG_SCH_NL_CLAIM"."ResponseGroupId") OVER (PARTITION BY "STG_SCH_NL_REFILL"."RefillId", "STG_SCH_NL_CLAIM"."ClaimSequence" ORDER BY "STG_SCH_NL_CLAIM"."RequestDate"))
+              ELSE "STG_SCH_NL_CLAIM"."ResponseGroupId" 
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c546a920-c3f4-4cfa-b285-39e0fbe919d4
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ISRELEVANT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9eee71f0-e137-4ee4-92bf-5a744edf03cc
+                stepCounter: 3c663567-78de-4dd6-bf80-d380dae86087
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f6e2021-6707-4102-8199-800f0ccda623
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ACQ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 611fbd12-9fe7-4068-9bfb-3ac949d52a04
+                stepCounter: 3c663567-78de-4dd6-bf80-d380dae86087
+            transform: |-
+              CASE WHEN "STG_SCH_NL_CLAIM"."ClaimState" = 3
+              THEN "STG_SCH_NL_CLAIM"."AcquisitionCost" *-1
+              ELSE "STG_SCH_NL_CLAIM"."AcquisitionCost"
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ad0925d-632e-4323-94f9-eab53b28bf6c
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: VARCHAR(350)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("STG_SCH_NL_CLAIM"."RefillId",'(',"STG_SCH_NL_CLAIM"."DateFilled",'-',"STG_SCH_NL_CLAIM"."ClaimState",'-',ROW_NUMBER() OVER (PARTITION BY "STG_SCH_NL_CLAIM"."RefillId", "STG_SCH_NL_CLAIM"."ClaimSequence" ORDER BY "STG_SCH_NL_CLAIM"."RequestDate"),')')
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dca9db71-99fe-45a0-ab1c-920dfe632100
+          stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+        config: {}
+        dataType: VARCHAR(4096)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ROLLUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 09fa4027-85bc-4c28-b607-41ff6c293b0a
+                stepCounter: 9b748fe8-3a66-4cae-9f76-74a3eec10e11
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_SCH_NL_CLAIM: 3c663567-78de-4dd6-bf80-d380dae86087
+          STG_SCH_NL_PAYERS: 9b748fe8-3a66-4cae-9f76-74a3eec10e11
+          STG_SCH_NL_REFILL: 60239133-715f-4105-8b5c-58dde53be133
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_CLAIM
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_PAYERS
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_REFILL
+        join:
+          joinCondition: |
+            FROM {{ ref('TARGET', 'STG_SCH_NL_CLAIM') }} "STG_SCH_NL_CLAIM"
+            LEFT JOIN {{ ref('TARGET', 'STG_SCH_NL_PAYERS') }} "STG_SCH_NL_PAYERS"
+            ON "STG_SCH_NL_PAYERS"."ThirdPartyId" = "STG_SCH_NL_CLAIM"."ThirdPartyId"
+            LEFT JOIN {{ ref('TARGET', 'STG_SCH_NL_REFILL') }} "STG_SCH_NL_REFILL"
+            ON "STG_SCH_NL_REFILL"."RefillId" = "STG_SCH_NL_CLAIM"."RefillId"
+        name: STG_SCH_NL_ALLCLAIMS
+        noLinkRefs: []
+  name: STG_SCH_NL_ALLCLAIMS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

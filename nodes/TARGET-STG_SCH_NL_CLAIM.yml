@@ -1358,7 +1358,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: Claim
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'Claim') }} "Claim"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'Claim') }} "Claim"
+            WHERE "Claim"."ClaimState" <> 6
         name: STG_SCH_NL_CLAIM
         noLinkRefs: []
   name: STG_SCH_NL_CLAIM
