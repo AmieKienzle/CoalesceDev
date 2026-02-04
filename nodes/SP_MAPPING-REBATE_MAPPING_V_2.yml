@@ -1,6 +1,6 @@
 fileVersion: 1
-id: 32b2c7c2-2672-45ff-9762-de100f75d893
-name: REBATE_MAPPING
+id: 7f4fb9da-e589-4f20-805f-b27b70460c63
+name: REBATE_MAPPING_V_2
 operation:
   database: ""
   deployEnabled: true
@@ -13,8 +13,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d018e94e-f51f-4c89-9a51-98dc64e1fea2
-          stepCounter: 32b2c7c2-2672-45ff-9762-de100f75d893
+          columnCounter: f2eb81a6-8a66-4ea9-9cd4-db810b303f80
+          stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -32,8 +32,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d44a29b4-3791-4140-934d-da4abd89bee7
-          stepCounter: 32b2c7c2-2672-45ff-9762-de100f75d893
+          columnCounter: 45f0ebe5-688b-43d1-838c-a14ff7fed0dd
+          stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
         config: {}
         dataType: TIMESTAMP_TZ(9)
         defaultValue: ""
@@ -51,8 +51,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: b27281ac-50f6-4182-a873-4394d47c8901
-          stepCounter: 32b2c7c2-2672-45ff-9762-de100f75d893
+          columnCounter: ca278ae3-50ee-488c-9cf6-d9ab90b0a261
+          stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
         config: {}
         dataType: VARCHAR(256)
         defaultValue: ""
@@ -70,8 +70,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 3b64be99-4381-4d73-8d35-d6a8865b67ca
-          stepCounter: 32b2c7c2-2672-45ff-9762-de100f75d893
+          columnCounter: 68fb664e-c028-4c40-96ba-2ce9c91b5d60
+          stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
         config: {}
         dataType: VARCHAR(256)
         defaultValue: ""
@@ -89,8 +89,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 0e503d75-0e9f-421f-98ca-3d2882361d1e
-          stepCounter: 32b2c7c2-2672-45ff-9762-de100f75d893
+          columnCounter: 9743d399-e353-41e7-b556-d9b01e395c9e
+          stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
         config: {}
         dataType: VARCHAR(256)
         defaultValue: ""
@@ -108,8 +108,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: c18ec554-43f7-4da2-a841-6c7db7e00329
-          stepCounter: 32b2c7c2-2672-45ff-9762-de100f75d893
+          columnCounter: c043d902-360f-48b5-a8c5-887076ba68f2
+          stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
         config: {}
         dataType: VARCHAR(256)
         defaultValue: ""
@@ -127,8 +127,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 75629a49-4e4e-4e32-bb66-60e6a1ad66e2
-          stepCounter: 32b2c7c2-2672-45ff-9762-de100f75d893
+          columnCounter: 327f8843-e2fd-4f8a-94a3-2d38bd3620f1
+          stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
         config: {}
         dataType: FLOAT
         defaultValue: ""
@@ -141,7 +141,45 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-  name: REBATE_MAPPING
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89be1946-1c79-432c-94a4-ce1437b8945f
+          stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: NDC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46ec4b53-3cc1-48ab-9d21-ee71154d0bb7
+          stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: SUBSIDY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: REBATE_MAPPING_V_2
   schema: ""
   sqlType: Source
   type: sourceInput
