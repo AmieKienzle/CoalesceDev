@@ -1,5 +1,7 @@
 defaultStorageMapping: TARGET
 fileVersion: 1
 locations:
+  - PIXELBO
+  - RAW_GP_NEWLEAF
   - RAW_SCH_NEWLEAF
   - TARGET
