@@ -1,0 +1,491 @@
+fileVersion: 1
+id: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+name: InventoryItem
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: RAW_SCH_NEWLEAF
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0903afa-c1c9-43ec-9c5c-ff4e7f642797
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: InventoryItemId
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b1f2e97-0522-4645-a91e-9241562118b7
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ItemCode
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8fcb0ee5-9308-4737-8985-fcc70cf0a1c4
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: CreatedBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38656117-3ea5-42de-b9bf-1a94044f3276
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        name: AcquisitionUnitCost
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5012d0ae-9d94-40b3-b453-b4c907f20f3a
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: QOHUpdatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 696ab66a-b09a-4774-a6b5-2c0bd14c76b4
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PrimaryCatalogItemId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c9dc5f8f-318e-44a0-8238-448c9a163f30
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: LastOrderedDate
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9aa85f47-aa44-43bf-b5cd-91bd9595e5a0
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: QuantityAvailableUpdatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34b766aa-079f-44cd-9968-5a8524088543
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: LastReceivedDate
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51b52185-86bd-49c9-bea0-f232c97e5fed
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: SecondaryCatalogItemId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 568e3956-1eca-4e90-8abe-71b45b4c8246
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: NUMBER(15,4)
+        defaultValue: ""
+        description: ""
+        name: QuantityOnHand
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d855dc4-2f5f-4932-bc33-7598823d122a
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: InventoryId
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1268fc4c-1d02-40c0-909a-f2597d699b5b
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: Item
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 277c0411-e63b-44d7-a2d5-ca2c864685f2
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 47ced256-9fac-4c9b-b696-2c61bc32f261
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LastPONumber
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 064f3760-1f12-46ae-8669-90e2a39d6ce8
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: NUMBER(11,4)
+        defaultValue: ""
+        description: ""
+        name: FreezeQuantity
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c98ca20c-e138-4313-8577-228d195838e0
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: NUMBER(11,4)
+        defaultValue: ""
+        description: ""
+        name: ReorderPoint
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ef59566-6439-499f-90ac-f14869a1ef21
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsRobotic
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb5ba794-5995-4b66-8119-4dc19225eb33
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ReorderQuantity
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b32c6bf-fdf4-4317-823c-128980a0101d
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 159fd271-323c-4408-9a3b-66e6af794514
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: CreatedOn
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3e514b8-fe40-46ee-86aa-895110351fd6
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: NUMBER(15,4)
+        defaultValue: ""
+        description: ""
+        name: QuantityAvailable
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c812d4b3-7853-4b6d-9912-20de4480b92a
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: IsRemoteFillEligible
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19baf925-4e38-4bd8-a916-b45423650d1a
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b88ee4a-320e-4acb-a838-40fe77eff48a
+          stepCounter: b776e7dd-5cd9-49a2-bff5-a83b3e7f18af
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: InventoryItem
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

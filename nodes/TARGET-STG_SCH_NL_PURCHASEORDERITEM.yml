@@ -1,0 +1,264 @@
+fileVersion: 1
+id: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+name: STG_SCH_NL_PURCHASEORDERITEM
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08b4cbd0-7e2c-4228-b31b-fb534ad38f68
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PurchaseOrderItemId
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de035a54-a7ef-43b4-9ee0-de2f33432897
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13693cd3-276a-460b-9d4f-acb3ce02445c
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: InventoryItemId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10436cef-982c-412e-aa38-3ba3a0ad3de7
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4585e40a-082b-4fb2-93e0-8ace2a7e82c2
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: VerifiedZeroReceived
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab6ca137-84e6-4e34-8baa-f2715a3a9360
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22cc0fef-d13e-43ae-a6cf-653f22c84b6e
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: TotalDollars
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a8e90e4e-06b8-4b4d-b7c8-0b44fe422393
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 70d738c8-e63e-456f-b613-bb721b19fb7d
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: Source
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cd5e73ce-447b-4935-8da4-2ead4b9062d2
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 564df67d-2d2e-4804-874a-e698ff9bc729
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7e7a32a7-b1c5-4cd9-bdd6-ae1c03fae5c2
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f197962-eebf-4bdf-b076-1920572dcf89
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CatalogItemId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44c8cf7a-62b8-472d-8a42-c1986a048d34
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6091a700-0bc0-4a37-85f8-4ab6adb29f4b
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: SpecialOrderItemId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1bd34a73-6c2f-46da-81b9-f9f68b519cfc
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cfb92d4b-0928-4bda-905f-26605bb109ef
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: NUMBER(19,4)
+        description: ""
+        name: AcquisitionCost
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f2b9eb59-c5d5-4aa5-b29a-ebdaa250ecc6
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94bd43e8-a7b1-4c18-8524-a36b3bbdf866
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PurchaseOrderId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b53e332e-5032-4e3f-b29c-b542b3d88cb5
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08ac484a-4270-40a5-b88e-f435fc3705c7
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: QuantityOrdered
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69664127-aa4e-4ca6-b99c-169d23d118de
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c12e30d-2556-44ec-9380-183ea5a9a79d
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b2596e2a-1faa-4c0a-a446-1b53cd83514f
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d003633-983e-4bc9-a1ac-2b910530f30c
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: QuantityReceived
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 001bf9f7-ba96-4c63-951f-29b36a8844d1
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a72061ed-a1de-4a34-8ffe-44be3a8c6ff0
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: DateAdded
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ff4ae8e0-ccb3-4357-b10e-e24166b69ee5
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5c5e925-4522-4dba-bc0b-19df3f305133
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6af34a84-1ef9-43b2-ae68-0f31329fec4e
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 809939d7-d24d-441c-8f81-131930f3ebd1
+          stepCounter: 714ec1db-1dc5-4177-b895-64e0e96bbd03
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 56e71b1c-fa8a-477f-a688-09ccc7e38c3c
+                stepCounter: fc4f45db-269c-43bb-b688-ee635414d62a
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          PurchaseOrderItem: fc4f45db-269c-43bb-b688-ee635414d62a
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_SCH_NEWLEAF
+            nodeName: PurchaseOrderItem
+        join:
+          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'PurchaseOrderItem') }} "PurchaseOrderItem"
+        name: STG_SCH_NL_PURCHASEORDERITEM
+        noLinkRefs: []
+  name: STG_SCH_NL_PURCHASEORDERITEM
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,222 @@
+fileVersion: 1
+id: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+name: STG_SCH_NL_ADJUDICATIONFORMAT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ccf2f9b-4ece-4aa5-93cd-43ea1946e23a
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: AdjudicationId
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0616c022-eacc-4567-8de1-ea0d76011adf
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 714d251d-7515-4280-be8b-6a30aec4ad33
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: be2c7058-fd40-4c1a-b33e-c86380542d13
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20f71195-09d3-4715-8469-ca071814d82e
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: VARCHAR(12)
+        description: ""
+        name: ProcessNbr
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0b06879a-b70a-4200-b348-0301e787bc6a
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1c0681ba-b072-4ab6-873f-3cdec385de0f
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IsActive
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f9a444a0-1458-4757-be16-f46357f76c98
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 24b8fc25-ae7d-4c7c-a1c9-cee7c57365ce
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: VARCHAR(80)
+        description: ""
+        name: FormatName
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 18815d73-2d6f-41f9-bb1d-c275bbd2b072
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c987be35-ac26-4c70-a2c6-7cc808553b0e
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 85948b6b-76aa-4ece-b5ee-c7ba89fff9a8
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ccf54e36-2581-4235-be43-d86f3530f1a2
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: FormatVersion
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0000f55-508e-48d8-b460-bcd2c7fcd34f
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c3c76f0-18af-4d12-8cf2-b9c5a71006c3
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: VARCHAR(6)
+        description: ""
+        name: BinNbr
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cbe8e433-48af-415d-9c24-129c3ce3daff
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ee7c31c-ab4c-4fa4-8187-29d4feb7219a
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: FormatType
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7042168f-aace-4d98-9c8a-b15e52879624
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d449cbe-405f-4a02-9655-f6e54a884319
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: RepositoryVersionDate
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8c6cd434-3af5-4016-96a4-a47a7adab5d7
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14b37d29-d1eb-4bcc-95b5-83ad9a5ee622
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: EffectiveDate
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ce5512f4-624d-4855-99c8-a71af3eb6dda
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f32e2acb-dea1-4c06-a8eb-fd9f99663127
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bbb285ed-ad8e-4daa-986c-f6bfb89a9cb4
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f257567-1ce1-4008-862d-a57e362baa75
+          stepCounter: 6e1041ae-f7b9-4f33-81d3-3a3aa1761b64
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b5cd2155-64cc-41c0-a89b-8dcdfb95bb67
+                stepCounter: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          AdjudicationFormat: 7df8c415-f1bb-4836-9a2c-d510b6c40ea9
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_SCH_NEWLEAF
+            nodeName: AdjudicationFormat
+        join:
+          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'AdjudicationFormat') }} "AdjudicationFormat"
+        name: STG_SCH_NL_ADJUDICATIONFORMAT
+        noLinkRefs: []
+  name: STG_SCH_NL_ADJUDICATIONFORMAT
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

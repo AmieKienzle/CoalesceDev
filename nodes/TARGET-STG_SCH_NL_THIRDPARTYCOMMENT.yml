@@ -1,0 +1,194 @@
+fileVersion: 1
+id: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+name: STG_SCH_NL_THIRDPARTYCOMMENT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a48f63fd-1193-425b-9708-649b139d6a17
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ThirdPartyCommentId
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6bf811fd-1308-4740-bbab-4af04b323035
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4aff597-c8ee-418f-a7af-369162647f9a
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: UpdatedBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0b26a196-a4ea-4efb-ac5c-ae8ef07c207f
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6f20ca1-c3ba-4b4e-b5c4-bef88db2ada0
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: VARCHAR(4096)
+        description: ""
+        name: Comment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e75eea7e-7218-4f25-bad0-ae6c963cb784
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2382211-42ea-4256-9679-afbe469c75ad
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CreatedBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4e25b963-e5ea-4e8e-b562-930470ce89f3
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b892f66a-dd6b-46ab-bf00-a3ade002921e
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PriorityCode
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 50b8a75b-a3b0-495e-adae-709467ca8f20
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c91eacb6-eb3e-4e5e-a2d9-9662beae95a8
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UpdatedOn
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b81393c5-7e39-42e0-b79c-8cf2f69164d1
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00a618ae-8930-4d12-9af6-ac5186366707
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: CreatedOn
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a784c007-de93-477c-8f0f-45308c4c01ea
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a678126-a9a3-44f7-8803-f317836c3059
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ThirdPartyId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 71c93300-d688-4e7f-95fd-49f9c320b0c9
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8968eba4-c95f-4ebc-89a6-671a6ba62faa
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: CommentDate
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8c9e3a7d-ae7f-4e45-97a8-d1fdc8a2e77a
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6fd97e81-b84e-4382-98bc-90f34bcda3c6
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _fivetran_deleted
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d3eed08-fe2c-49b0-9356-effa33d53d58
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 286523cd-dac0-4ef3-bfcc-0966f98f2a9c
+          stepCounter: 9cf4b742-2512-45d6-9cf9-c98fbc54c6c8
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _fivetran_synced
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: db60756a-4fc0-45cf-bbef-6e43217ae3fa
+                stepCounter: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          ThirdPartyComment: 9fe73661-04d8-4322-ab52-9f17dcbaf534
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: RAW_SCH_NEWLEAF
+            nodeName: ThirdPartyComment
+        join:
+          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'ThirdPartyComment') }} "ThirdPartyComment"
+        name: STG_SCH_NL_THIRDPARTYCOMMENT
+        noLinkRefs: []
+  name: STG_SCH_NL_THIRDPARTYCOMMENT
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

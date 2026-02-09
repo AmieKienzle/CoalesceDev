@@ -1,0 +1,272 @@
+fileVersion: 1
+id: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+name: STG_SCH_NL_NEEDBY
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d95fd726-391e-46d3-982b-90ca7600bf82
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CUSTOMERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cbe589f5-9971-49f6-8de0-81450a4bfff0
+                stepCounter: ff2be468-4036-4d9d-b280-6db7304785ea
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6fc22ff-253e-415a-ade9-8be49b3ff9a2
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REFILLID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b484fc53-471f-4886-a0a1-ef86306bb0c2
+                stepCounter: ff2be468-4036-4d9d-b280-6db7304785ea
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d39b59f4-fea1-4d88-ae50-0bb30d8fdb13
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RXNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a571fe9d-27be-4162-8e87-8c5b1ac7bb0e
+                stepCounter: 560d574d-6bca-4c32-b972-c796b2562f77
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d3cd7b20-6994-4f5f-93d1-ef78f5ba5db9
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ORDERNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c5c5d829-9262-4f6a-844c-4f033e088fda
+                stepCounter: 72d1ffc3-dea7-47dd-9336-df1b8ce583b2
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8512328-8bd9-4551-8a3c-ba4a2e9ec266
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DELIVERYMETHOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5afe99f7-b07b-4119-a638-6e92c074145e
+                stepCounter: 72d1ffc3-dea7-47dd-9336-df1b8ce583b2
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9a4bf12f-d629-49ba-8808-0b0c0dbf8bf9
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: COMPLETEDON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b963d60f-f98b-4927-b930-4815f152fe49
+                stepCounter: 72d1ffc3-dea7-47dd-9336-df1b8ce583b2
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9737792-aa50-4323-9ba6-8e29d5d1f61e
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CUSTOMERTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7c3fd791-bf72-4bfe-bb00-2048305f5f7c
+                stepCounter: 734c72bb-41e1-41c2-a744-8fb200f2e0dd
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5505f160-d25d-4364-a5f6-411d8e1d6807
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRACKINGNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6b90138f-6803-4826-9b70-2fcf22888498
+                stepCounter: 4c36cdaa-3dc3-4363-8721-71403805ef30
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67589bb4-2826-438e-949b-845ec1fdfa75
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ASPMONTH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b963d60f-f98b-4927-b930-4815f152fe49
+                stepCounter: 72d1ffc3-dea7-47dd-9336-df1b8ce583b2
+            transform: DATE_FROM_PARTS(YEAR("STG_SCH_NL_ENTERPRISEORDER"."CompletedOn"),MONTH("STG_SCH_NL_ENTERPRISEORDER"."CompletedOn"),01)
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93849428-73bd-453d-a95e-c8ae0d218a84
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CANCELLED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a1b62d09-4d78-4fcd-88bc-f8b7b3f362a5
+                stepCounter: 72d1ffc3-dea7-47dd-9336-df1b8ce583b2
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_SCH_NL_CUSTOMERS: 734c72bb-41e1-41c2-a744-8fb200f2e0dd
+          STG_SCH_NL_ENTERPRISEODERENTRY: 9402d27e-8e35-4781-b111-f1d594ee7fcf
+          STG_SCH_NL_ENTERPRISEORDER: 72d1ffc3-dea7-47dd-9336-df1b8ce583b2
+          STG_SCH_NL_REFILLSHIPMENT: 4c36cdaa-3dc3-4363-8721-71403805ef30
+          STG_SCH_NL_RX: 560d574d-6bca-4c32-b972-c796b2562f77
+          STG_SCH_NL_WORKQUEUEITEM: ff2be468-4036-4d9d-b280-6db7304785ea
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_CUSTOMERS
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_ENTERPRISEODERENTRY
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_ENTERPRISEORDER
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_REFILLSHIPMENT
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_RX
+          - locationName: TARGET
+            nodeName: STG_SCH_NL_WORKQUEUEITEM
+        join:
+          joinCondition: |+
+            FROM {{ ref('TARGET', 'STG_SCH_NL_ENTERPRISEODERENTRY') }} "STG_SCH_NL_ENTERPRISEODERENTRY"
+            JOIN {{ ref('TARGET', 'STG_SCH_NL_WORKQUEUEITEM') }} "STG_SCH_NL_WORKQUEUEITEM"
+            ON "STG_SCH_NL_WORKQUEUEITEM"."WorkQueueItemId" = "STG_SCH_NL_ENTERPRISEODERENTRY"."ItemFillId"
+            JOIN {{ ref('TARGET', 'STG_SCH_NL_RX') }} "STG_SCH_NL_RX"
+            ON "STG_SCH_NL_RX"."RxId" = "STG_SCH_NL_WORKQUEUEITEM"."RxId"
+            JOIN {{ ref('TARGET', 'STG_SCH_NL_ENTERPRISEORDER') }} "STG_SCH_NL_ENTERPRISEORDER"
+            ON "STG_SCH_NL_ENTERPRISEORDER"."EnterpriseOrderId" = "STG_SCH_NL_ENTERPRISEODERENTRY"."EnterpriseOrderId"
+            JOIN {{ ref('TARGET', 'STG_SCH_NL_CUSTOMERS') }} "STG_SCH_NL_CUSTOMERS"
+            ON "STG_SCH_NL_CUSTOMERS"."CustomerId" = "STG_SCH_NL_WORKQUEUEITEM"."CustomerId"
+            LEFT JOIN {{ ref('TARGET', 'STG_SCH_NL_REFILLSHIPMENT') }} "STG_SCH_NL_REFILLSHIPMENT"
+            ON "STG_SCH_NL_REFILLSHIPMENT"."EnterpriseOrderId" = "STG_SCH_NL_ENTERPRISEODERENTRY"."EnterpriseOrderId"
+
+            WHERE "STG_SCH_NL_WORKQUEUEITEM"."StatusId" = 1
+            AND "STG_SCH_NL_ENTERPRISEODERENTRY"."WorkflowState" <> 4
+
+            GROUP BY "STG_SCH_NL_WORKQUEUEITEM"."RefillId", "STG_SCH_NL_WORKQUEUEITEM"."CustomerId", "STG_SCH_NL_RX"."RxNumber", "STG_SCH_NL_ENTERPRISEORDER"."Identifier","STG_SCH_NL_ENTERPRISEORDER"."CompletedOn","STG_SCH_NL_CUSTOMERS"."CUSTOMERTYPE","STG_SCH_NL_REFILLSHIPMENT"."TrackingNumber","STG_SCH_NL_ENTERPRISEORDER"."DeliveryMethod","STG_SCH_NL_ENTERPRISEORDER"."IsCancelled"
+
+        name: STG_SCH_NL_NEEDBY
+        noLinkRefs: []
+  name: STG_SCH_NL_NEEDBY
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

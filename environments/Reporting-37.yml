@@ -1,10 +1,9 @@
 fileVersion: 1
 id: "37"
 mappingDefinitions:
-
-  RAW_GP_NEWLEAF:
+  RAW_SCH_NEWLEAF:
     database: SCH_RAW
-    schema: GP_NEWLEAF_DBO
+    schema: dbo
   TARGET:
     database: SCH_DEV
     schema: REPORTING
