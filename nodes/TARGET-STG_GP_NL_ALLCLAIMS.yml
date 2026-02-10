@@ -391,6 +391,50 @@ operation:
                 stepCounter: 5ede5222-f9cb-40d0-887d-79da0809459b
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3710c18-0699-4fa6-af83-82da03717038
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(350)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("STG_GP_NL_CLAIM"."REFILLID",'(',"STG_GP_NL_CLAIM"."DATEFILLED",'-',"STG_GP_NL_CLAIM"."CLAIMSTATE",'-',ROW_NUMBER()OVER(PARTITION BY "STG_GP_NL_CLAIM"."REFILLID","STG_GP_NL_CLAIM"."CLAIMSEQUENCE" ORDER BY "STG_GP_NL_CLAIM"."REQUESTDATE"),')')
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33b1bd95-4225-4d26-bc70-c910a10a5dff
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ACQ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_GP_NL_CLAIM"."CLAIMSTATE" = 3
+              THEN "STG_GP_NL_CLAIM"."ACQUISITIONCOST"*-1
+              ELSE "STG_GP_NL_CLAIM"."ACQUISITIONCOST"
+              END
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
