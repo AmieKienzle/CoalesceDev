@@ -1,0 +1,166 @@
+fileVersion: 1
+id: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+name: STG_REBATE_MAPPING_V_2
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b25b74e5-6582-4758-b6d9-7ba4e82d3ee4
+          stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: _LINE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f2eb81a6-8a66-4ea9-9cd4-db810b303f80
+                stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d191162d-f357-4631-ae83-bed64eb1eae0
+          stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 45f0ebe5-688b-43d1-838c-a14ff7fed0dd
+                stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96a70a80-cd3e-413f-bc07-42f7542c47d5
+          stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: END_FILL_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ca278ae3-50ee-488c-9cf6-d9ab90b0a261
+                stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c4c13a2-7330-43c1-bec6-2d0da96538f5
+          stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: REBATE_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68fb664e-c028-4c40-96ba-2ce9c91b5d60
+                stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7efd5ee-a5fe-4aea-8b06-c3ff79309e45
+          stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: START_FILL_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9743d399-e353-41e7-b556-d9b01e395c9e
+                stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b701369b-c9ac-49f4-8719-0cb934d82553
+          stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: MASTER_DRUG_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c043d902-360f-48b5-a8c5-887076ba68f2
+                stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ce196f8-baf4-4e09-b5ec-a173c2cf0766
+          stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: REBATE_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 327f8843-e2fd-4f8a-94a3-2d38bd3620f1
+                stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b752bd83-b453-4140-b4ca-b6ad27bcd13c
+          stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: NDC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 89be1946-1c79-432c-94a4-ce1437b8945f
+                stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dd084d00-cd52-40be-8a2f-737c3223cc0d
+          stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: SUBSIDY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 46ec4b53-3cc1-48ab-9d21-ee71154d0bb7
+                stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          REBATE_MAPPING_V_2: 7f4fb9da-e589-4f20-805f-b27b70460c63
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SP_MAPPING
+            nodeName: REBATE_MAPPING_V_2
+        join:
+          joinCondition: FROM {{ ref('SP_MAPPING', 'REBATE_MAPPING_V_2') }} "REBATE_MAPPING_V_2"
+        name: STG_REBATE_MAPPING_V_2
+        noLinkRefs: []
+  name: STG_REBATE_MAPPING_V_2
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

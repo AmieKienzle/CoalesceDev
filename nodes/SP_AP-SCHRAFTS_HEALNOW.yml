@@ -1,0 +1,263 @@
+fileVersion: 1
+id: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+name: SCHRAFTS_HEALNOW
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SP_AP
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f95ff4c1-5a18-4b19-a6fe-8b2e9669fc41
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: _FILE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e154994b-0ae6-4a71-9de4-f87cb581c6c8
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: _LINE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7da894f-95eb-477c-aed9-58b01b3bbced
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _MODIFIED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ca64056-82e0-4eac-b349-be8d34c6ff5e
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: def96d96-e4ed-47d2-816b-dca4d5d8c8aa
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05cc4f8d-ab89-4ac5-ac12-a4d9c1fb0f2d
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: FEES_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7398847a-1b50-409d-9bf5-64205cbdece1
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: TAX_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23aabf56-ef4a-40f2-9d09-c8c1ceaa27bb
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: SUBTOTAL_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f326fec-34f5-4720-8c08-1243beaf626a
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: SHIPPING_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc9420ec-234c-4c05-9e66-bef27698abf9
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: TOTAL_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5aa06814-e325-4144-b8a8-ab55a14a1c4e
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PATIENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fae808f1-aca0-459d-aa71-b1818988fa7e
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ORDER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 956adcd4-8a07-427c-8f06-606887888150
+          stepCounter: c42079b4-8f2b-41ee-88d3-76bf32d6f0fc
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SCHRAFTS_HEALNOW
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

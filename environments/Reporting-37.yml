@@ -1,15 +1,15 @@
 fileVersion: 1
 id: "37"
 mappingDefinitions:
-  PIXELBO:
+  SP_AP:
     database: SCH_RAW
-    schema: FT_PIXEL_BACKOFFICE_DB_1_DBO
-  RAW_GP_NEWLEAF:
+    schema: FT_SHAREPOINT
+  SP_MAPPING:
     database: SCH_RAW
-    schema: GP_NEWLEAF_DBO
-  RAW_SCH_NEWLEAF:
+    schema: FT_SHAREPOINT_MAPPING
+  SP_PRICELISTS:
     database: SCH_RAW
-    schema: dbo
+    schema: FT_SHAREPOINT_PRICELISTS
   TARGET:
     database: SCH_DEV
     schema: REPORTING

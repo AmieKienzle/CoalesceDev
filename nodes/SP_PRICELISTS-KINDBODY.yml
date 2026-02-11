@@ -1,0 +1,206 @@
+fileVersion: 1
+id: 60371be0-099f-47c7-9a60-ab6258574d08
+name: KINDBODY
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SP_PRICELISTS
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aef87843-f6de-4502-9357-221291c3f84f
+          stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: _LINE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8aa638b-7af0-4718-8a14-63a50f52e9e7
+          stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 44c103c8-4b89-42ed-be21-624fb366ca01
+          stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: PRINCETON
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9f8eae4-76b9-47bc-bee1-56ff4083a0c8
+          stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: JCODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4eceff85-83cc-49b2-a130-0d86aa9ceb8a
+          stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: SANA
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 990b24fc-d2ab-4829-b310-2119eb6d98fd
+          stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: REIMBURSEMENT_FOR_ALL_GROUPS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 193d66e8-24c6-47b3-afc1-e30c429518d9
+          stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: MEDICATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: baaf086f-e79e-48cd-931c-9994b62f870f
+          stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: REIMBURSEMENT_FOR_SANA_SMITH_RX
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7539455a-834e-40b3-9de7-42a399238b46
+          stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: NDC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c094c9b2-1019-43e3-ac7a-2b0a273ec4a2
+          stepCounter: 60371be0-099f-47c7-9a60-ab6258574d08
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: REIMBURSEMENT_FOR_MANAGED_CARE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: KINDBODY
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
