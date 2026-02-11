@@ -281,6 +281,46 @@ operation:
                 stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c313fa3-6298-4cdb-852b-749781242845
+          stepCounter: 164f9a49-c84f-4c7c-a108-5cfc740cec9c
+        config: {}
+        dataType: VARCHAR(350)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f3710c18-0699-4fa6-af83-82da03717038
+                stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e3d35180-fdd5-4b3b-9985-a5b9e0a6824a
+          stepCounter: 164f9a49-c84f-4c7c-a108-5cfc740cec9c
+        config: {}
+        dataType: NUMBER(19,4)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ACQ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 33b1bd95-4225-4d26-bc70-c910a10a5dff
+                stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

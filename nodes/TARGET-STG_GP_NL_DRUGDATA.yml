@@ -167,9 +167,9 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: ""
+              - columnCounter: 2895ca93-a853-4ad5-9553-b7c2acef398e
+                stepCounter: dc7956d3-b4d4-4747-a103-e86411c47087
+            transform: CASE WHEN "STG_GP_NL_DRUG"."PACKAGEQUANTITY" = 0 THEN 1 ELSE "STG_GP_NL_DRUG"."PACKAGEQUANTITY" END
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
