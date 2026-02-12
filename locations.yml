@@ -1,6 +1,10 @@
 defaultStorageMapping: TARGET
 fileVersion: 1
 locations:
+  - PIXELBO
+  - PIXELBO_CAPRX
+  - RAW_GP_NEWLEAF
+  - RAW_SCH_NEWLEAF
   - SP_AP
   - SP_MAPPING
   - SP_PRICELISTS
