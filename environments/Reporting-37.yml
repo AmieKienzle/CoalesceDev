@@ -4,6 +4,9 @@ mappingDefinitions:
   PIXELBO:
     database: SCH_RAW
     schema: FT_PIXEL_BACKOFFICE_DB_1_DBO
+  PIXELBO_CAPRX:
+    database: SCH_RAW
+    schema: FT_PIXEL_BACKOFFICE_DB_1_CAPRX
   TARGET:
     database: SCH_DEV
     schema: REPORTING
