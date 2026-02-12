@@ -1,0 +1,189 @@
+fileVersion: 1
+id: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+name: STG_PIXELBO_REFILL_INFO
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: To prepare info related to refills
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8350fd49-b838-4f6b-ad09-edbf5edb3c00
+          stepCounter: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+        config: {}
+        dataType: NUMBER(38,0)
+        description: For Join
+        name: RefillsID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 64c59524-aba3-4bfc-a9c2-65590fad0284
+                stepCounter: 4eb7cfa7-3d64-4fbb-8818-905e16c8bf5e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e89c8c1a-2dba-4b43-8c06-f4849dacea4b
+          stepCounter: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+        config: {}
+        dataType: NUMBER(38,0)
+        description: For Join
+        name: PRESCRIPTIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 800a6cec-f049-46ca-b7cc-86a02e2d1f73
+                stepCounter: 4eb7cfa7-3d64-4fbb-8818-905e16c8bf5e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e3e40b22-504e-4658-abd1-9e67ca9345d1
+          stepCounter: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: FOLLOWUPDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0babd302-59b3-43e0-9fe0-0529967dba4e
+                stepCounter: 4eb7cfa7-3d64-4fbb-8818-905e16c8bf5e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d5ed900-2605-4af7-91bc-6d7a77e26fe9
+          stepCounter: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+        config: {}
+        dataType: NUMBER(38,0)
+        description: For Join
+        name: TREATMENTREGIMENID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 317fbdc7-899a-4c3c-b27e-c438096df44b
+                stepCounter: 4eb7cfa7-3d64-4fbb-8818-905e16c8bf5e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 936ef61e-101f-49b4-8fd7-f2c4740a85af
+          stepCounter: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+        config: {}
+        dataType: NUMBER(38,0)
+        description: For Join
+        name: REFILLSTATUSID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 596b8343-9758-428f-a8d8-14ce9ad6b336
+                stepCounter: 4eb7cfa7-3d64-4fbb-8818-905e16c8bf5e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a97fcf7b-2104-480c-ba3b-dbb5f25cd94a
+          stepCounter: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+        config: {}
+        dataType: NUMBER(38,0)
+        description: For Join
+        name: DRUGID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2b5e6e0b-ad90-41e5-8637-06b519dacb7c
+                stepCounter: 4eb7cfa7-3d64-4fbb-8818-905e16c8bf5e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62c67d92-d254-4f3c-80bd-9dc901b872ed
+          stepCounter: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: REFILLSTATUSNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7350349-b770-4771-b84b-0937cee8b3b9
+                stepCounter: 1990e832-eee4-43fd-b5a1-f861a6f2b24f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0876f640-5c39-4fe7-8384-335fa40ce1dd
+          stepCounter: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+        config: {}
+        dataType: NUMBER(38,0)
+        description: For Join
+        name: PharmacyAssetsID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 25a8c071-2816-45be-8374-66f424cd3137
+                stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 669fbf63-076e-4b25-b508-3d7ace70f34d
+          stepCounter: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+        config: {}
+        dataType: VARCHAR(256)
+        description: For Select
+        name: NDC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b1f76db7-0d16-4c60-8ba3-7d7ac8ac68df
+                stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe2fd6fa-367e-4c81-8585-84ecd25957f9
+          stepCounter: 4aea6530-690e-4c30-a8fd-0b41f47d8301
+        config: {}
+        dataType: VARCHAR(200)
+        description: For Select (drug name)
+        name: PRODUCTTITLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d81c72c4-1d8b-4e2e-b6ca-db7f4905f29c
+                stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_PIXELBO_PHARMACYASSETS: 73811478-e11a-48f0-932b-70509b978b8c
+          STG_PIXELBO_REFILLS: 4eb7cfa7-3d64-4fbb-8818-905e16c8bf5e
+          STG_PIXELBO_REFILLSTATUSES: 1990e832-eee4-43fd-b5a1-f861a6f2b24f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_PHARMACYASSETS
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_REFILLS
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_REFILLSTATUSES
+        join:
+          joinCondition: |-
+            FROM {{ ref('TARGET', 'STG_PIXELBO_REFILLS') }} "STG_PIXELBO_REFILLS"
+            JOIN {{ ref('TARGET', 'STG_PIXELBO_REFILLSTATUSES') }} "STG_PIXELBO_REFILLSTATUSES" ON "STG_PIXELBO_REFILLS"."REFILLSTATUSID" = "STG_PIXELBO_REFILLSTATUSES"."ID"
+            JOIN {{ ref('TARGET', 'STG_PIXELBO_PHARMACYASSETS') }} "STG_PIXELBO_PHARMACYASSETS" ON "STG_PIXELBO_REFILLS"."DRUGID" = "STG_PIXELBO_PHARMACYASSETS"."ID"
+        name: STG_PIXELBO_REFILL_INFO
+        noLinkRefs: []
+  name: STG_PIXELBO_REFILL_INFO
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,706 @@
+fileVersion: 1
+id: 753815ba-4452-44e2-869c-4662c9134521
+name: STG_PIXELBO_ALL_INSURANCES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Join of OrderRefillInsurances, Insurance, InsuranceCompany, BaseInsuranceTemplate. Started with OrderRefillInsurances
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 21b4a841-5a7e-42de-98a3-16e5921118c7
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: OrderRefillInsurancesID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a4df1ee5-3643-471a-bfc6-d5d2d76f9e01
+                stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8dba8e7c-a445-4512-a533-42161bf47e04
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: PATIENTPAYMARGIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 11ca0001-ab5c-476f-a6b9-0a0fec99a2fe
+                stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e1f50eec-2cf9-4049-9c30-2326a790f9fe
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: INSURANCEPAYAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3b3d2d66-3d4a-409e-b175-babdac417243
+                stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 85e020a1-90f7-423a-b5e3-b9213d2acf36
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INSURANCEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a9abb4de-bada-460a-9f0c-4cffbcc579ae
+                stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0243427e-4c70-4045-9c06-8917bec124ea
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: PATIENTPAYAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 13979c62-466e-4758-954f-a397d0b657f4
+                stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d01ec7e4-a322-4b70-aabb-a3e7cfa6a9e4
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: INSURANCEPAYMARGIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f75c3d0-9c43-4201-855b-6d76d8529ec0
+                stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41297ca3-c7b5-48b4-9722-6ce5b1608110
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDERITEMID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c3b7beaa-6d64-46c2-a533-b0d7e91c0f9d
+                stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e742ea7-b56c-4f55-8424-e5eb621155d2
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: OrderRefillInsurances_FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9e5e694-6e03-4870-998d-b32d1873df9b
+                stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f0f37c8-2426-4db7-992a-dfe0d03a0c2f
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: OrderRefillInsurances_FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2c5936ff-9dfe-45f6-8a02-2afc8769af97
+                stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79824123-a10e-4bb9-8495-a86186c398b0
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: Number(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: InsuranceTemplateId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cd24f470-3b4e-4912-b711-cdff77c536a3
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffe5a175-1bbb-4d33-bb2f-4a63f24e10f4
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: InsuranceID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 51422c82-e285-4643-ad2e-4794cade3c18
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9fe782c3-27fd-491a-8748-bcaf5336c430
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: InsuranceSTATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e6234d5-2844-46e5-b3a6-a0742abe2cc6
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 087dadf1-c273-47e9-a177-cc32495e2a4d
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: DEDUCTIBLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5729ab00-bbc8-47e1-9af2-2d4b44425535
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0fc3f95a-0ada-424c-bb97-d4fd11acac56
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: FERTILITYCOVERAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a78d2205-a905-46be-bc8e-1a58df799b1d
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a60d1cd-fd87-4903-88e0-c559e3b1c768
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: COINSURANCECOVERAGEMODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0022f0bd-3ed7-45c1-99ab-1f93d14b7af3
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d997074a-2957-4603-8bb6-6d78bb8ccf3c
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISENABLED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 21db70a0-c207-46db-b504-59b30ec2dfbb
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97edec9e-5bd2-4012-a617-3ef6315c74e3
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRIORITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2860b901-3887-40c1-8195-8719969ee586
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98abb8b7-f91f-4d16-ba46-6960bb5d073e
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: LIFETIMECAP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cef5057e-2850-4cf2-923c-a1d23380b9d6
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93694335-5f5a-4d63-b886-7048e11d0d47
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: COMBINEDCAPOPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8139fd82-c1c0-4425-8b23-609e887d97db
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0e835bb-07f8-4a04-b42e-345546bd44bf
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: ANNUALCAP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e3145d10-f964-4a32-8f49-ca289d8a9838
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5751b8d0-2360-44f2-88c9-25f4e7053958
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: DATE
+        description: ""
+        name: ENDDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 41122411-cb90-4cd1-aba8-945a5588d1b7
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94cf9fdd-67d8-4aff-9a93-cd7618e629fe
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INSURANCETEMPLATEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cd24f470-3b4e-4912-b711-cdff77c536a3
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76af875e-13de-4ba7-9ecd-a1416f08e03e
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DISCRIMINATOR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e097a51f-385e-478e-8f4a-c789cd270411
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ccdd0c80-ef18-490f-b4de-49851b21c5e1
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: InsuranceNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 165d26ae-41fe-47a7-9fe8-1b6f6d943817
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3677ca65-1a9e-48d2-b6d1-50d421830dfc
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: DATE
+        description: ""
+        name: STARTDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 612d9547-fbba-45a1-a93b-0620e7f946ec
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8eeff703-881f-4b31-b525-88597666714f
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: COINSURANCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 33ef1ce8-e954-4bd5-90cc-dfdc58a51078
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6eb74d13-9666-4eff-93de-d5d6959e9d85
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: VARCHAR(512)
+        description: ""
+        name: OWNERCHANGELOGS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 95558e23-f7c6-48e9-b8da-4295b5038f97
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b56b806a-9de6-4e13-9b40-7c35b97423e3
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: VARCHAR(510)
+        description: ""
+        name: INSURANCENUMBERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a04b6a71-4949-40bc-9038-b1b298e5ffb3
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2bd7bba8-f1e2-449b-992e-89f4cad67888
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: VARCHAR(1000)
+        description: ""
+        name: DESCRIPTIONANDNOTES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6634a7e4-c1b5-454f-a5ea-fad26d684dbc
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 518f9109-1898-4aa1-932f-126f004427b5
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PATIENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 324b91a6-2ae8-4195-ba69-916a2d7af9c3
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8741d889-e8c5-40ee-bdad-7d488134a51c
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CYCLESCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 94492739-610a-4e5e-a730-dd62120051f5
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23fba747-6b0e-4b92-99e2-53bdd70ed0c6
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: Insurance_FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dd648c99-9806-4aae-9626-fdf3fa8303b4
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ddf30073-5b04-4fd9-bb8a-99623e62f237
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: Insurance_FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 34ad51a4-3265-4cc6-8824-ff2c8e8fa462
+                stepCounter: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f607288e-c178-4333-8057-4d7c13446956
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: InsuranceCompanyID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3b9bc637-7031-4f7f-9d86-b8b91e052709
+                stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: adab3346-ae8e-47e0-b7ea-f957b190a68b
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: InsuranceCompanySTATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 051136b7-10c3-44c3-9413-bbed725207f7
+                stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60c825b1-3adc-49b5-91bf-dcd922cb972b
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: COMPANYNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e93d8af3-b9d0-46c3-acd3-cbfcb938f016
+                stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11ffba1b-1903-431a-9954-0617cb1a11af
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bb25c6cc-25b1-4041-b51b-16fb28be8c8a
+                stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1fd09f34-114a-420a-a17a-257b86d002b3
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: InsuranceCompany_FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d963f37-82f6-47a2-bf0d-c36fdcfae57e
+                stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1edf373f-6fec-4f8a-9052-d80d6f8f3596
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: InsuranceCompany_FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 446b9411-2bf7-46eb-bd65-74c416181959
+                stepCounter: e18aa355-2ea1-4781-80aa-24f179369458
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a733a98-6909-416b-b722-e86f6bb31b0b
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BaseInsuranceTemplateID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 11e94245-139f-40bd-b0bf-2a516ee8fd22
+                stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8b53bef-d51f-43a0-b2ea-ab3474fc6aa0
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BaseInsuranceTemplateSTATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 62170656-63e2-4fd5-b289-a1710858f940
+                stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7248e904-ce6c-41c7-8cad-e0f1164561ef
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BaseInsuranceTemplateINSURANCECOMPANYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10516ced-28fc-4ba4-ab43-02dffe69f09e
+                stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3286f6c4-8104-494d-b40b-a2356d595969
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: VARCHAR(1000)
+        description: ""
+        name: PLANDESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84890a52-dfbc-4a49-b2f9-736ef87dc32e
+                stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9a4891dd-292b-40b3-a5e7-eb11426c0237
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: BaseInsuranceTemplateNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d614f6c-79b0-40e9-b75a-67b2f483e5a7
+                stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6504322a-547d-4b61-99f3-a96052778007
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: BaseInsuranceTemplate_FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa8f866c-6974-4616-8d67-7508b1659286
+                stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a33608d2-8630-4148-bbbf-50075fa7938d
+          stepCounter: 753815ba-4452-44e2-869c-4662c9134521
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: BaseInsuranceTemplate_FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4095da76-7bed-44dd-9bb0-fdc87b34a145
+                stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_PIXELBO_BASEINSURANCETEMPLATE: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+          STG_PIXELBO_INSURANCE: 8d8a7274-05de-4dfa-a729-25ba1064a2e7
+          STG_PIXELBO_INSURANCECOMPANY: e18aa355-2ea1-4781-80aa-24f179369458
+          STG_PIXELBO_ORDERREFILLINSURANCES: 724b540f-c81b-4306-90b2-3b4ca0beacde
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_BASEINSURANCETEMPLATE
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_INSURANCE
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_INSURANCECOMPANY
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_ORDERREFILLINSURANCES
+        join:
+          joinCondition: |-
+            FROM {{ ref('TARGET', 'STG_PIXELBO_ORDERREFILLINSURANCES') }} "STG_PIXELBO_ORDERREFILLINSURANCES"
+            JOIN {{ ref('TARGET', 'STG_PIXELBO_INSURANCE') }} "STG_PIXELBO_INSURANCE"
+            ON "STG_PIXELBO_ORDERREFILLINSURANCES"."INSURANCEID" = "STG_PIXELBO_INSURANCE"."ID"
+            LEFT JOIN {{ ref('TARGET', 'STG_PIXELBO_BASEINSURANCETEMPLATE') }} "STG_PIXELBO_BASEINSURANCETEMPLATE"
+            ON "STG_PIXELBO_INSURANCE"."INSURANCETEMPLATEID" = "STG_PIXELBO_BASEINSURANCETEMPLATE"."ID"
+            LEFT JOIN {{ ref('TARGET', 'STG_PIXELBO_INSURANCECOMPANY') }} "STG_PIXELBO_INSURANCECOMPANY"
+            ON "STG_PIXELBO_BASEINSURANCETEMPLATE"."INSURANCECOMPANYID" = "STG_PIXELBO_INSURANCECOMPANY"."ID"
+        name: STG_PIXELBO_ALL_INSURANCES
+        noLinkRefs: []
+  name: STG_PIXELBO_ALL_INSURANCES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

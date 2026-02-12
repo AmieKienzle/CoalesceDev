@@ -1,0 +1,11 @@
+fileVersion: 1
+id: 49886c1c-d5e7-40e0-902a-caa37a0794af
+name: PixelBO Patients Build
+steps:
+  - 3e2b1d00-836d-4e6f-aeb8-6b7c2e46abe4
+  - 565a8db0-4d7b-438b-9d97-d19de4b04aa9
+  - 64e1f124-98d5-494a-8688-27c565463dfd
+  - 6eb0c259-f2c4-4794-a20c-83148b4ac789
+  - 8ac9d575-b69a-4099-b81b-f4866a67a1da
+  - 8f527a14-6e6a-43e5-9cec-be460ce49a0c
+type: Subgraph

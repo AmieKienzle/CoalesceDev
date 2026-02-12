@@ -1,0 +1,138 @@
+fileVersion: 1
+id: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+name: STG_PIXELBO_BASEINSURANCETEMPLATE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Master BaseInsuranceTemplate
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11e94245-139f-40bd-b0bf-2a516ee8fd22
+          stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f14258e2-633b-4e80-ae6f-5090c349ae85
+                stepCounter: b1e1235c-8e86-4dd1-a777-07dc43476f83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62170656-63e2-4fd5-b289-a1710858f940
+          stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 168ea317-241f-4699-8dfb-3d66401697d7
+                stepCounter: b1e1235c-8e86-4dd1-a777-07dc43476f83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 10516ced-28fc-4ba4-ab43-02dffe69f09e
+          stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INSURANCECOMPANYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4aaa7a43-1bc4-4528-89f3-e4fe094af3e2
+                stepCounter: b1e1235c-8e86-4dd1-a777-07dc43476f83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84890a52-dfbc-4a49-b2f9-736ef87dc32e
+          stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+        config: {}
+        dataType: VARCHAR(1000)
+        description: ""
+        name: PLANDESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa134ccf-506b-4d36-9f07-f53066bf749b
+                stepCounter: b1e1235c-8e86-4dd1-a777-07dc43476f83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d614f6c-79b0-40e9-b75a-67b2f483e5a7
+          stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 05080f86-0b62-445c-8da6-d4ce8beab171
+                stepCounter: b1e1235c-8e86-4dd1-a777-07dc43476f83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa8f866c-6974-4616-8d67-7508b1659286
+          stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d2478ed-2b2b-4514-bc6a-abf267c0644f
+                stepCounter: b1e1235c-8e86-4dd1-a777-07dc43476f83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4095da76-7bed-44dd-9bb0-fdc87b34a145
+          stepCounter: cccd1e6f-4cd7-48ff-8fe9-3db53037c6ee
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 173601b5-0183-45e5-8086-7986acbd9a10
+                stepCounter: b1e1235c-8e86-4dd1-a777-07dc43476f83
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          BASEINSURANCETEMPLATE: b1e1235c-8e86-4dd1-a777-07dc43476f83
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PIXELBO
+            nodeName: BASEINSURANCETEMPLATE
+        join:
+          joinCondition: FROM {{ ref('PIXELBO', 'BASEINSURANCETEMPLATE') }} "BASEINSURANCETEMPLATE"
+        name: STG_PIXELBO_BASEINSURANCETEMPLATE
+        noLinkRefs: []
+  name: STG_PIXELBO_BASEINSURANCETEMPLATE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

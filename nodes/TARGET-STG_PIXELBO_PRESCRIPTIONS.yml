@@ -1,0 +1,418 @@
+fileVersion: 1
+id: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+name: STG_PIXELBO_PRESCRIPTIONS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e7d0ae3-3af2-42fc-9481-9e182f1a13d7
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d116bbb4-c12f-4fe9-98b1-b57ecf6ccfb7
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76b09b34-6609-445b-a2a5-182b2a3488d4
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LASTMODIFIERUSERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 64dfe67c-adef-495d-9629-b54c99cd882e
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4810a12c-f4e7-49a2-8156-e89a3cda44fc
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CREATORTENANTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 329b029e-fbf4-445d-85f0-731299cde8fb
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4cb1f30c-48bc-4a08-9ed0-5e0157dd6fa8
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: PRESCRIPTIONCODEFORMATTED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b19263a3-62de-4d38-be02-d061d03fd5db
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7619a3ed-50f6-4636-b835-f5e6d5d32c29
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: QUANTITYOFWRITTEN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bad4058d-bf02-4fb0-8fa9-a2aa032e3946
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b1eacc6-96c2-4082-bb32-a70065d03114
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRESCRIPTIONCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3651dcd1-14b0-4870-b765-cb617e2cf1a2
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7eaba9b0-379a-45e2-9dee-0596f0dedcd0
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PATIENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40c1b278-af38-41f2-a7cb-93d3e761cece
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ae95137-962f-45ed-8fd2-0b60f2b5a7c7
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TOTALQUANTITYOFWRITTEN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a3822369-1337-417c-9ce7-830c61fbe514
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83d9d010-9217-40de-8bcd-86e936de6828
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CREATORUSERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a7d64bb9-c03e-4a27-9b92-1726e6785a7e
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d18845a-ac37-40cf-93eb-16a0c61ccfa1
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TOTALQUANTITYOFDISPENSED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 78860b41-0042-4a31-8fa1-c4f85afac6f3
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f631e77-53a2-4001-b2d7-0d32898b300b
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: LASTMODIFICATIONTIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 984d8639-4d70-4731-8ae7-4177b7789075
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1134273-3e37-42de-a29e-cf4cf6cb8e57
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9a93cedd-bd8d-4083-8250-9fef9f65a376
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfe98262-43c6-4c7e-a682-c449b2c85b18
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISDELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a8ee995b-1478-4ebb-8074-b33e2a5e6b96
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2e90581-bd28-4f60-ae67-82f5dff028e6
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: VARCHAR(512)
+        description: ""
+        name: DIRECTIONFORADMINISTRATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ecbfc039-d408-4b4f-a5e4-60c626f6af04
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 751bed3b-21b3-4427-8131-5a6105163e04
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PATIENTMERGELOGS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d4902b02-cadb-4b8c-beae-23ab480f52fe
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6ff24f6-71a7-4a3c-82ef-077c3a768f3b
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: WRITTENDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6e19dd77-032f-429f-b1c5-dd3857bee7f5
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fcb6a80-4fdf-4fdf-8779-15a6c931498a
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DELETERUSERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 170ccf20-1117-4281-8b9b-fe638d2e7e6c
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a752cfe4-54ad-4367-be0d-60f9d780a185
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: DELETIONTIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0dc5bec7-86e2-445d-95e0-37f37d8fed8c
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aca477f2-15f3-4a1e-9ba4-06894d283989
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PRESCRIBERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43206860-c61d-432e-bf8a-9cd407cd09a3
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66d2a775-173c-4682-9bbc-3ddd5968b3b3
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AUTHORIZEDQUANTITYOFWRITTEN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8f105b34-81e3-44cd-a758-00ceb5acc07d
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25c00ff6-18ab-4506-9d48-c537219e693a
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISEXTERNAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9aa425c4-e665-46e7-85ca-7c77da9a6c19
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 822cb126-2b6c-412b-9e1b-446dbca1d08b
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PRESCRIBERMERGELOGS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 659f16a9-d8cb-41ee-9824-38a4da50f979
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed7666c4-7b06-48fe-ba96-e2a8f395ef4a
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AUTHORIZEDREFILLSCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 897d9597-fe32-4aff-ac18-1bc6c5fc158a
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f6c6a40-57d6-4ccc-aa33-f32cc79d435f
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: CREATIONTIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 157d19af-be63-4a84-92ba-87687286da84
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0c3d86d-9a97-4bb1-9d4c-a5c121f3c66e
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DRUGID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 794bc0e8-4562-41cc-8b33-55e59bbeaa2c
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c564d8f-185d-4258-881f-b94495d68068
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 412180de-a3c3-4610-aeaa-c75a38b8aa1c
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 68fc20e0-3f4a-4a9c-a2f0-da3cc23f7f09
+          stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 634544c2-7659-4bde-bccb-3c0957b63b09
+                stepCounter: 35aca995-dc83-468c-955c-ccf75b5ae277
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          PRESCRIPTIONS: 35aca995-dc83-468c-955c-ccf75b5ae277
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PIXELBO
+            nodeName: PRESCRIPTIONS
+        join:
+          joinCondition: FROM {{ ref('PIXELBO', 'PRESCRIPTIONS') }} "PRESCRIPTIONS"
+        name: STG_PIXELBO_PRESCRIPTIONS
+        noLinkRefs: []
+  name: STG_PIXELBO_PRESCRIPTIONS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,166 @@
+fileVersion: 1
+id: 724b540f-c81b-4306-90b2-3b4ca0beacde
+name: STG_PIXELBO_ORDERREFILLINSURANCES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Master OrderRefillInsurances
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a4df1ee5-3643-471a-bfc6-d5d2d76f9e01
+          stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d9a862da-703f-409e-9c6c-fa6fb5f953dc
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11ca0001-ab5c-476f-a6b9-0a0fec99a2fe
+          stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: PATIENTPAYMARGIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7164650c-5a3b-498d-ac41-b6532dff4f6f
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b3d2d66-3d4a-409e-b175-babdac417243
+          stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: INSURANCEPAYAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f2d346e-e5ee-4245-ada7-d01da108e67f
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9abb4de-bada-460a-9f0c-4cffbcc579ae
+          stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INSURANCEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2e8a66bb-69fa-430b-8e35-a626ea01ff43
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13979c62-466e-4758-954f-a397d0b657f4
+          stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: PATIENTPAYAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2edeaed1-e389-4b1f-ba80-13ab2a48a0a8
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f75c3d0-9c43-4201-855b-6d76d8529ec0
+          stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: INSURANCEPAYMARGIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 501f2b29-212a-4e09-bd63-c8d1fe6c6e10
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3b7beaa-6d64-46c2-a533-b0d7e91c0f9d
+          stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDERITEMID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0fe36fd0-1813-49fd-8d16-4799fd6646ab
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9e5e694-6e03-4870-998d-b32d1873df9b
+          stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 19154b09-e645-43db-9ef9-d4217eddb812
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c5936ff-9dfe-45f6-8a02-2afc8769af97
+          stepCounter: 724b540f-c81b-4306-90b2-3b4ca0beacde
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a9de7f35-ff41-481d-98f3-1586fd1ee68d
+                stepCounter: f5305024-ddf7-40bf-b92d-936a86192f35
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          ORDERREFILLINSURANCES: f5305024-ddf7-40bf-b92d-936a86192f35
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PIXELBO
+            nodeName: ORDERREFILLINSURANCES
+        join:
+          joinCondition: FROM {{ ref('PIXELBO', 'ORDERREFILLINSURANCES') }} "ORDERREFILLINSURANCES"
+        name: STG_PIXELBO_ORDERREFILLINSURANCES
+        noLinkRefs: []
+  name: STG_PIXELBO_ORDERREFILLINSURANCES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

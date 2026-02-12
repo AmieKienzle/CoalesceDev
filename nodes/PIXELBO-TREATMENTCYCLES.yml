@@ -1,0 +1,187 @@
+fileVersion: 1
+id: 07d339cf-8ec7-4c00-b6f6-5b1b483be056
+name: TREATMENTCYCLES
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: PIXELBO
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ee1cf43-2f28-4a97-b7a1-f0345281f21f
+          stepCounter: 07d339cf-8ec7-4c00-b6f6-5b1b483be056
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 374cf520-6524-4577-b5a4-13ef748513b2
+          stepCounter: 07d339cf-8ec7-4c00-b6f6-5b1b483be056
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6386e7fc-af24-4e1a-89e5-433969536b1b
+          stepCounter: 07d339cf-8ec7-4c00-b6f6-5b1b483be056
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: ISHIDDEN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16747978-f0c5-41fe-83fe-ff9a7c57a76c
+          stepCounter: 07d339cf-8ec7-4c00-b6f6-5b1b483be056
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: NAMESPANISH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66fa7c9f-4cc6-43c8-99ea-61409a4b78b5
+          stepCounter: 07d339cf-8ec7-4c00-b6f6-5b1b483be056
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: NAMEENGLISH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d3ed814-ed2b-480e-80bd-a69536a7824f
+          stepCounter: 07d339cf-8ec7-4c00-b6f6-5b1b483be056
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DISEASESTATEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 359baa95-95dc-4060-9b5b-d1e974a68f90
+          stepCounter: 07d339cf-8ec7-4c00-b6f6-5b1b483be056
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1874202e-6d91-4203-97f3-230a0441e1fc
+          stepCounter: 07d339cf-8ec7-4c00-b6f6-5b1b483be056
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e38ce14-71f8-40a1-b15e-9ce3068ca164
+          stepCounter: 07d339cf-8ec7-4c00-b6f6-5b1b483be056
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: TREATMENTCYCLES
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

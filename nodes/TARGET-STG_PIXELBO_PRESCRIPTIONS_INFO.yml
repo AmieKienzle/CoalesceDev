@@ -1,0 +1,197 @@
+fileVersion: 1
+id: ae930913-1eeb-4154-9a54-4b226e54b7c0
+name: STG_PIXELBO_PRESCRIPTIONS_INFO
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: To join info for basis of prescriptions
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eab94b3a-4383-4573-aa03-371b149525a5
+          stepCounter: ae930913-1eeb-4154-9a54-4b226e54b7c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: For Join on Refills
+        name: PrescriptionsID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4e7d0ae3-3af2-42fc-9481-9e182f1a13d7
+                stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbe13140-e1fc-4a6d-b5c9-55552ad5a4cc
+          stepCounter: ae930913-1eeb-4154-9a54-4b226e54b7c0
+        config: {}
+        dataType: VARCHAR(50)
+        description: For Select. RxNumber
+        name: PRESCRIPTIONCODEFORMATTED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4cb1f30c-48bc-4a08-9ed0-5e0157dd6fa8
+                stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94a3ae75-5ab4-442f-be90-09cbe3040ed8
+          stepCounter: ae930913-1eeb-4154-9a54-4b226e54b7c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: For Join on Patients
+        name: PATIENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7eaba9b0-379a-45e2-9dee-0596f0dedcd0
+                stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ccc38e21-dd72-4e56-a415-d198324f309a
+          stepCounter: ae930913-1eeb-4154-9a54-4b226e54b7c0
+        config: {}
+        dataType: Date
+        description: For Select
+        name: WRITTENDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6ff24f6-71a7-4a3c-82ef-077c3a768f3b
+                stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 271a2e5d-c520-4985-b189-3f2a7cbb4e85
+          stepCounter: ae930913-1eeb-4154-9a54-4b226e54b7c0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: For Join on AbpUsers And HealthcareProfessionals
+        name: PRESCRIBERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aca477f2-15f3-4a1e-9ba4-06894d283989
+                stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7cf97d99-03c0-422f-9e62-ed0f30163f11
+          stepCounter: ae930913-1eeb-4154-9a54-4b226e54b7c0
+        config: {}
+        dataType: date
+        description: For Select
+        name: CREATIONTIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8f6c6a40-57d6-4ccc-aa33-f32cc79d435f
+                stepCounter: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 158b0771-0395-445f-94ff-856cf005a584
+          stepCounter: ae930913-1eeb-4154-9a54-4b226e54b7c0
+        config: {}
+        dataType: VARCHAR(20)
+        description: For Select
+        name: NPI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5123967b-9f7b-4484-a774-5ad997b1e7fd
+                stepCounter: 49fee7aa-df6e-4831-a380-ca80d4ae8898
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d798c378-e1fc-43ce-9e35-0994d72af5a2
+          stepCounter: ae930913-1eeb-4154-9a54-4b226e54b7c0
+        config: {}
+        dataType: VARCHAR(128)
+        description: Prescriber First Name
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cbc8dbbd-3cae-461a-a119-cbdc5be35fa5
+                stepCounter: 565a8db0-4d7b-438b-9d97-d19de4b04aa9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef288cee-4408-428a-af88-58ad13c1ccc0
+          stepCounter: ae930913-1eeb-4154-9a54-4b226e54b7c0
+        config: {}
+        dataType: VARCHAR(128)
+        description: Prescriber Last Name
+        name: SURNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 55f30040-560b-411f-853e-e101ac1ae45e
+                stepCounter: 565a8db0-4d7b-438b-9d97-d19de4b04aa9
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e297c7af-ba10-49a4-a801-fdb35a9e3b0f
+          stepCounter: ae930913-1eeb-4154-9a54-4b226e54b7c0
+        config: {}
+        dataType: VARCHAR(128)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrescriberName
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cbc8dbbd-3cae-461a-a119-cbdc5be35fa5
+                stepCounter: 565a8db0-4d7b-438b-9d97-d19de4b04aa9
+            transform: CONCAT("STG_PIXELBO_ABPUSERS"."NAME", ' ',"STG_PIXELBO_ABPUSERS"."SURNAME" )
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_PIXELBO_ABPUSERS: 565a8db0-4d7b-438b-9d97-d19de4b04aa9
+          STG_PIXELBO_HEALTHCAREPROFESSIONALS: 49fee7aa-df6e-4831-a380-ca80d4ae8898
+          STG_PIXELBO_PRESCRIPTIONS: ad199d94-ba3f-44a1-8e05-5df62c34c5ca
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_ABPUSERS
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_HEALTHCAREPROFESSIONALS
+          - locationName: TARGET
+            nodeName: STG_PIXELBO_PRESCRIPTIONS
+        join:
+          joinCondition: |-
+            FROM {{ ref('TARGET', 'STG_PIXELBO_PRESCRIPTIONS') }} "STG_PIXELBO_PRESCRIPTIONS"
+            JOIN {{ ref('TARGET', 'STG_PIXELBO_HEALTHCAREPROFESSIONALS') }} "STG_PIXELBO_HEALTHCAREPROFESSIONALS"
+            ON "STG_PIXELBO_PRESCRIPTIONS"."PRESCRIBERID" = "STG_PIXELBO_HEALTHCAREPROFESSIONALS"."ID"
+            JOIN {{ ref('TARGET', 'STG_PIXELBO_ABPUSERS') }} "STG_PIXELBO_ABPUSERS"
+            ON "STG_PIXELBO_PRESCRIPTIONS"."PRESCRIBERID" = "STG_PIXELBO_ABPUSERS"."ID"
+        name: STG_PIXELBO_PRESCRIPTIONS_INFO
+        noLinkRefs: []
+  name: STG_PIXELBO_PRESCRIPTIONS_INFO
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

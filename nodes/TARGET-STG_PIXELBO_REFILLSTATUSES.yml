@@ -1,0 +1,110 @@
+fileVersion: 1
+id: 1990e832-eee4-43fd-b5a1-f861a6f2b24f
+name: STG_PIXELBO_REFILLSTATUSES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6dab00d5-401c-4854-bdaa-7515e1da45f3
+          stepCounter: 1990e832-eee4-43fd-b5a1-f861a6f2b24f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3f36412b-8caa-40c2-b1f4-caad9e8bf5fa
+                stepCounter: a6331fd7-d11d-477f-bb8a-02f46c5b1763
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f97a9166-85d9-4df2-96f4-87b1d5beaabd
+          stepCounter: 1990e832-eee4-43fd-b5a1-f861a6f2b24f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDERINDEX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad706204-aec4-4fe3-85c1-93783c0e0e3c
+                stepCounter: a6331fd7-d11d-477f-bb8a-02f46c5b1763
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7350349-b770-4771-b84b-0937cee8b3b9
+          stepCounter: 1990e832-eee4-43fd-b5a1-f861a6f2b24f
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dba94b2e-d890-47af-9eec-4604e4e41fa8
+                stepCounter: a6331fd7-d11d-477f-bb8a-02f46c5b1763
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0665ee72-672e-474c-ac14-8a9dd9df9e4a
+          stepCounter: 1990e832-eee4-43fd-b5a1-f861a6f2b24f
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4be0fda1-38a0-445c-93c3-eec51888c4e1
+                stepCounter: a6331fd7-d11d-477f-bb8a-02f46c5b1763
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a748e16-903c-4204-8058-4c9f96d95bc8
+          stepCounter: 1990e832-eee4-43fd-b5a1-f861a6f2b24f
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2480306a-5f42-4b02-befa-331aa79c2e60
+                stepCounter: a6331fd7-d11d-477f-bb8a-02f46c5b1763
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          REFILLSTATUSES: a6331fd7-d11d-477f-bb8a-02f46c5b1763
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PIXELBO
+            nodeName: REFILLSTATUSES
+        join:
+          joinCondition: FROM {{ ref('PIXELBO', 'REFILLSTATUSES') }} "REFILLSTATUSES"
+        name: STG_PIXELBO_REFILLSTATUSES
+        noLinkRefs: []
+  name: STG_PIXELBO_REFILLSTATUSES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

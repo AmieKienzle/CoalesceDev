@@ -1,0 +1,544 @@
+fileVersion: 1
+id: 73811478-e11a-48f0-932b-70509b978b8c
+name: STG_PIXELBO_PHARMACYASSETS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25a8c071-2816-45be-8374-66f424cd3137
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8b039c85-5c5a-4179-9e8d-c0c18cd79e58
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fb59965e-2960-497f-a3e3-252f2069f580
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5abd28cf-dbf4-49d0-87f5-23aefaad7fdf
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40535cbc-24e3-4813-a80a-7e488ed50f8e
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9166467d-279c-47b7-86dd-a2d1b4a37523
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf2fe2e1-4c54-4c11-8f3e-cc4f7ad79c5b
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DRUGSTORAGETYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9df3ad99-c304-43c7-86ae-1626888a89dc
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a604d8dc-1a27-43aa-8811-4a24689d6414
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: HCPCSJCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77d7d170-91e5-4686-ada4-4e81a27d2b2b
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b6b3742-a4d1-4885-9148-c7eb57689a22
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DRUGTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0e5455b9-2204-43cd-b997-756702d7b653
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1f76db7-0d16-4c60-8ba3-7d7ac8ac68df
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: NDC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 75ae8a12-dbc7-44fc-8d7f-e0eabd69a5dd
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbf68636-3720-4aef-94ac-8b6fb121cff4
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISCONTROLLED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a9c9b5f6-52e5-4469-a844-ac62c42286f3
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa5ed1bb-373b-4309-9ad7-e4af673f8f9a
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6dfa0025-0470-42ca-8c85-6edb2c7fa839
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7aa5913e-6200-49c7-b017-c5b5bc789da7
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: PACKAGESIZE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6aa7bbba-96a2-459c-a869-d3326a9754ef
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0905d84e-0340-4e14-8cbd-6364cf84fcf1
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: MONYCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b2e35a5-28fd-4fd3-bef9-817d3cd143e7
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25d29c55-524a-4877-9372-dcd4e303d86c
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: REQUIREFILLDATEONTRANSFER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c7fdd40-d3c3-4e9a-9b9b-d5240f3c2fa4
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e7b21fe-83f4-480b-8e79-9dc2d87ca3fd
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: MANUFACTURER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d5c20908-d67a-4fd0-8dd7-0ad2696fe498
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6fcc9fca-fe83-45af-b014-e75bf25e709a
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INVENTORYUNITOFMEASUREID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3a5d5380-8e61-4888-8268-47215ba89b2b
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef2f1cce-7e6d-48ea-a66b-7ab900483f03
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 26a07901-4c17-43a7-9f4d-9936260b4107
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff2cbda9-5e44-40fe-87c3-d74a162a594d
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: STRENGTHUNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8039f643-baf9-4751-b090-5c0d1e50daba
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdf80ec9-32c0-4264-b301-15972636cbc5
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: ADMINISTRATIONROUTE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3fe466f0-94cd-4fc1-a3eb-8f774d1497d2
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 627e59e1-8259-4124-9427-c845e5b5ecff
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(1000)
+        description: ""
+        name: DIRECTIONFORADMINISTRATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 98a11843-6a4c-4198-84ec-3b99cabf8c2a
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: db9e7c32-1399-4cb0-9b97-6bcbfe290d70
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STORAGECONDITION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6df96c6f-6f9f-4529-9c72-183492885d08
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11b49973-34f4-4421-84a8-551a462b1188
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DRUGBRANDID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bd7d267f-98be-4eed-adfe-5ca6bd60a5ff
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc7b1b89-3a64-4e91-8605-7d5a7b89979c
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(14)
+        description: ""
+        name: GPICODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3fa1f7bf-8f04-4ff4-98c2-2332eb232969
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d81c72c4-1d8b-4e2e-b6ca-db7f4905f29c
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: PRODUCTTITLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fb08fa0f-1820-47ad-9cb1-69ea87a53f46
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0135edbf-610d-4674-89b4-c6feb2e80821
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DRUGFORM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab4470fb-53bf-46c6-ac4d-0af138680e0c
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57474f44-f4ee-4ec2-af07-659604561c95
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(18,5)
+        description: ""
+        name: PACKAGEDIVISOR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 95f13345-040a-4c05-addb-604b6bd12c7d
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1639459-8183-4c86-b275-b3616fd1a3d4
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CALENDARUNITOFMEASUREID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2112e47-54c6-4410-885d-18a62c81a482
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dd544d3c-4b49-4481-be3c-7369778b68cf
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: PRICE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 012640b2-9cda-41aa-be0b-d78298001df0
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a2538fe-0ff7-4a2d-8aa6-8c9928e8fd15
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISEXTERNAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7f256aa-d75e-41c2-91b2-8fa237f4c426
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 700d9d84-59e5-4d1a-bb30-ebdc366f9921
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: CONTROLCLASSIFICATIONCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b457cb0f-ac8a-4d40-af9f-9cda8602fd98
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d7be7a0-797a-48a5-b461-2dc4789b77b8
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: STRENGTH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7fee713b-cdb0-4901-b052-eb71bae466d7
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d3292cf-cfcd-48d3-b060-753ac6b39296
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(18,2)
+        description: ""
+        name: UNITSPERITEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 73c53327-59d0-4c05-a939-0a4fe56eb07b
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 165d540f-3c29-4b1a-8913-039f26c1ae45
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1247d9cd-bf98-4c99-849f-dafbf5005931
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fd8edc2-95e4-4559-bdc7-1782a132d584
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bcb0a792-f2a5-410f-8074-a749f08bbfb7
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b009b55-fc9d-48eb-8929-dd4d8e9b2e8d
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: ISCOMPOUND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7f7032b8-891c-455a-bd94-c5b0a0503026
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b74a630b-1db4-4114-a8ab-036d9971f43f
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(2000)
+        description: ""
+        name: COMPOUNDGPI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 444ef3f5-c468-4b54-9986-c31031105fcd
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89be0e28-d0e5-4bda-a314-001fbeca9f72
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: VARCHAR(2000)
+        description: ""
+        name: COMPOUNDNDC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61bc05c2-2ef5-4875-9d46-2f244eb3a5c6
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e180331-36d7-48ac-81a0-d1dff49075ec
+          stepCounter: 73811478-e11a-48f0-932b-70509b978b8c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TRANSFERUNITOFMEASUREID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88b8feda-172f-4027-af27-129a5bbe9f97
+                stepCounter: aae33e67-8fd3-4be6-9ff3-3319786213f4
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          PHARMACYASSETS: aae33e67-8fd3-4be6-9ff3-3319786213f4
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PIXELBO
+            nodeName: PHARMACYASSETS
+        join:
+          joinCondition: FROM {{ ref('PIXELBO', 'PHARMACYASSETS') }} "PHARMACYASSETS"
+        name: STG_PIXELBO_PHARMACYASSETS
+        noLinkRefs: []
+  name: STG_PIXELBO_PHARMACYASSETS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
