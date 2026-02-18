@@ -2,20 +2,9 @@ fileVersion: 1
 id: f6298fab-93c6-434a-b0ba-3c565308aa34
 name: Revenue
 steps:
-  - 3fa1ca39-7fd9-4bf4-a54a-de3eb3a2c2fe
-  - 43682bc7-3da2-4c3b-b66a-be34792bf7f0
-  - 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
-  - 734c72bb-41e1-41c2-a744-8fb200f2e0dd
   - 74ba7703-7947-468c-aa03-6b3c6a75a42d
-  - 7e6f4e15-e594-454b-864d-2b7fde878074
-  - 8cb33459-36bd-4c34-a70c-c3088e09cb14
+  - 8f97e546-ef97-41ba-9a27-9a7055ecce3d
   - 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
-  - 950736b8-37ce-491f-a29d-cb521a69cd49
   - 9df1dcb0-444c-4fc2-a4cd-9679b0d358de
-  - b4a74502-b93d-43ca-bfa6-ce1f89f75972
   - bb66c5a8-8ab2-4afe-ac14-d2a987731871
-  - cd6bd6b7-2c71-4458-9c05-6c254efe1790
-  - d1c42450-5ee8-4c32-9a08-b3b642b34410
-  - e509cbdc-844a-4e8f-b15c-076b301d3989
-  - fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
 type: Subgraph
