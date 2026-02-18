@@ -309,7 +309,7 @@ operation:
         defaultValue: ""
         description: ""
         keyColumnType: None
-        name: WHOLESALER
+        name: WHOLESLAER
         nullable: true
         sourceColumnReferences:
           - columnReferences:

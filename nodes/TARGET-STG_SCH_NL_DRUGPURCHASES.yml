@@ -131,6 +131,20 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 734c9c3c-e0fc-4ae9-bde6-9ab43b44d448
+          stepCounter: d1c42450-5ee8-4c32-9a08-b3b642b34410
+        config: {}
+        dataType: VARCHAR(30)
+        description: ""
+        name: MANUFACTURER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 24f62660-c214-434f-ab15-c3603e92e952
+                stepCounter: 43682bc7-3da2-4c3b-b66a-be34792bf7f0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: 572782f8-d796-4e64-8053-5297c7690977
           stepCounter: d1c42450-5ee8-4c32-9a08-b3b642b34410
         config: {}
@@ -244,37 +258,7 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: e7eb24ff-318f-4eec-98a6-4ca8bdecf9d4
-          stepCounter: d1c42450-5ee8-4c32-9a08-b3b642b34410
-        config: {}
-        dataType: NUMBER(19,4)
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: AcqCost
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 08c23a86-e875-445a-89ff-f94ebe97bb2f
-                stepCounter: a83bb136-470d-472c-8ced-dbcfe05406c1
-            transform: |-
-              CASE WHEN "STG_SCH_NL_INVENTORYPURCHASEITEM"."QuantityReceived" IS NULL OR "STG_SCH_NL_INVENTORYPURCHASEITEM"."QuantityReceived" = 0
-              THEN 0
-              WHEN ("STG_SCH_NL_INVENTORYPURCHASEITEM"."QuantityReceived"*"STG_SCH_NL_DRUGDATA"."PACKSIZE") = 0
-              THEN 0
-              WHEN "STG_SCH_NL_DRUGDATA"."PACKDESCRIPTIONCODE" = 'AA' OR "STG_SCH_NL_DRUGDATA"."PACKDESCRIPTIONCODE" = 'BO' OR "STG_SCH_NL_DRUGDATA"."PACKDESCRIPTIONCODE" = 'BX' OR "STG_SCH_NL_DRUGDATA"."PACKDESCRIPTIONCODE" = 'DP'
-              THEN CASE WHEN ("STG_SCH_NL_INVENTORYPURCHASEITEM"."QuantityReceived"*"STG_SCH_NL_DRUGDATA"."PACKSIZE") = 0 THEN 0 ELSE "STG_SCH_NL_INVENTORYPURCHASEITEM"."TotalDollars"/("STG_SCH_NL_INVENTORYPURCHASEITEM"."QuantityReceived"*"STG_SCH_NL_DRUGDATA"."PACKSIZE") END
-              WHEN "STG_SCH_NL_DRUGDATA"."NDC" ='00245002340' OR "STG_SCH_NL_DRUGDATA"."NDC" = '75177497590'
-              THEN CASE WHEN "STG_SCH_NL_INVENTORYPURCHASEITEM"."QuantityReceived" = 0 THEN 0 ELSE "STG_SCH_NL_INVENTORYPURCHASEITEM"."TotalDollars"/"STG_SCH_NL_INVENTORYPURCHASEITEM"."QuantityReceived" END
-              WHEN "STG_SCH_NL_DRUGDATA"."NDC" = '00052693900' THEN 0
-              WHEN "STG_SCH_NL_DRUGDATA"."DRUGNAME" LIKE 'fentaNYL%' THEN 31.38 ELSE CASE WHEN ("STG_SCH_NL_INVENTORYPURCHASEITEM"."QuantityReceived"*"STG_SCH_NL_DRUGDATA"."PACKQUANTITY")=0 THEN 0 ELSE "STG_SCH_NL_INVENTORYPURCHASEITEM"."TotalDollars"/("STG_SCH_NL_INVENTORYPURCHASEITEM"."QuantityReceived"*"STG_SCH_NL_DRUGDATA"."PACKQUANTITY") END
-              END
-        systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
+
           columnCounter: f2aefef4-6a59-4176-aaf2-c53622164150
           stepCounter: d1c42450-5ee8-4c32-9a08-b3b642b34410
         config: {}
@@ -290,26 +274,7 @@ operation:
                 stepCounter: a83bb136-470d-472c-8ced-dbcfe05406c1
             transform: ""
         systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 3fc08d46-220b-4583-b38f-606e711d552e
-          stepCounter: d1c42450-5ee8-4c32-9a08-b3b642b34410
-        config: {}
-        dataType: VARCHAR(50)
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: WHOLESALER
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 7a64daef-2df1-47d3-9919-5264c22d7c81
-                stepCounter: c5e3d3a9-8ca7-495a-81d8-485c5bd7bac1
-            transform: ""
-        systemColumnType: None
+
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -327,14 +292,15 @@ operation:
           - locationName: TARGET
             nodeName: STG_SCH_NL_INVENTORYPURCHASEITEM
         join:
-          joinCondition: |
+          joinCondition: |+
             FROM {{ ref('TARGET', 'STG_SCH_NL_DRUGDATA') }} "STG_SCH_NL_DRUGDATA"
             LEFT JOIN {{ ref('TARGET', 'STG_SCH_NL_INVENTORYPURCHASEITEM') }} "STG_SCH_NL_INVENTORYPURCHASEITEM"
             ON "STG_SCH_NL_INVENTORYPURCHASEITEM"."DRUGID" = "STG_SCH_NL_DRUGDATA"."DRUGID"
             LEFT JOIN {{ ref('TARGET', 'STG_SCH_NL_DRUGCATALOG') }} "STG_SCH_NL_DRUGCATALOG"
-            ON "STG_SCH_NL_DRUGCATALOG"."CatalogItemId" = "STG_SCH_NL_INVENTORYPURCHASEITEM"."CatalogItemId"
+            ON "STG_SCH_NL_DRUGCATALOG"."NDC" = "STG_SCH_NL_DRUGDATA"."NDC"
 
-            WHERE "STG_SCH_NL_INVENTORYPURCHASEITEM"."DateAdded" IS NOT NULL
+
+
         name: STG_SCH_NL_DRUGPURCHASES
         noLinkRefs: []
   name: STG_SCH_NL_DRUGPURCHASES
