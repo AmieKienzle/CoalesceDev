@@ -13,7 +13,15 @@ mappingDefinitions:
   RAW_SCH_NEWLEAF:
     database: SCH_RAW
     schema: dbo
-
+  SP_AP:
+    database: SCH_RAW
+    schema: FT_SHAREPOINT
+  SP_MAPPING:
+    database: SCH_RAW
+    schema: FT_SHAREPOINT_MAPPING
+  SP_PRICELISTS:
+    database: SCH_RAW
+    schema: FT_SHAREPOINT_PRICELISTS
   TARGET:
     database: SCH_DEV
     schema: REPORTING

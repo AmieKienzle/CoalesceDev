@@ -342,8 +342,7 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases:
-          ORDERITEMS: c3ae32af-d5c0-4ddc-99c1-62a383a14b42
+      - aliases: {}
         customSQL:
           customSQL: ""
         dependencies:
@@ -353,7 +352,7 @@ operation:
           joinCondition: |-
             FROM {{ ref('PIXELBO', 'ORDERITEMS') }} "ORDERITEMS"
 
-            where "SUPPLYID" is NULL and "ORDERITEMS"."ISDELETED"=0
+            where "ORDERITEMS"."SUPPLYID" is NULL and "ORDERITEMS"."ISDELETED"=0
         name: STG_PIXELBO_ORDERITEMS
         noLinkRefs: []
   name: STG_PIXELBO_ORDERITEMS
