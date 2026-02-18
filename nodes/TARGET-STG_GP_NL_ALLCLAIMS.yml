@@ -435,6 +435,49 @@ operation:
               ELSE "STG_GP_NL_CLAIM"."ACQUISITIONCOST"
               END
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d7f9454-71a5-4f02-b2f6-398133a8b185
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Fill#
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 22f5184f-2837-4b6f-bdd4-c87f77d42f2c
+                stepCounter: 5ede5222-f9cb-40d0-887d-79da0809459b
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8d2d4ff-b360-4007-a572-1f5bc838b856
+          stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Group
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN CHARINDEX('',"STG_GP_NL_CLAIM"."REQUESTTEXT",CHARINDEX('C1',"STG_GP_NL_CLAIM"."REQUESTTEXT")) = 0
+              THEN ''
+              ELSE SUBSTRING("STG_GP_NL_CLAIM"."REQUESTTEXT",(CHARINDEX('C1',"STG_GP_NL_CLAIM"."REQUESTTEXT")+2), CASE WHEN CHARINDEX(' ',"STG_GP_NL_CLAIM"."REQUESTTEXT",CHARINDEX('C1',"STG_GP_NL_CLAIM"."REQUESTTEXT")) - (CHARINDEX('C1',"STG_GP_NL_CLAIM"."REQUESTTEXT")+2)>15 THEN 15 ELSE CHARINDEX(' ',"STG_GP_NL_CLAIM"."REQUESTTEXT",CHARINDEX('C1',"STG_GP_NL_CLAIM"."REQUESTTEXT"))-(CHARINDEX('C1',"STG_GP_NL_CLAIM"."REQUESTTEXT")+2)END)END
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

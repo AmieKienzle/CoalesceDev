@@ -198,7 +198,11 @@ operation:
           - columnReferences:
               - columnCounter: ffd5da91-d545-477b-963f-03dd77cda853
                 stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_GP_NL_ALLCLAIMS"."Group" IS NULL
+              THEN "STG_GP_NL_ALLCLAIMS"."GROUPID"
+              ELSE STG_GP_NL_ALLCLAIMS."Group"
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7fb56870-4dd9-46cb-9a21-69f2bbaf4627

@@ -177,6 +177,26 @@ operation:
                 stepCounter: a1b3b757-d364-4649-95c4-6aaa556738de
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2b8da9f-4b52-450e-8a2d-f85d1310b3b8
+          stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PRESCRIBERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e0379ca5-30f6-4f0a-9f43-19bb796b2b11
+                stepCounter: e55b0425-59fd-4398-a7bd-d87f8eda12f6
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
