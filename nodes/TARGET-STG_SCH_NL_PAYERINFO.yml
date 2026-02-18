@@ -159,7 +159,11 @@ operation:
           - columnReferences:
               - columnCounter: 6f0f266e-ae98-43d0-8f16-2b1f7c3a666b
                 stepCounter: d8a00b0f-1b32-4abc-b9d2-081689c7b46c
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_SCH_NL_SECCLAIMS"."PAID" IS NULL
+              THEN 0 
+              ELSE "STG_SCH_NL_SECCLAIMS"."PAID"
+              END
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
@@ -179,7 +183,11 @@ operation:
           - columnReferences:
               - columnCounter: 90c67a5e-eaf6-413a-9682-e8f0d201162a
                 stepCounter: 50d67a68-c8ea-49aa-88a5-8df1f01a2e8a
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_SCH_NL_TRICLAIMS"."PAID" IS NULL
+              THEN 0 
+              ELSE "STG_SCH_NL_TRICLAIMS"."PAID"
+              END
         systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
@@ -213,7 +221,11 @@ operation:
           - columnReferences:
               - columnCounter: 3a98f0ad-5975-4d48-b2a6-d72f8707772b
                 stepCounter: d8a00b0f-1b32-4abc-b9d2-081689c7b46c
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_SCH_NL_SECCLAIMS"."COPAY" IS NULL
+              THEN 0 
+              ELSE "STG_SCH_NL_SECCLAIMS"."COPAY"
+              END
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
@@ -233,7 +245,11 @@ operation:
           - columnReferences:
               - columnCounter: 74082532-7018-4c03-a8e6-bf35a1541e0e
                 stepCounter: 50d67a68-c8ea-49aa-88a5-8df1f01a2e8a
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_SCH_NL_TRICLAIMS"."COPAY" IS NULL
+              THEN 0 
+              ELSE "STG_SCH_NL_TRICLAIMS"."COPAY"
+              END
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
@@ -439,6 +455,66 @@ operation:
                 stepCounter: e5287e08-d746-4bf8-a339-bba45be51617
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 09ac0ee3-558b-496c-997f-baecb565847c
+          stepCounter: 7e6f4e15-e594-454b-864d-2b7fde878074
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DrugId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ff4a7782-5568-4768-a05b-8e0546f16868
+                stepCounter: e5287e08-d746-4bf8-a339-bba45be51617
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1249dff3-fb67-4bd8-b1d2-461900e664ae
+          stepCounter: 7e6f4e15-e594-454b-864d-2b7fde878074
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Fill#
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 012f3d31-a228-4ba2-96c2-597076cb6cbc
+                stepCounter: e5287e08-d746-4bf8-a339-bba45be51617
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9338be9e-acf9-47fb-81c2-e4c3fe43c822
+          stepCounter: 7e6f4e15-e594-454b-864d-2b7fde878074
+        config: {}
+        dataType: NUMBER(11,3)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Quantity
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b27b6cac-4dda-4ead-ba53-459a0875a006
+                stepCounter: e5287e08-d746-4bf8-a339-bba45be51617
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -456,13 +532,14 @@ operation:
           - locationName: TARGET
             nodeName: STG_SCH_NL_TRICLAIMS
         join:
-          joinCondition: |+
+          joinCondition: |-
             FROM {{ ref('TARGET', 'STG_SCH_NL_PRIMECLAIMS') }} "STG_SCH_NL_PRIMECLAIMS"
             LEFT JOIN {{ ref('TARGET', 'STG_SCH_NL_SECCLAIMS') }} "STG_SCH_NL_SECCLAIMS"
             ON "STG_SCH_NL_SECCLAIMS"."KEY" = "STG_SCH_NL_PRIMECLAIMS"."KEY"
             LEFT JOIN {{ ref('TARGET', 'STG_SCH_NL_TRICLAIMS') }} "STG_SCH_NL_TRICLAIMS"
             ON "STG_SCH_NL_TRICLAIMS"."KEY" = "STG_SCH_NL_PRIMECLAIMS"."KEY"
 
+            ORDER BY "STG_SCH_NL_PRIMECLAIMS"."REQUESTDATE" DESC
         name: STG_SCH_NL_PAYERINFO
         noLinkRefs: []
   name: STG_SCH_NL_PAYERINFO
