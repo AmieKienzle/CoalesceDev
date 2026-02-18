@@ -198,7 +198,11 @@ operation:
           - columnReferences:
               - columnCounter: ffd5da91-d545-477b-963f-03dd77cda853
                 stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_GP_NL_ALLCLAIMS"."Group" IS NULL
+              THEN "STG_GP_NL_ALLCLAIMS"."GROUPID"
+              ELSE STG_GP_NL_ALLCLAIMS."Group"
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1507f82f-479c-47ae-8946-c7a3dc2d76cb
@@ -318,6 +322,26 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 33b1bd95-4225-4d26-bc70-c910a10a5dff
+                stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e983eca2-c1a9-4e9c-afa4-86f38ce0f79e
+          stepCounter: 164f9a49-c84f-4c7c-a108-5cfc740cec9c
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Fill#
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d7f9454-71a5-4f02-b2f6-398133a8b185
                 stepCounter: 3046a9ae-9dd4-4ac2-aefa-879f8d4ec4af
             transform: ""
         systemColumnType: None

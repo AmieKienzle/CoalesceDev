@@ -159,7 +159,11 @@ operation:
           - columnReferences:
               - columnCounter: a5774931-23a4-4b89-8166-12a06953dda8
                 stepCounter: 9e73522b-643a-4524-83d3-e6cf388711ec
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_GP_NL_SECCLAIMS"."PAID" IS NULL
+              THEN 0
+              ELSE "STG_GP_NL_SECCLAIMS"."PAID"
+              END
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
@@ -179,7 +183,11 @@ operation:
           - columnReferences:
               - columnCounter: a2d704f7-a865-4ca4-a4bc-67af20eb9d52
                 stepCounter: 6773fc08-48b9-40b5-9d78-78c9078fa969
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_GP_NL_TRICLAIMS"."PAID" IS NULL
+              THEN 0
+              ELSE "STG_GP_NL_TRICLAIMS"."PAID"
+              END
         systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
@@ -213,7 +221,11 @@ operation:
           - columnReferences:
               - columnCounter: 0404b7e6-9b93-4739-a0b2-301c49c54a34
                 stepCounter: 9e73522b-643a-4524-83d3-e6cf388711ec
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_GP_NL_SECCLAIMS"."COPAY" IS NULL
+              THEN 0
+              ELSE "STG_GP_NL_SECCLAIMS"."COPAY"
+              END
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
@@ -233,7 +245,11 @@ operation:
           - columnReferences:
               - columnCounter: 8e3e056c-ab63-4846-940d-5ae2dd836239
                 stepCounter: 6773fc08-48b9-40b5-9d78-78c9078fa969
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_GP_NL_TRICLAIMS"."COPAY" IS NULL
+              THEN 0
+              ELSE "STG_GP_NL_TRICLAIMS"."COPAY"
+              END
         systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
@@ -506,6 +522,26 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: e3d35180-fdd5-4b3b-9985-a5b9e0a6824a
+                stepCounter: 164f9a49-c84f-4c7c-a108-5cfc740cec9c
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93c3b439-a248-4ef8-b5bc-9d8ddb08fb99
+          stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Fill#
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e983eca2-c1a9-4e9c-afa4-86f38ce0f79e
                 stepCounter: 164f9a49-c84f-4c7c-a108-5cfc740cec9c
             transform: ""
         systemColumnType: None

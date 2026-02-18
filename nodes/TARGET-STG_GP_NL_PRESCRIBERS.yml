@@ -507,6 +507,126 @@ operation:
               - columnCounter: 2a964262-4031-42cc-9bab-2700a89745ce
                 stepCounter: 2e574edf-39c3-46cf-94db-fe60a40f7297
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7310fa95-0c05-4189-8733-e14881c503a1
+          stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+        config: {}
+        dataType: VARCHAR(7000)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Clinic
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 334008b1-9228-4378-bcfb-9547c26485e9
+                stepCounter: 11ca8216-29e9-4527-9e33-9534f878d624
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 27ac69c9-bbce-49a0-b650-6ac61b0c4323
+          stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Address1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed78114a-b152-4fa2-b399-67492f483d1b
+                stepCounter: 11ca8216-29e9-4527-9e33-9534f878d624
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90d0abbb-76cb-40d3-b6f3-e82cf65dc5e0
+          stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Address2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 362e1b83-90f2-409e-83ef-27e7da473a96
+                stepCounter: 11ca8216-29e9-4527-9e33-9534f878d624
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba2c0e4a-df3c-4df0-b035-7bf013465d92
+          stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: City
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 33c7e49b-591d-4e4a-ad16-ecf6c63d217d
+                stepCounter: 11ca8216-29e9-4527-9e33-9534f878d624
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0327670-2781-4e52-b6ec-a092dd938004
+          stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+        config: {}
+        dataType: VARCHAR(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: State
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 773c6b79-7ff8-4466-a957-9daf9a372837
+                stepCounter: 11ca8216-29e9-4527-9e33-9534f878d624
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00b43bb9-4e70-4c4a-b582-153a368d7130
+          stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+        config: {}
+        dataType: VARCHAR(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Zip
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a8b945b4-c810-4537-b9e1-080acc0cf8d4
+                stepCounter: 11ca8216-29e9-4527-9e33-9534f878d624
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

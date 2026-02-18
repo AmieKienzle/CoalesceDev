@@ -1,0 +1,890 @@
+fileVersion: 1
+id: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+name: STG_GP_NL_REVENUE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 88e705b3-9d43-47d2-b5be-0623fa6df859
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(35)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrescriberNPI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb2176b0-4c7f-4e01-89f3-17df8c1cf5ef
+                stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aec216cb-e2c5-4ad8-bdc0-d252e1b57416
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrescriberName
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("STG_GP_NL_PRESCRIBERS"."FIRSTNAME",' ',"STG_GP_NL_PRESCRIBERS"."LASTNAME")
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40820bb5-2d18-4d72-8ce8-2689576025ac
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(7000)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Clinic
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7310fa95-0c05-4189-8733-e14881c503a1
+                stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48bf2c8c-ebac-457c-a38f-bcc65869be2e
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrescriberAddress
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT ("STG_GP_NL_PRESCRIBERS"."Address1",' ',"STG_GP_NL_PRESCRIBERS"."Address2")
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ad77c94-4fe6-459c-a078-bb1a33dd043f
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrescriberCity
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ba2c0e4a-df3c-4df0-b035-7bf013465d92
+                stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e833c524-e434-4149-b8a0-4bdebba4c6ed
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrescriberState
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e0327670-2781-4e52-b6ec-a092dd938004
+                stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61611745-9322-42b2-b5fb-2bd372662f60
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrescriberZip
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 00b43bb9-4e70-4c4a-b582-153a368d7130
+                stepCounter: 950736b8-37ce-491f-a29d-cb521a69cd49
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c18c6c40-3154-406e-b066-643be00f669f
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AdjudicatedMonth
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: DATE_FROM_PARTS(YEAR("STG_GP_NL_PAYERINFO"."REQUESTDATE"),MONTH("STG_GP_NL_PAYERINFO"."REQUESTDATE"),01)
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26894e1f-a2b4-4e8a-b2a2-dd57431235fd
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AdjudicatedDate
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: be33b18c-9d6d-4e54-893a-cd8df8bcde5b
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7acf412-636b-4468-9d15-6d5934a9eb8d
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ShippedMonth
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: DATE_FROM_PARTS(YEAR("STG_GP_NL_NEEDBY"."COMPLETEDON"),MONTH("STG_GP_NL_NEEDBY"."COMPLETEDON"),01)
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 82608cc7-ea55-444a-b8e1-ae674c3d25fb
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ShippedDate
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b6612a1a-0b99-4ff7-8ea2-9abc3c9a09f6
+                stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f13ef8f9-b777-4ab3-acd3-d87802f003d4
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: INT
+        description: ""
+        name: PrescriptionNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1258a2b7-64c4-4158-9e39-ea2a85290cbc
+                stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e27610d-d2c4-4042-9b81-1fb53448785a
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RefillNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93c3b439-a248-4ef8-b5bc-9d8ddb08fb99
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30cfe306-b1e7-45e3-9760-59a29e1f285c
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: INT
+        description: ""
+        name: OrderNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b7f68b7-3f00-428e-8a03-f4fdff1bc7a2
+                stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8c771f3-831c-4896-8175-6c7e6a358431
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(35)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: NDC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0a510592-4bb0-474e-8bd4-79a659c6000b
+                stepCounter: 3fa1ca39-7fd9-4bf4-a54a-de3eb3a2c2fe
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e86c6876-7718-4ed3-8049-a5313f80f6fd
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(105)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DrugName
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4701f500-a4b5-475e-9dc5-f7fbd0cc3af6
+                stepCounter: 3fa1ca39-7fd9-4bf4-a54a-de3eb3a2c2fe
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a1c261f-d9c7-49ba-ab9f-492084bc3a61
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(105)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: MasterDrugName
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 690cec84-be9c-403d-a77a-86056492662b
+                stepCounter: 3fa1ca39-7fd9-4bf4-a54a-de3eb3a2c2fe
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 07949706-18ac-452e-86b6-d8317561e4cb
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(11,3)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Quantity
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 032a3ddc-c9c5-4e67-a86d-2710a0905b3a
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9a47c926-0052-4d2f-a84a-77314ce5e9f4
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DispensedQuantity
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CAST("STG_GP_NL_PAYERINFO"."QUANTITY"/"STG_GP_NL_DRUGDATA"."DIVISOR" AS INT)
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c6806c5-53b2-42fc-8824-c111c1d62363
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(6)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: BIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9080b654-4511-48d9-b542-903b8f32c53f
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26b7a31f-981c-4241-a8a4-898ed9059042
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrimeGroupNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3dcb7bb8-6845-4bb2-968b-44688b34b759
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: efd99c69-3825-465d-86aa-51ec8d161759
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SecGroupNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7437821a-a91c-4752-a7e8-e10844555bbc
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37e4bbe0-3fd8-43b5-bef9-f69516a89b04
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TriGroupNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: def5fba9-a34a-45ec-b850-115254c0a49c
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08b42ef3-7c0e-4dc1-bdc9-eacfb2f248ee
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrimePayer
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 702c7583-3261-42d5-bdf3-5b4ba9c8e895
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ce03ca6-d3f3-4b72-bd0d-9bee5eea9ac1
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SecPayer
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 623effb8-6958-47eb-a25d-b78982cea9e3
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9a6e25b-c7b5-4a8c-821c-52f302008a8e
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TriPayer
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77c691a9-700e-4fa3-878a-82f0fff81dcc
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f829fce-6765-43a8-9345-62dc81818635
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(40)
+        description: ""
+        name: CustomerType
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 787b391b-3171-42b4-8b06-60ec1f0338d6
+                stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b21ea3ed-296d-4f04-aa45-6794af88cb0c
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: TrackingNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a7971cbf-b6f1-48e0-b9c5-e6c46ccd1341
+                stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 80cdf4c5-bd9c-4697-bbf1-5a7f91574738
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrimePaid
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0dbef0d6-b127-4671-aa27-0089f557cd29
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8d178d0-44b9-494c-a175-36e3584e17c0
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrimeCoPay
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1c4f6012-4608-41ec-873e-34a9f0d8efe8
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 682ed092-709d-40d9-b6d4-517a6f6ec326
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SecPaid
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 99df5741-228b-48ee-a418-919a0bd9c41e
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0396893b-0ba3-4cad-9db4-f298eb9bfdf2
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SecCoPay
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 99df5741-228b-48ee-a418-919a0bd9c41e
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8216f9cc-77ae-40ad-95ee-97021c4445b2
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TriPaid
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cc54bb2a-89ed-46ad-b504-052befbc2a70
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9cb82b49-7960-46c8-bd14-634c1232ed8f
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TriCoPay
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf497aef-c908-4439-a363-a84efc2c9090
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd93687c-eb15-4e2e-9646-094bf4f85a2f
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PayerFundedAmount
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "\"STG_GP_NL_PAYERINFO\".\"P_PAID\"+\"STG_GP_NL_PAYERINFO\".\"S_PAID\"+\"STG_GP_NL_PAYERINFO\".\"T_PAID\""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ce313a6-f222-4def-953d-f5212d7dda1c
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PatientResponsibility
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_GP_NL_PAYERINFO"."TPLAN" IS NOT NULL
+              THEN "STG_GP_NL_PAYERINFO"."T_COPAY"
+              WHEN "STG_GP_NL_PAYERINFO"."PPLAN" IS NOT NULL
+              THEN "STG_GP_NL_PAYERINFO"."S_COPAY"
+              ELSE "STG_GP_NL_PAYERINFO"."P_COPAY"
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 80aae9dd-0afb-4530-a2ab-7a5dfdaaebc3
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_GP_NL_PAYERINFO"."TPLAN" IS NOT NULL
+              THEN "STG_GP_NL_PAYERINFO"."T_COPAY"
+              WHEN "STG_GP_NL_PAYERINFO"."PPLAN" IS NOT NULL
+              THEN "STG_GP_NL_PAYERINFO"."S_COPAY"
+              ELSE "STG_GP_NL_PAYERINFO"."P_COPAY"
+              END
+              +"STG_GP_NL_PAYERINFO"."P_PAID"
+              +"STG_GP_NL_PAYERINFO"."S_PAID"
+              +"STG_GP_NL_PAYERINFO"."T_PAID"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77063ba1-9233-4471-b595-3d1eacc7ba81
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrimePayerRollup
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a25fe19-6739-4ca5-9e8f-c8ae786c4747
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75677243-6234-4293-9dfe-1761020213cb
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SecPayerRollup
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8fd4815b-a93d-48b2-a7c1-22e8bf29333d
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a44e12c8-4ee8-40ed-98ea-2f256a315175
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TriPayerRollup
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0db3099d-1708-45d9-9c6a-32eb5a8aca3d
+                stepCounter: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9901f36c-9a54-4a08-9815-e434f0dfec2a
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RebateType
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_GP_NL_PAYERINFO"."PPLAN" = 'ENVISION-RXI'
+              THEN 'RXI'
+              WHEN "STG_GP_NL_PAYERINFO"."BIN" = '025854' AND "STG_GP_NL_PAYERINFO"."PPLAN" <>'REUNITERX'
+              THEN 'KINDBODY'
+              WHEN "STG_GP_NL_PAYERINFO"."BIN" = '025854' AND "STG_GP_NL_PAYERINFO"."PPLAN" = 'REUNITERX'
+              THEN 'REUNITE'
+              WHEN "STG_GP_NL_PAYERINFO"."PPLAN" = 'HEARTTOMORROW'
+              THEN 'HEARTTOMORROW'
+              END
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93285cba-492b-4d5c-a454-61e91e87c9a2
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CustomerID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 75126daf-04c7-4b06-b20b-4d3e358a3868
+                stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_GP_NL_DRUGDATA: 3fa1ca39-7fd9-4bf4-a54a-de3eb3a2c2fe
+          STG_GP_NL_NEEDBY: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
+          STG_GP_NL_PAYERINFO: 48f45fdb-01b7-4cd5-8545-eed5dd4aef7a
+          STG_GP_NL_PRESCRIBERS: 950736b8-37ce-491f-a29d-cb521a69cd49
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_GP_NL_DRUGDATA
+          - locationName: TARGET
+            nodeName: STG_GP_NL_NEEDBY
+          - locationName: TARGET
+            nodeName: STG_GP_NL_PAYERINFO
+          - locationName: TARGET
+            nodeName: STG_GP_NL_PRESCRIBERS
+        join:
+          joinCondition: |-
+            FROM {{ ref('TARGET', 'STG_GP_NL_NEEDBY') }} "STG_GP_NL_NEEDBY"
+            LEFT JOIN {{ ref('TARGET', 'STG_GP_NL_PRESCRIBERS') }} "STG_GP_NL_PRESCRIBERS"
+            ON "STG_GP_NL_PRESCRIBERS"."PRESCRIBERID" = "STG_GP_NL_NEEDBY"."PRESCRIBERID"
+            LEFT JOIN {{ ref('TARGET', 'STG_GP_NL_PAYERINFO') }} "STG_GP_NL_PAYERINFO"
+            ON "STG_GP_NL_PAYERINFO"."REFILLID" = "STG_GP_NL_NEEDBY"."REFILLID"
+            LEFT JOIN {{ ref('TARGET', 'STG_GP_NL_DRUGDATA') }} "STG_GP_NL_DRUGDATA"
+            ON "STG_GP_NL_DRUGDATA"."DRUGID" = "STG_GP_NL_PAYERINFO"."DRUGID"
+        name: STG_GP_NL_REVENUE
+        noLinkRefs: []
+  name: STG_GP_NL_REVENUE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
