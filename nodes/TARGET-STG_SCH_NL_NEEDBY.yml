@@ -217,6 +217,26 @@ operation:
                 stepCounter: 72d1ffc3-dea7-47dd-9336-df1b8ce583b2
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4aa9533e-7b69-4b30-9078-10c2bb3d4fd8
+          stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PrescriberId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 12b02af5-98b8-454d-a81c-a875bb2a0031
+                stepCounter: 560d574d-6bca-4c32-b972-c796b2562f77
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -259,7 +279,7 @@ operation:
             WHERE "STG_SCH_NL_WORKQUEUEITEM"."StatusId" = 1
             AND "STG_SCH_NL_ENTERPRISEODERENTRY"."WorkflowState" <> 4
 
-            GROUP BY "STG_SCH_NL_WORKQUEUEITEM"."RefillId", "STG_SCH_NL_WORKQUEUEITEM"."CustomerId", "STG_SCH_NL_RX"."RxNumber", "STG_SCH_NL_ENTERPRISEORDER"."Identifier","STG_SCH_NL_ENTERPRISEORDER"."CompletedOn","STG_SCH_NL_CUSTOMERS"."CUSTOMERTYPE","STG_SCH_NL_REFILLSHIPMENT"."TrackingNumber","STG_SCH_NL_ENTERPRISEORDER"."DeliveryMethod","STG_SCH_NL_ENTERPRISEORDER"."IsCancelled"
+            GROUP BY "STG_SCH_NL_WORKQUEUEITEM"."RefillId", "STG_SCH_NL_WORKQUEUEITEM"."CustomerId", "STG_SCH_NL_RX"."RxNumber", "STG_SCH_NL_ENTERPRISEORDER"."Identifier","STG_SCH_NL_ENTERPRISEORDER"."CompletedOn","STG_SCH_NL_CUSTOMERS"."CUSTOMERTYPE","STG_SCH_NL_REFILLSHIPMENT"."TrackingNumber","STG_SCH_NL_ENTERPRISEORDER"."DeliveryMethod","STG_SCH_NL_ENTERPRISEORDER"."IsCancelled","STG_SCH_NL_RX"."PrescriberId"
 
         name: STG_SCH_NL_NEEDBY
         noLinkRefs: []

@@ -184,7 +184,11 @@ operation:
           - columnReferences:
               - columnCounter: 004e9eaf-646d-49a0-8d73-34e48a666cb7
                 stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
-            transform: ""
+            transform: |-
+              CASE WHEN "STG_SCH_NL_ALLCLAIMS"."Group" IS NULL 
+              THEN "STG_SCH_NL_ALLCLAIMS"."GROUPID"
+              ELSE STG_SCH_NL_ALLCLAIMS."Group" 
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ccadf95b-616a-4469-a636-aa534347fc52
@@ -250,6 +254,66 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: dca9db71-99fe-45a0-ab1c-920dfe632100
+                stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff4a7782-5568-4768-a05b-8e0546f16868
+          stepCounter: e5287e08-d746-4bf8-a339-bba45be51617
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DrugId
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cad3f16f-f137-4522-8d41-bff26d63b66a
+                stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 012f3d31-a228-4ba2-96c2-597076cb6cbc
+          stepCounter: e5287e08-d746-4bf8-a339-bba45be51617
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Fill#
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d46f12b-6221-4f09-b8d4-bfa5c85f7f67
+                stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b27b6cac-4dda-4ead-ba53-459a0875a006
+          stepCounter: e5287e08-d746-4bf8-a339-bba45be51617
+        config: {}
+        dataType: NUMBER(11,3)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Quantity
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c8093d03-290a-4035-af1f-d351740706ec
                 stepCounter: 72ce9eee-915f-4505-9374-f04ee44217f5
             transform: ""
         systemColumnType: None
