@@ -859,6 +859,26 @@ operation:
               THEN 'HEARTTOMORROW'
               END
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7535edf0-b3ae-426f-8139-5bd5da05ab3c
+          stepCounter: cfcce1ba-d894-43b7-b12b-8f60f7a6d39e
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CustomerID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d95fd726-391e-46d3-982b-90ca7600bf82
+                stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
