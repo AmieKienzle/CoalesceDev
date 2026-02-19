@@ -378,7 +378,8 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: PurchaseOrder
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'PurchaseOrder') }} "PurchaseOrder"
+          joinCondition: |
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'PurchaseOrder') }} "PurchaseOrder"
         name: STG_SCH_NL_PURCHASEORDER
         noLinkRefs: []
   name: STG_SCH_NL_PURCHASEORDER
