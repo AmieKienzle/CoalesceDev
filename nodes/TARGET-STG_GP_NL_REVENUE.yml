@@ -851,6 +851,26 @@ operation:
               - columnCounter: 75126daf-04c7-4b06-b20b-4d3e358a3868
                 stepCounter: fb8ae71f-f123-4947-a44d-3f7c2dc3d3ac
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 115775c1-ea25-4fa4-a561-c7b0d4b58ef6
+          stepCounter: 8f97e546-ef97-41ba-9a27-9a7055ecce3d
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: GPI
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3ecccb1d-1dbf-42b2-961e-7647aacf7738
+                stepCounter: 3fa1ca39-7fd9-4bf4-a54a-de3eb3a2c2fe
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
