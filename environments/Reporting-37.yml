@@ -1,7 +1,18 @@
 fileVersion: 1
 id: "37"
 mappingDefinitions:
-
+  PIXELBO:
+    database: SCH_RAW
+    schema: FT_PIXEL_BACKOFFICE_DB_1_DBO
+  PIXELBO_CAPRX:
+    database: SCH_RAW
+    schema: FT_PIXEL_BACKOFFICE_DB_1_CAPRX
+  RAW_GP_NEWLEAF:
+    database: SCH_RAW
+    schema: GP_NEWLEAF_DBO
+  RAW_SCH_NEWLEAF:
+    database: SCH_RAW
+    schema: dbo
   SP_AP:
     database: SCH_RAW
     schema: FT_SHAREPOINT
