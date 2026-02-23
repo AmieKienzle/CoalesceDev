@@ -225,7 +225,7 @@ operation:
           columnCounter: e07ca6d7-f5ee-4b23-9352-9c32086aa734
           stepCounter: cfcce1ba-d894-43b7-b12b-8f60f7a6d39e
         config: {}
-        dataType: DATE
+        dataType: TIMESTAMP_NTZ(9)
         defaultValue: ""
         description: ""
         keyColumnType: None
@@ -235,7 +235,7 @@ operation:
           - columnReferences:
               - columnCounter: 9a4bf12f-d629-49ba-8808-0b0c0dbf8bf9
                 stepCounter: b4a74502-b93d-43ca-bfa6-ce1f89f75972
-            transform: CAST ("STG_SCH_NL_NEEDBY"."COMPLETEDON" AS DATE)
+            transform: ""
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
