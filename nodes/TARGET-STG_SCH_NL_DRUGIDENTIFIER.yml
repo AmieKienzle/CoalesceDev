@@ -170,7 +170,7 @@ operation:
         join:
           joinCondition: |-
             FROM {{ ref('RAW_SCH_NEWLEAF', 'DrugIdentifier') }} "DrugIdentifier"
-            where "DrugIdentifierId" <> '0D9FC51D-A847-407B-BDD3-CD972173D6E7'
+            WHERE "DrugIdentifier"."Identifier" <> '3-82584-70011-9'
         name: STG_SCH_NL_DRUGIDENTIFIER
         noLinkRefs: []
   name: STG_SCH_NL_DRUGIDENTIFIER
