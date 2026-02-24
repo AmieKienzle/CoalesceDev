@@ -168,7 +168,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: DrugIdentifier
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'DrugIdentifier') }} "DrugIdentifier"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'DrugIdentifier') }} "DrugIdentifier"
+            where "DrugIdentifierId" <> '0D9FC51D-A847-407B-BDD3-CD972173D6E7'
         name: STG_SCH_NL_DRUGIDENTIFIER
         noLinkRefs: []
   name: STG_SCH_NL_DRUGIDENTIFIER
