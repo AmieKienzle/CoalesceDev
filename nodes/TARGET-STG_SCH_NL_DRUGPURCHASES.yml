@@ -353,7 +353,7 @@ operation:
           - locationName: TARGET
             nodeName: STG_SCH_NL_INVENTORYPURCHASEITEM
         join:
-          joinCondition: |
+          joinCondition: |-
             FROM {{ ref('TARGET', 'STG_SCH_NL_DRUGDATA') }} "STG_SCH_NL_DRUGDATA"
             LEFT JOIN {{ ref('TARGET', 'STG_SCH_NL_INVENTORYPURCHASEITEM') }} "STG_SCH_NL_INVENTORYPURCHASEITEM"
             ON "STG_SCH_NL_INVENTORYPURCHASEITEM"."DRUGID" = "STG_SCH_NL_DRUGDATA"."DRUGID"
@@ -361,6 +361,7 @@ operation:
             ON "STG_SCH_NL_DRUGCATALOG"."CatalogItemId" = "STG_SCH_NL_INVENTORYPURCHASEITEM"."CatalogItemId"
 
             WHERE "STG_SCH_NL_INVENTORYPURCHASEITEM"."DateAdded" IS NOT NULL
+            and "STG_SCH_NL_DRUGDATA"."NDC" <> '3-82584-70011-9'
         name: STG_SCH_NL_DRUGPURCHASES
         noLinkRefs: []
   name: STG_SCH_NL_DRUGPURCHASES
