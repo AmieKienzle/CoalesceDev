@@ -336,7 +336,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: CatalogItem
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'CatalogItem') }} "CatalogItem"
+          joinCondition: |+
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'CatalogItem') }} "CatalogItem"
+
         name: STG_SCH_NL_CATALOGITEM
         noLinkRefs: []
   name: STG_SCH_NL_CATALOGITEM

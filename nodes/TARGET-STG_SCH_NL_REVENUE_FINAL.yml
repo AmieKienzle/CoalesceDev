@@ -162,7 +162,7 @@ operation:
           columnCounter: 08f2def5-8069-492c-8900-d3a3bea8b8a2
           stepCounter: c9a00d06-a0e0-4101-83db-abfb99c242b4
         config: {}
-        dataType: DATE
+        dataType: TIMESTAMP_NTZ(9)
         description: ""
         name: ShippedDate
         nullable: true
@@ -619,29 +619,6 @@ operation:
               - columnCounter: 252e818a-6c8c-4560-b9d6-275ca5cfaed2
                 stepCounter: cfcce1ba-d894-43b7-b12b-8f60f7a6d39e
             transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: c97592a0-87a7-4e2d-9db5-7d4f5f88ca96
-          stepCounter: c9a00d06-a0e0-4101-83db-abfb99c242b4
-        config: {}
-        dataType: NUMBER(8,2)
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: AcquisitionCost
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: e7eb24ff-318f-4eec-98a6-4ca8bdecf9d4
-                stepCounter: d1c42450-5ee8-4c32-9a08-b3b642b34410
-            transform: |-
-              CASE WHEN "STG_SCH_NL_REVENUE_FINAL"."ShippedDate" >= "STG_SCH_NL_DRUGPURCHASES"."AcqDate" AND "STG_SCH_NL_REVENUE_FINAL"."ShippedDate" < "STG_SCH_NL_DRUGPURCHASES"."NextAcq"
-              THEN "STG_SCH_NL_DRUGPURCHASES"."AcqCost"
-              END
-        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -649,7 +626,6 @@ operation:
           STG_CAP_RX_GPI: dfefdefa-6791-481c-9a48-1ae5bc4b656c
           STG_CAP_RX_NDC: 4cd72a64-97f4-46db-917e-200a6bd52f0b
           STG_REBATE_MAPPING_V_2: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
-          STG_SCH_NL_DRUGPURCHASES: d1c42450-5ee8-4c32-9a08-b3b642b34410
           STG_SCH_NL_REVENUE: cfcce1ba-d894-43b7-b12b-8f60f7a6d39e
         customSQL:
           customSQL: ""
@@ -661,8 +637,6 @@ operation:
           - locationName: TARGET
             nodeName: STG_REBATE_MAPPING_V_2
           - locationName: TARGET
-            nodeName: STG_SCH_NL_DRUGPURCHASES
-          - locationName: TARGET
             nodeName: STG_SCH_NL_REVENUE
         join:
           joinCondition: |-
@@ -671,8 +645,7 @@ operation:
             ON "STG_CAP_RX_GPI"."IDENTIFIER" = "STG_SCH_NL_REVENUE"."GPI"
             LEFT JOIN {{ ref('TARGET', 'STG_CAP_RX_NDC') }} "STG_CAP_RX_NDC"
             ON "STG_CAP_RX_NDC"."IDENTIFIER" = "STG_SCH_NL_REVENUE"."NDC"
-            LEFT JOIN {{ ref('TARGET', 'STG_SCH_NL_DRUGPURCHASES') }} "STG_SCH_NL_DRUGPURCHASES"
-            ON "STG_SCH_NL_DRUGPURCHASES"."NDC" = "STG_SCH_NL_REVENUE"."NDC"
+
             LEFT JOIN {{ ref('TARGET', 'STG_REBATE_MAPPING_V_2') }} "STG_REBATE_MAPPING_V_2"
             ON "STG_REBATE_MAPPING_V_2"."NDC" = "STG_SCH_NL_REVENUE"."NDC"
         name: STG_SCH_NL_REVENUE_FINAL
