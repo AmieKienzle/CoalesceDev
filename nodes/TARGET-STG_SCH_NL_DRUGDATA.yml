@@ -355,10 +355,12 @@ operation:
           - locationName: TARGET
             nodeName: STG_SCH_NL_DRUGIDENTIFIER
         join:
-          joinCondition: |
+          joinCondition: |-
             FROM {{ ref('TARGET', 'STG_SCH_NL_DRUGIDENTIFIER') }} "STG_SCH_NL_DRUGIDENTIFIER"
             JOIN {{ ref('TARGET', 'STG_SCH_NL_DRUG') }} "STG_SCH_NL_DRUG"
             ON "STG_SCH_NL_DRUG"."DrugId" = "STG_SCH_NL_DRUGIDENTIFIER"."DrugId"
+
+            where "STG_SCH_NL_DRUGIDENTIFIER"."Identifier" <> '3-82584-70011-9'
         name: STG_SCH_NL_DRUGDATA
         noLinkRefs: []
   name: STG_SCH_NL_DRUGDATA
