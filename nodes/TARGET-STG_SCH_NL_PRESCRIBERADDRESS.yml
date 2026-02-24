@@ -672,7 +672,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: PrescriberAddress
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'PrescriberAddress') }} "PrescriberAddress"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'PrescriberAddress') }} "PrescriberAddress"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_PRESCRIBERADDRESS
         noLinkRefs: []
   name: STG_SCH_NL_PRESCRIBERADDRESS

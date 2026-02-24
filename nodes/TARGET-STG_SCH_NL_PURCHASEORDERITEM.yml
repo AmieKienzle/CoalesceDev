@@ -252,7 +252,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: PurchaseOrderItem
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'PurchaseOrderItem') }} "PurchaseOrderItem"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'PurchaseOrderItem') }} "PurchaseOrderItem"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_PURCHASEORDERITEM
         noLinkRefs: []
   name: STG_SCH_NL_PURCHASEORDERITEM

@@ -170,7 +170,7 @@ operation:
         join:
           joinCondition: |-
             FROM {{ ref('RAW_SCH_NEWLEAF', 'DrugIdentifier') }} "DrugIdentifier"
-            WHERE "DrugIdentifier"."Identifier" <> '3-82584-70011-9'
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_DRUGIDENTIFIER
         noLinkRefs: []
   name: STG_SCH_NL_DRUGIDENTIFIER

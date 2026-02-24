@@ -308,7 +308,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: CustomerAddress
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'CustomerAddress') }} "CustomerAddress"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'CustomerAddress') }} "CustomerAddress"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_CUSTOMERADDRESS
         noLinkRefs: []
   name: STG_SCH_NL_CUSTOMERADDRESS

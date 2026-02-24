@@ -1484,7 +1484,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: Drug
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'Drug') }} "Drug"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'Drug') }} "Drug"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_DRUG
         noLinkRefs: []
   name: STG_SCH_NL_DRUG

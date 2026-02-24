@@ -182,7 +182,10 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: ThirdPartyComment
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'ThirdPartyComment') }} "ThirdPartyComment"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'ThirdPartyComment') }} "ThirdPartyComment"
+
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_THIRDPARTYCOMMENT
         noLinkRefs: []
   name: STG_SCH_NL_THIRDPARTYCOMMENT
