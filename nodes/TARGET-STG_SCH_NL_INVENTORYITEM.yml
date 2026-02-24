@@ -378,7 +378,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: InventoryItem
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'InventoryItem') }} "InventoryItem"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'InventoryItem') }} "InventoryItem"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_INVENTORYITEM
         noLinkRefs: []
   name: STG_SCH_NL_INVENTORYITEM

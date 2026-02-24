@@ -784,7 +784,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: Rx
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'Rx') }} "Rx"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'Rx') }} "Rx"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_RX
         noLinkRefs: []
   name: STG_SCH_NL_RX

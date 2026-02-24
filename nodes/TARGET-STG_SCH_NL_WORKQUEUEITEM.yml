@@ -546,7 +546,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: WorkQueueItem
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'WorkQueueItem') }} "WorkQueueItem"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'WorkQueueItem') }} "WorkQueueItem"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_WORKQUEUEITEM
         noLinkRefs: []
   name: STG_SCH_NL_WORKQUEUEITEM

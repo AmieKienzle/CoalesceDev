@@ -210,7 +210,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: AdjudicationFormat
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'AdjudicationFormat') }} "AdjudicationFormat"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'AdjudicationFormat') }} "AdjudicationFormat"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_ADJUDICATIONFORMAT
         noLinkRefs: []
   name: STG_SCH_NL_ADJUDICATIONFORMAT

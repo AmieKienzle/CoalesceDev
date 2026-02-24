@@ -1360,7 +1360,8 @@ operation:
         join:
           joinCondition: |-
             FROM {{ ref('RAW_SCH_NEWLEAF', 'Claim') }} "Claim"
-            WHERE "Claim"."ClaimState" <> 6
+            WHERE "Claim"."ClaimState" <> 6 
+            and  "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_CLAIM
         noLinkRefs: []
   name: STG_SCH_NL_CLAIM

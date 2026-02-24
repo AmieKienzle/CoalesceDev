@@ -574,7 +574,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: EnterpriseOrderEntry
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'EnterpriseOrderEntry') }} "EnterpriseOrderEntry"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'EnterpriseOrderEntry') }} "EnterpriseOrderEntry"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_ENTERPRISEODERENTRY
         noLinkRefs: []
   name: STG_SCH_NL_ENTERPRISEODERENTRY

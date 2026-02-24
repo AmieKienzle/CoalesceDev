@@ -1120,7 +1120,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: Customer
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'Customer') }} "Customer"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'Customer') }} "Customer"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_CUSTOMER
         noLinkRefs: []
   name: STG_SCH_NL_CUSTOMER

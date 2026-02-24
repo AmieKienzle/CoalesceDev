@@ -616,7 +616,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: RefillShipment
         join:
-          joinCondition: FROM {{ ref('RAW_SCH_NEWLEAF', 'RefillShipment') }} "RefillShipment"
+          joinCondition: |-
+            FROM {{ ref('RAW_SCH_NEWLEAF', 'RefillShipment') }} "RefillShipment"
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_REFILLSHIPMENT
         noLinkRefs: []
   name: STG_SCH_NL_REFILLSHIPMENT

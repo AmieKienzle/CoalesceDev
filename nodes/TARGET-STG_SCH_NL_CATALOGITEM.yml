@@ -336,9 +336,9 @@ operation:
           - locationName: RAW_SCH_NEWLEAF
             nodeName: CatalogItem
         join:
-          joinCondition: |+
+          joinCondition: |-
             FROM {{ ref('RAW_SCH_NEWLEAF', 'CatalogItem') }} "CatalogItem"
-
+            where "_fivetran_deleted" = 'false'
         name: STG_SCH_NL_CATALOGITEM
         noLinkRefs: []
   name: STG_SCH_NL_CATALOGITEM
