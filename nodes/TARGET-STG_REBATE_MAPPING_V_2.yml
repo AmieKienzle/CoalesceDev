@@ -143,6 +143,26 @@ operation:
               - columnCounter: 46ec4b53-3cc1-48ab-9d21-ee71154d0bb7
                 stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17d15948-d3a4-462f-a501-329bf6175804
+          stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RebateCheck
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("REBATE_MAPPING_V_2"."NDC",':',"REBATE_MAPPING_V_2"."REBATE_TYPE")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
