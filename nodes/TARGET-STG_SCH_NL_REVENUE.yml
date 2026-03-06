@@ -920,9 +920,7 @@ operation:
             transform: |-
               concat("STG_SCH_NL_DRUGDATA"."NDC",':',CASE WHEN "STG_SCH_NL_PAYERINFO"."PPLAN" = 'ENVISION-RXI'
               THEN 'RXI'
-              WHEN "STG_SCH_NL_PAYERINFO"."BIN" ='025854' AND "STG_SCH_NL_PAYERINFO"."PPLAN" <> 'REUNITERX'
-              THEN 'KINDBODY'
-              WHEN "STG_SCH_NL_PAYERINFO"."BIN" ='025854' AND "STG_SCH_NL_PAYERINFO"."PPLAN" = 'REUNITERX'
+              WHEN "STG_SCH_NL_PAYERINFO"."BIN" ='025854'
               THEN 'REUNITE'
               WHEN "STG_SCH_NL_PAYERINFO"."PPLAN" = 'HEARTTOMORROW'
               THEN 'HEARTTOMORROW'
