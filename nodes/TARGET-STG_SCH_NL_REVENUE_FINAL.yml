@@ -619,21 +619,70 @@ operation:
               - columnCounter: 252e818a-6c8c-4560-b9d6-275ca5cfaed2
                 stepCounter: cfcce1ba-d894-43b7-b12b-8f60f7a6d39e
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f40b604-ab74-4192-91a7-0eab7a763103
+          stepCounter: c9a00d06-a0e0-4101-83db-abfb99c242b4
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RebateQuantity
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_SCH_NL_REVENUE"."RebateType" <>'' THEN
+                  CASE WHEN "STG_SCH_NL_REVENUE"."MasterDrugName" = 'FAQ 300 (ORGANON)'
+                  THEN "STG_SCH_NL_REVENUE"."DispensedQuantity"*4
+                  WHEN "STG_SCH_NL_REVENUE"."MasterDrugName" = 'FAQ 600 (ORGANON)'
+                  THEN "STG_SCH_NL_REVENUE"."DispensedQuantity"*8
+                  WHEN "STG_SCH_NL_REVENUE"."MasterDrugName" = 'FAQ 600 (ORGANON)'
+                  THEN "STG_SCH_NL_REVENUE"."DispensedQuantity"*12
+                  ELSE STG_SCH_NL_REVENUE."DispensedQuantity"
+                  END
+              END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e12a91c-f9c1-4c8c-8c95-c936ae3d8c46
+          stepCounter: c9a00d06-a0e0-4101-83db-abfb99c242b4
+        config: {}
+        dataType: NUMBER(8,2)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RXIRebate
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_SCH_NL_REVENUE"."RebateType"='RXI' 
+                  THEN CASE WHEN "STG_REBATE_MAPPING_V_2"."END_FILL_DATE" > "STG_SCH_NL_REVENUE"."ShippedDate" AND "STG_REBATE_MAPPING_V_2"."START_FILL_DATE" >= STG_SCH_NL_REVENUE."ShippedDate" THEN "STG_REBATE_MAPPING_V_2"."REBATE_AMOUNT" 
+                  END
+              ELSE 0
+              END * "STG_SCH_NL_REVENUE"."DispensedQuantity"
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
-          STG_CAP_RX_GPI: dfefdefa-6791-481c-9a48-1ae5bc4b656c
-          STG_CAP_RX_NDC: 4cd72a64-97f4-46db-917e-200a6bd52f0b
           STG_REBATE_MAPPING_V_2: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
           STG_SCH_NL_REVENUE: cfcce1ba-d894-43b7-b12b-8f60f7a6d39e
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: TARGET
-            nodeName: STG_CAP_RX_GPI
-          - locationName: TARGET
-            nodeName: STG_CAP_RX_NDC
           - locationName: TARGET
             nodeName: STG_REBATE_MAPPING_V_2
           - locationName: TARGET
@@ -641,13 +690,8 @@ operation:
         join:
           joinCondition: |-
             FROM {{ ref('TARGET', 'STG_SCH_NL_REVENUE') }} "STG_SCH_NL_REVENUE"
-            LEFT JOIN {{ ref('TARGET', 'STG_CAP_RX_GPI') }} "STG_CAP_RX_GPI"
-            ON "STG_CAP_RX_GPI"."IDENTIFIER" = "STG_SCH_NL_REVENUE"."GPI"
-            LEFT JOIN {{ ref('TARGET', 'STG_CAP_RX_NDC') }} "STG_CAP_RX_NDC"
-            ON "STG_CAP_RX_NDC"."IDENTIFIER" = "STG_SCH_NL_REVENUE"."NDC"
-
             LEFT JOIN {{ ref('TARGET', 'STG_REBATE_MAPPING_V_2') }} "STG_REBATE_MAPPING_V_2"
-            ON "STG_REBATE_MAPPING_V_2"."NDC" = "STG_SCH_NL_REVENUE"."NDC"
+            ON "STG_REBATE_MAPPING_V_2"."RebateCheck" = "STG_SCH_NL_REVENUE"."RebateCheck"
         name: STG_SCH_NL_REVENUE_FINAL
         noLinkRefs: []
   name: STG_SCH_NL_REVENUE_FINAL
