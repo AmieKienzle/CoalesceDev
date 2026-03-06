@@ -899,6 +899,35 @@ operation:
                 stepCounter: 43682bc7-3da2-4c3b-b66a-be34792bf7f0
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8bf8980c-9524-4dda-a612-974c693358c6
+          stepCounter: cfcce1ba-d894-43b7-b12b-8f60f7a6d39e
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RebateCheck
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              concat("STG_SCH_NL_DRUGDATA"."NDC",':',CASE WHEN "STG_SCH_NL_PAYERINFO"."PPLAN" = 'ENVISION-RXI'
+              THEN 'RXI'
+              WHEN "STG_SCH_NL_PAYERINFO"."BIN" ='025854' AND "STG_SCH_NL_PAYERINFO"."PPLAN" <> 'REUNITERX'
+              THEN 'KINDBODY'
+              WHEN "STG_SCH_NL_PAYERINFO"."BIN" ='025854' AND "STG_SCH_NL_PAYERINFO"."PPLAN" = 'REUNITERX'
+              THEN 'REUNITE'
+              WHEN "STG_SCH_NL_PAYERINFO"."PPLAN" = 'HEARTTOMORROW'
+              THEN 'HEARTTOMORROW'
+              END)
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
