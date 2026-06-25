@@ -50,7 +50,7 @@ operation:
           columnCounter: 96a70a80-cd3e-413f-bc07-42f7542c47d5
           stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
         config: {}
-        dataType: VARCHAR(256)
+        dataType: DATE
         description: ""
         name: END_FILL_DATE
         nullable: true
@@ -58,7 +58,7 @@ operation:
           - columnReferences:
               - columnCounter: ca278ae3-50ee-488c-9cf6-d9ab90b0a261
                 stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
-            transform: ""
+            transform: CAST ("REBATE_MAPPING_V_2"."END_FILL_DATE" AS DATE)
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7c4c13a2-7330-43c1-bec6-2d0da96538f5
@@ -78,7 +78,7 @@ operation:
           columnCounter: b7efd5ee-a5fe-4aea-8b06-c3ff79309e45
           stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
         config: {}
-        dataType: VARCHAR(256)
+        dataType: DATE
         description: ""
         name: START_FILL_DATE
         nullable: true
@@ -86,7 +86,7 @@ operation:
           - columnReferences:
               - columnCounter: 9743d399-e353-41e7-b556-d9b01e395c9e
                 stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
-            transform: ""
+            transform: CAST ("REBATE_MAPPING_V_2"."START_FILL_DATE" AS DATE)
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b701369b-c9ac-49f4-8719-0cb934d82553
@@ -120,7 +120,7 @@ operation:
           columnCounter: b752bd83-b453-4140-b4ca-b6ad27bcd13c
           stepCounter: 949f1fe6-4c8c-4d55-8cc3-50fc5da301eb
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(35)
         description: ""
         name: NDC
         nullable: true
@@ -128,7 +128,7 @@ operation:
           - columnReferences:
               - columnCounter: 89be1946-1c79-432c-94a4-ce1437b8945f
                 stepCounter: 7f4fb9da-e589-4f20-805f-b27b70460c63
-            transform: ""
+            transform: CAST ("REBATE_MAPPING_V_2"."NDC" AS VARCHAR(35))
       - appliedColumnTests: {}
         columnReference:
           columnCounter: dd084d00-cd52-40be-8a2f-737c3223cc0d
